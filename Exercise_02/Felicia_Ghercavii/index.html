@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Felicia Ghercavii">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>To-Do List</h1>
+</header>
+<h4>Plan your shopping, errands, next big holiday, or just your next cozy Tuesday :)</h4>
+<main>
+    <!-- Task Addition Card -->
+    <section class="add-task-card">
+        <form id="task-form">
+            <div class="input-group">
+                <input type="text" id="text_input" placeholder="Enter your task" required />
+            </div>
+            <div class="dropdowns">
+                <select id="category_input" required>
+                    <option value="" disabled selected>Select Category ▽</option>
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="health ">Health</option>
+                    <option value="others">Others</option>
+                </select>
+
+                <select id="priority_input" required>
+                    <option value="" disabled selected>Select Priority ▽</option>
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+            </div>
+        </form>
+    </section>
+
+    <!-- Buttons Outside the Card -->
+    <div class="external-buttons">
+        <button type="submit" form="task-form" id="add_button">Add Task</button>
+        <button type="button" id="erase_button">Erase All</button>
+    </div>
+
+    <!-- Sorting Controls -->
+    <section class="sorting-controls">
+        <div class="sort-by">
+            <label for="sort_select">Sort By:</label>
+            <select id="sort_select">
+                <option value="default">Time Created</option>
+                <option value="name">A to Z</option>
+                <option value="priority">Priority</option>
+                <option value="category">Category</option>
+            </select>
+        </div>
+        <div class="sort-direction">
+            <button id="sort_direction" aria-label="Toggle Sort Direction">
+                <span id="sort_arrow">↑</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Task List -->
+    <article id="container">
+         
+    </article>
+</main>
+</body>
+</html>
