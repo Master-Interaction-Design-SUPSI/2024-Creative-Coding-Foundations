@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Valentina Guariglia"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>My Quick Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Quick Notes</h1>
+        <p>Organize your reminders by category and keep track of what’s important</p>
+    </header>
+
+    <main>
+        <aside>
+            <input type="text" id="text_input" placeholder="Add a new reminder" />
+            <select id="category_input">
+                <option value="">Select Category</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Appointments">Appointments</option>
+                <option value="Places to Visit">Places to Visit</option>
+                <option value="Movies to Watch">Movies to Watch</option>
+                <option value="Books to Read">Books to Read</option>
+                <option value="Personal Goals">Personal Goals</option>
+                <option value="Work Tasks">Work Tasks</option>
+            </select>
+            <button id="button">Add Note</button>
+        </aside>
+        <article id="container"></article>
+    </main>
+</body>
+</html>
