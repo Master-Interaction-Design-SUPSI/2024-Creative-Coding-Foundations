@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gnome Cone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Send the gnome to an adventure!</h1>
+      <p>
+        Everytime you press the button the gnome will go pick a traffic cone
+      </p>
+    </header>
+    <main>
+      <div class="screen">
+        <div class="stages-container">
+          <div class="stage1 woods round" id="woods">
+            <div class="gnome-container" id="gnome">
+              <img
+                class="gnome-image"
+                id="gnome-image"
+                src="./assets/imgs/Gnome0.png"
+                alt="" />
+            </div>
+          </div>
+          <div class="stage2 city round" id="city"></div>
+        </div>
+        <div class="end-stage crane round" id="gets-cone"></div>
+      </div>
+      <div class="buttons">
+        <button id="send-adventure">
+          <h2>Send to an adventure</h2>
+        </button>
+      </div>
+      <div id="end-popup" class="end-popup">
+        <div class="popup-image">
+          <img src="./assets/imgs/gnome3.png" alt="" />
+        </div>
+        <div class="popup-right">
+          <div>
+            <h2>Gnome Leveled Up!</h2>
+            <p>
+              Your gnome found another traffic cone... <br />
+              Gnome this is getting out of hand!
+            </p>
+          </div>
+          <button id="end-button" class="popup-button">
+            Throw those ugly cones away.
+          </button>
+        </div>
+      </div>
+      <div id="level-popup" class="level-popup">
+        <div class="popup-image">
+          <img id="popup-image" src="./assets/imgs/Gnome0.png" alt="" />
+        </div>
+        <div class="popup-right">
+          <div>
+            <h2>Gnome Leveled Up!</h2>
+            <p>
+              Your gnome found a traffic cone! <br />
+              He thinks it's a nice hat... don't tell him...
+            </p>
+          </div>
+          <button id="popup-button" class="popup-button">Keep playing!</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0f4ef;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #f0f4ef;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="34.01" cy="29.51" r="3.8"/>
+  <circle class="cls-1" cx="92.72" cy="92.38" r="3.8"/>
+  <circle class="cls-1" cx="24.22" cy="55.07" r="2.71"/>
+  <circle class="cls-1" cx="121.82" cy="102.39" r="2.71"/>
+  <circle class="cls-1" cx="60.49" cy="77.14" r="2.71"/>
+  <circle class="cls-1" cx="69.89" cy="80.85" r="2.71"/>
+  <circle class="cls-1" cx="78.48" cy="80.85" r="2.71"/>
+  <circle class="cls-1" cx="75.76" cy="71.71" r="2.71"/>
+  <circle class="cls-1" cx="67.18" cy="71.71" r="2.71"/>
+  <circle class="cls-1" cx="67.18" cy="64.53" r="2.71"/>
+  <circle class="cls-1" cx="59.29" cy="50.65" r="2.71"/>
+  <circle class="cls-1" cx="127.25" cy="114.24" r="2.71"/>
+  <polyline class="cls-2" points="34.01 29.51 59.29 50.65 67.18 64.53 67.18 71.71 75.76 71.71 78.48 80.85 92.72 92.38 121.82 102.39 127.25 114.24"/>
+  <polyline class="cls-2" points="24.22 55.07 60.49 77.14 70.76 81.75 79.59 81.75"/>
+</svg>

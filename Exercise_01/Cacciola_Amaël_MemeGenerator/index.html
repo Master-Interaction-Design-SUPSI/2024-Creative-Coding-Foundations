@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Meme Generator</h1>
+
+    <div class="button-container">
+        <button onclick="generateMeme('work')">Work</button>
+        <button onclick="generateMeme('friends')">Friends</button>
+        <button onclick="generateMeme('relationship')">Relationship</button>
+        <button onclick="generateMeme('study')">Study</button>
+        <button onclick="generateMeme('fusion')">Fusion</button>
+    </div>
+
+    <div id="meme">
+        <img id="meme-image" src="src/img/nervous-sweating-sweating-bullets.gif" alt="meme">
+        <div id="top-text" class="meme-text"></div>
+        <div id="bottom-text" class="meme-text"></div>
+    </div>
+</div>
+
+</body>
+</html>

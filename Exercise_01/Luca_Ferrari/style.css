@@ -1,0 +1,94 @@
+/* Style emelents */
+html {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+   background-image: url("assets/img/bgr_img.png"); 
+   background-color: #fff;
+   
+}
+
+h1 {
+    font-size: 2rem;
+    color: brown;
+    font-weight: bold;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Style classes */
+.container {
+    position: relative;
+}
+
+.center-container {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-winner:hover {
+    cursor: not-allowed;
+}
+
+.btn-hidden {
+    border: 0.2rem solid black;
+    border-radius: 0.8rem;
+    background-color: beige;
+    padding: 1rem;
+    margin: 0.3rem;
+}
+
+.btn-hidden {
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-hidden:hover {
+    transform: rotate(20deg);
+}
+
+.btn-clicked {
+    border: none;
+    border-radius: 0.8rem;
+    background-color: rebeccapurple;
+    padding: 1rem;
+    margin: 0.3rem;
+}
+
+.btn-clicked:hover {
+    cursor: not-allowed;
+}
+
+.btn-winner {
+    border: none;
+    border-radius: 0.8rem;
+    background-color: green;
+    padding: 1rem;
+    margin: 0.3rem;
+}
+
+.btn-winner:hover {
+    cursor: not-allowed;
+}
+
+/* Style IDs */
+#new-game {
+    border: none;
+    border-radius: 0.8rem;
+    background-color: green;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#new-game:hover {
+    border: 0.2rem solid #fff;
+    background-color: lightgreen;
+}

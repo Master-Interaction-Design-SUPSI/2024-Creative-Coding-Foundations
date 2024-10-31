@@ -1,0 +1,156 @@
+@font-face {
+   font-family: "Gravity"; 
+   src:
+   url(./assets/fonts/ABCGravity-Normal-Trial.woff2)
+}
+
+@font-face{
+    font-family: "Lausanne";
+    src: url(./assets/fonts/Lausanne-Regular.otf);
+}
+
+body{
+    padding-left: 2vw;
+}
+h1{
+    font-family: "Gravity";
+    font-size: 2.5rem;
+    
+}
+
+p{
+ font-family: "Lausanne";
+}
+
+h2{
+    font-family: "Lausanne";
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    position: relative;
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.stages-container{
+    height: 29vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.end-stage{
+    height: 35vh;
+    width: 50vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.stage1,
+.stage2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons{
+    margin-top: 50vh;
+}
+
+.gnome-image{
+    width: 23px;
+}
+
+.gnome-container{
+    position: absolute;
+    bottom: 19px;
+    left: 15px;
+   
+}
+
+.woods{
+    background-image: url(./assets/imgs/forest1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.city{
+    background-image: url(./assets/imgs/city\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.crane{
+    background-image: url(./assets/imgs/gru\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.round{
+    border-radius: 10px;
+}
+
+.level-popup,
+.end-popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: rgb(255, 213, 213);
+    padding: 10vh 7vw 10vh 7vw;
+    border-radius: 20px;
+    gap: 5vw;
+    justify-content: space-evenly;
+}
+
+.popup-right{
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popup-button{
+    padding: 2vh 2vw;
+}
+
+#send-adventure{
+    padding: 3vh 5vw;
+    background-color: rgb(255, 213, 213);
+    border-radius: 20px;
+}
+
+#send-adventure:active,
+button:active{
+    background-color: rgb(156, 129, 129);
+    position: relative;
+    top: 5px;
+}
+
+#send-adventure:hover,
+button:hover{
+    border-color: rgb(255, 74, 74);;
+}
+
+button{
+    background-color: rgb(255, 213, 213);
+    border-radius: 20px;
+}
+

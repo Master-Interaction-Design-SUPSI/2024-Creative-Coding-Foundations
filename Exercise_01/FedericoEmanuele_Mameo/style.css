@@ -1,0 +1,126 @@
+html{
+    font-size:18px;
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:100%;
+}
+
+body{
+    margin:0;
+    height:100%;
+}
+
+.container{
+    display: flex;
+    width:100%;
+    height:100%;
+}
+
+.box-centrale{
+    width: 70%;
+    text-align: center;
+    background-image: url(assets/basketbol-sahasinin-yapimi-hakkinda-bilgiler.jpg);
+    background-repeat: no-repeat;
+}
+
+.box-laterale{
+    width: 15%;
+    background-color:white;
+    text-align: center;
+}
+
+#big-title{
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    margin-bottom: 10px;
+    color: rgba(222,97,59,255);
+}
+
+h2{
+   font-size:xx-large;
+   color: white;
+   margin: 0 auto;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p{
+    font-style: italic;
+    margin: 10px auto;
+    color:white;
+}
+
+.images-button{
+    height: 150px;
+}
+
+.lateral-image{
+    width:100%   
+}
+
+button{
+    font-size:1rem;
+    border-radius:1rem;
+    padding:1rem;
+    background-color:rgb(235, 235, 235);
+    border:2px solid black;
+    box-shadow: 0 2px 4px 0 rgba(222,97,59,255), 0 3px 10px 0 rgba(222,97,59,255);
+    text-align: center;
+}
+
+button:hover{
+    background-color:rgba(222,97,59,255);
+    cursor:pointer;
+    position:relative;
+    top:-0.05rem;
+}
+
+button:active{
+    background-color: rgb(0, 128, 17);
+    cursor:progress;
+    position:relative;
+    top:0.1rem;
+}
+
+#button-2points{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#button-reset{
+    background-color: rgba(222,97,59,255);
+    box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
+    margin-top:10px;
+}
+
+#button-reset:hover{
+    background-color: rgb(195, 1, 1);
+}
+
+#button-reset:active{
+    background-color: rgb(255, 0, 0);
+}
+
+#output{
+background-color: black;
+padding:2rem;
+color:white;
+border:5px;
+border-color: white;
+border-radius:1rem;
+text-align: center;
+width: 50%;
+margin: 0 auto;
+height:200px;
+overflow-y: scroll;
+}
+
+.video-output{
+    width: 250px;
+    height: auto;
+    text-align:left;
+}
+
+.p-result{
+    font-style: normal;
+    font-size: larger;
+    font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TypeWriter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1>When the wedding wishes get real</h1>
+        <p>When the wedding wishes get real, it's time to look beyond the traditional greetings and uncover what people
+            are really thinking. Type your thoughts and reveal the unspoken truths hiding behind the polished words.
+            Whether it's heartfelt, humorous, or a little sarcastic, discover the real emotions behind every well-wish.
+        </p>
+    </div>
+
+    <h3>Your wedding card:</h3>
+
+    <div id="output">
+        <p id="greeting"><strong>Dear Bride and Groom,</strong></p>
+        <p id="dynamic-text"></p> <!-- Paragraph for the dynamic button text -->
+        <p id="closing"><strong>Sent With Love!</strong></p>
+    </div>
+
+
+    <div class="keyboard-container">
+        <!-- Buttons with common class 'buttons' -->
+        <!-- The visible button text is 'Best wishes', but the message on click is 'I give it two years' -->
+        <button class="buttons" data-message="I give it two years, tops. ">Best wishes</button>
+        <button class="buttons" data-message="See you at your next one..">Happily ever after</button>
+        <button class="buttons" data-message="I still can't believe you picked them.">True love</button>
+        <button class="buttons" data-message="It should have been me!">To the perfect couple</button>
+        <button class="buttons" data-message="May your Wi-Fi always work better than your relationship!">Congratulations</button>
+        <button class="buttons" data-message="Let's see how long forever really is..">Forever and always</button>
+        <button class="buttons" data-message="Enjoy your last day of freedom!">Cheers to love</button>
+        <button class="buttons" data-message="I hope your in-laws are tolerable.">Perfect family dynamics</button>
+        <button class="buttons" data-message="Well, one of you definitely settled..">Perfect match</button>
+        <button class="buttons" data-message="Because nothing says romance like arguing over dishes.">Endless romance</button>
+        <button class="buttons" data-message="Still waiting for mine to show up!">Love wins</button>
+        <button class="buttons" data-message="I'm just here for the free drinks."> Love and happiness</button>
+        <button class="buttons" data-message="Don't forget to delete Tinder.">Togheter forever</button>
+        <button class="buttons" data-message="Let's see if you survive the first IKEA trip.">A match made in heaven</button>
+        <button class="buttons" data-message="Just wing it, like the rest of us.">Perfect life plan</button>
+        <button class="buttons" data-message="Just waint until someone forgets to do the laundry.">Soulmates forever</button>
+        <button id="clear">Clear</button>
+    </div>
+
+
+</body>
+
+</html>

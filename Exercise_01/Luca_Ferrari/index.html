@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the dog!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- The main content of the page-->
+        <div class="center-container">
+            <h1>Catch the dog</h1>
+            <h2 id="result"></h2>
+            <p>Find the dog in as few clicks as possible!</p>
+            <button id="new-game">New game</button>
+            
+            <!--Game board 3x3. Each row is a div. At the moment there's no style applied to the row class-->
+            <div class="row">
+                <!--Each btn has its own class and a fixed hidden value. Is it used to check the winning card. It has its own btn image.-->
+                <button class="btn-hidden" value="1">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+                <button class="btn-hidden" value="2">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+                <button class="btn-hidden" value="3">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+            </div>
+            <div class="row">
+                <button class="btn-hidden" value="4">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+                <button class="btn-hidden" value="5">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+                <button class="btn-hidden" value="6">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+            </div>
+            <div class="row">
+                <button class="btn-hidden" value="7">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+                <button class="btn-hidden" value="8">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+                <button class="btn-hidden" value="9">
+                    <img src="assets/img/pet.png" alt="buttonpng" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

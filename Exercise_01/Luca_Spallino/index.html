@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bop Tuner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://use.typekit.net/thb1uwd.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="text-container"> <!-- top text (title+counter) -->
+            <h1>Bop Tuner</h1>
+            <p><span id="correct-counter">0</span></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="button-notes"> <!-- everything about the button of the notes -->
+            <button id="button-c" data-key="c">C</button>
+            <button id="button-c#" data-key="c1">C#</button>
+            <button id="button-d" data-key="d">D</button>
+            <button id="button-d#" data-key="d1">D#</button>
+            <button id="button-e" data-key="e">E</button>
+            <button id="button-f" data-key="f">F</button>
+            <button id="button-f#" data-key="f1">F#</button>
+            <button id="button-g" data-key="g">G</button>
+            <button id="button-g#" data-key="g1">G#</button>
+            <button id="button-a" data-key="a">A</button>
+            <button id="button-a#" data-key="a1">A#</button>
+            <button id="button-b" data-key="b">B</button>
+        </div>
+
+        <div class="container-bop"> <!-- everything about Bop -->
+            <button id="button-bop">
+                <div class="eye-bop">
+                    <div class="pupil-bop"></div>
+                </div>
+                <div class="eye-bop">
+                    <div class="pupil-bop"></div>
+                </div>
+                <div id="mouth-bop"></div>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="moving-text"> <!-- auto-scroll bottom text -->
+            <p>
+                <span id="orange-text">Make Bop sing and guess the note! The counter increases if you get it right on the first try</span>
+                <span id="black-text"> • Luca Enrico Spallino • Creative Coding Foundations • MaInD SUPSI • Prof. Marco Lurati & Giovanni Profeta • 2024-2025</span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
+

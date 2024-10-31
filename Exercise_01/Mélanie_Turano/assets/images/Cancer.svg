@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0f4ef;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #f0f4ef;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="48.83" cy="120.04" r="2.71"/>
+  <circle class="cls-1" cx="103.57" cy="95.53" r="2.71"/>
+  <circle class="cls-1" cx="76.71" cy="77.71" r="2.71"/>
+  <circle class="cls-1" cx="69.29" cy="21.29" r="2.71"/>
+  <polyline class="cls-2" points="70.59 21.29 72.68 61.32 76.71 78.32 102.25 94.42"/>
+  <line class="cls-2" x1="76.71" y1="78.32" x2="48.83" y2="119.19"/>
+</svg>

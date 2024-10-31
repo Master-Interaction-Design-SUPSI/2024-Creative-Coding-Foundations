@@ -1,0 +1,91 @@
+html {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+code {
+    font-size: 2rem;
+    display: none   ;
+}
+
+.selected {
+    background-color: cornflowerblue;
+}
+
+.active {
+    display: block;
+}
+
+main {
+    height: 100vh;
+}
+
+#helpers {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: white;
+    z-index: 1;
+}
+
+#img-html-items {
+    max-width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 2;
+}
+
+#code-quiz {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+
+code {
+    text-align: center;
+}
+
+#controller {
+    z-index: 2;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+#controller button {
+    border: none;
+    background-color: unset;
+    font-size: 3rem;
+}
+#controller button:hover {
+    position: relative;
+    top: -0.1rem;
+    cursor: pointer;
+}
+
+#controller button:active {
+    position: relative;
+    top: 0.2rem;
+}
+
+.hidden {
+    display: none !important;
+}

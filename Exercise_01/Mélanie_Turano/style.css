@@ -1,0 +1,87 @@
+html{
+    font-family: 'Space Mono';
+    font-size: 28px;
+    background-color: #1d2451;
+    color: #b4d9e3;
+}
+
+body {
+    background-image: url(assets/images/01sfondo.png); /*Mi permette di inserire img di sfondo*/
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+button {
+    background-color: #513977;
+    color: #f0f4ef;
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+}
+
+.caption-image {
+    font-size: 0.5rem;
+    margin-left: 3rem;
+}
+
+#gemini-button, #taurus-button, #aries-button, #pisces-button, #aquarius-button, #capricorn-button, #sagittarius-button, #ophiuchus-button, #scorpio-button, #libra-button, #virgo-button, #leo-button, #cancer-button, #button-clear, #generalinfo-button {
+    margin-right: 0.5rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+#description-tool {
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#output {
+    color: black;
+    background-color: #b4d9e3;
+    border: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+button:hover {
+    background-color: #B5838D;
+    cursor: pointer;
+    position: relative;
+    top: -0.2rem;
+}
+
+.gemini-image, .taurus-image, .aries-image, .pisces-image, .aquarius-image, .capricorn-image, .sagittarius-image, .ophiuchus-image, .scorpio-image, .libra-image, .virgo-image, .leo-image, .cancer-image, #generalinfo-image, #generalinfo-image {
+    display: block; /* Rende l'immagine un blocco */
+    margin: 0.2rem; 
+    width: 80px; 
+    height: 80px;
+}
+
+.gemini-text, .taurus-text, .aries-text, .pisces-text, .aquarius-text, .capricorn-text, .sagittarius-text, .ophiuchus-text, .scorpio-text, .libra-text, .virgo-text, .leo-text, .cancer-text, .generalinfo-text {
+    display: block; /* Rende il testo un blocco */
+    color: white; 
+    text-align: center;
+    margin-top: 10px; /*Mi permette di gestire distanza img-testo*/
+}

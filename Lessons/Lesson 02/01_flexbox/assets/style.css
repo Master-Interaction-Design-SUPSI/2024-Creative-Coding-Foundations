@@ -1,0 +1,90 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* body {
+    background-color: blue;
+} */
+
+img {
+    display: block;
+}
+
+article {
+    padding: 1rem;
+}
+
+aside {
+    background-color: antiquewhite;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+section {
+    background-color: aqua;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    /* body {
+        background-color: white;
+    } */
+
+    main {
+        display: flex; 
+        justify-content: space-between; 
+    }
+
+    aside {
+        flex: 0 1 50%
+    }
+
+    article {
+        flex: 0 1 100%
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    /* body {
+        background-color: yellow;
+    } */
+
+    article {
+        display: flex; 
+        justify-content: space-between; 
+    }
+
+    section {
+        flex: 0 1 44%;
+    }
+}

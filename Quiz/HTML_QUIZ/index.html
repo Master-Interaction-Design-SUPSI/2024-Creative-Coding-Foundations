@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>HTML QUIZ</title>
+</head>
+<body>
+    <main>
+        <section id="helpers" class="hidden">
+            <img src="assets/html-items.png" id="img-html-items">
+        </section>
+        <section id="code-quiz">
+            <code data-block-id="0" class="active">
+                <span class="element"><span class="opening-tag">&lt;a <span class="attribute">href=”<span class="value">https://url.xyz</span>”</span> <span class="attribute">target=”<span class="value">_blank</span>”</span>&gt;</span><span class="content">Link to url.xyz</span><span class="closing-tag">&lt;/a&gt;</span></span>
+            </code>
+            <code data-block-id="1" style="text-align: left;">
+                <span class="element"><span class="opening-tag">&lt;ul <span class="attribute">class=”generic-list”</span>&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="element"><span class="opening-tag">&lt;li&gt;</span><span class="content">One</span><span class="closing-tag">/li&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp;<span class="element"><span class="opening-tag">&lt;li <span class="attribute">id=”<span class="value">selected</span>”</span>&gt;</span><span class="content">Two</span><span class="closing-tag">&lt;/li&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp;<span class="element"><span class="opening-tag">&lt;li&gt;</span><span class="content">Three</span><span class="closing-tag">&lt;/li&gt;</span></span><br>
+                <span class="closing-tag">&lt;/ul&gt;</span></span>
+            </code>
+            <code data-block-id="2" style="text-align: left;">
+                <span class="element">&lt;img <span class="attribute">src=”<span class="value">img/bg.jpg</span>”</span>&gt;</span>
+            </code>
+            <code data-block-id="2" style="text-align: left;">
+                <span class="element"><span class="opening-tag">&lt;p <span class="attribute">class=”<span class="value">quote</span>”</span>&gt;</span><span class="content">Coding is <span class="element"><span class="opening-tag">&lt;span&gt;</span><span class="content">great!</span><span class="closing-tag">&lt;/span&gt;</span></span></span><span class="closing-tag">&lt;/p&gt;</span></span>
+            </code>
+        </section>
+        <section id="controller">
+            <button id="button-quiz-next">&#128260</button>
+            <button id="button-next-block">&#9193</button>
+            <button id="button-helper">&#128735</button>
+        </section>
+    </main>
+</body>
+</html>
+

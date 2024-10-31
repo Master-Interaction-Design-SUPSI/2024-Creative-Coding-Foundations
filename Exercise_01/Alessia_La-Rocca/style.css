@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'CrypticFont'; 
+    src: url('./assets/font/we-come-in-peace-bb.regular.ttf') format('truetype'); 
+}
+html{
+    font-family: monospace;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.cryptic {
+    font-family: 'CrypticFont', Courier, monospace;
+    color: red;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+h1{
+    font-size: 40px;
+}
+#intro{
+    width: 30%;
+}
+#output{
+    padding: 2rem;
+    margin-left: 22%;
+    margin-top: 10%;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    border: solid;
+    border-color: rgb(82, 82, 82);
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+.keys{
+    position: absolute;
+    width: 50%;
+    margin-left: 22%;
+    /* white-space: nowrap;  */
+}
+button{
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin: 0.1rem;
+    background-color: rgb(30, 30, 30);
+    border-radius: 5rem;
+    border: solid;
+    border-color: rgb(82, 82, 82);
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: rgb(40, 40, 40);
+    position:relative;
+    top: -0.2rem;
+}
+button:active{
+    background-color: rgb(17, 17, 17);
+    position: relative;
+    top: 0.1rem;
+}
+#button-zero,#button-seven{
+    background-color: rgb(192, 0, 0);
+}

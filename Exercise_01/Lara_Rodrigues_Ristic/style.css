@@ -1,0 +1,93 @@
+html {
+    font-size: 24px;
+    color: rgb(217, 242, 1);
+    font-family: montserrat, oxygen, roboto, sans-serif;
+    background-image: url(Assets/Wind-Dark.jpg);
+}
+
+h1 {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    border-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, h3 {
+    color: rgb(255, 153, 219);
+    margin-left: 10%;
+}
+
+p {
+    color: rgb(211, 200, 255);
+    margin-left: 10%;
+}
+
+#output {
+    background-color:rgb(211, 200, 255);
+    color: rgb(13, 13, 85);
+    width: 80%;
+    padding: 0.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 0.3rem;
+    min-height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    max-width: 80%;
+    
+}
+
+.keyboard-button {
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0.1rem;
+    border-radius: 0.3rem;
+    background-color: rgb(217, 242, 1);
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete-button {
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0.1rem;
+    border-radius: 0.3rem;
+    background-color: rgb(217, 242, 1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+button:hover {
+    background-color: rgb(255, 153, 219);
+    cursor: pointer;
+    position: relative;
+    top: -0.1rem;
+}
+
+button:active {
+    background-color: rgb(211, 200, 255);
+    cursor: initial;
+    position: relative;
+    top: 0.1rem;
+}

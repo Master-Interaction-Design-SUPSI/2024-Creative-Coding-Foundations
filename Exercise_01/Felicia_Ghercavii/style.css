@@ -1,0 +1,72 @@
+html {
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.keyboard-container {
+    display: grid;
+    grid-template-columns: repeat(14, 60px);
+    grid-gap: 5px;
+    margin: 5px;
+    padding-top: 2%;
+}
+
+.letterButtons {
+    width: 60px;
+    height: 50px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.letterButtons:hover {
+    background-color: pink;
+    color: maroon;
+}
+
+.letterButtons.active {
+    background-color: pink;
+    color: maroon;
+}
+
+/* Row 2: QWERTYUIOP */
+.keyboard-container button:nth-child(14) {
+    grid-column-start: 2;
+}
+
+/* Row 3: ASDFGHJKL */
+.keyboard-container button:nth-child(25) {
+    grid-column-start: 2;
+}
+/* Row 4: ZXCVBNM */
+.keyboard-container button:nth-child(37) {
+    grid-column-start: 3; /* Adjusted to align properly */
+}
+
+/* Row 5: Spacebar */
+.letterButtonsSpace {
+    grid-column: 3 / span 10;
+    width: 645px;
+    height: 50px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.letterButtonsSpace.active {
+background-color: pink;
+    color: maroon;
+    }
+
+.letterButtonsSpace:hover {
+background-color: pink;
+    color: maroon;
+    }

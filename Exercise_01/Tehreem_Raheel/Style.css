@@ -1,0 +1,154 @@
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    height: 100vh;
+    background-image: url('Assets/images/tp220-01c.jpg');
+    background-repeat:inherit;
+    background-size: cover;
+    background-position: center;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #564335;
+    font-size: 48px;
+    background-color: #fed8bc81;
+    border-color: #414141;
+    padding: 20px 40px;
+    margin: 60px;
+    border-color: #414141;
+    border-radius: 10px;
+}
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+h2 {
+    color: #564335;
+    font-size: 32px;
+    margin-top: 60px;
+}
+
+/* All Buttons styling */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FCEADB;
+}
+/* Button Hover states */
+
+#happy-button:hover {
+    background-color:yellow;
+}
+#sad-button:hover {
+    background-color:rgb(79, 79, 254);
+}
+#angry-button:hover {
+    background-color:rgb(255, 71, 71);
+}
+#cool-button:hover {
+    background-color:lightblue;
+}
+#love-button:hover {
+    background-color:pink;
+}
+#sleepy-button:hover {
+    background-color:lavender;
+}
+#rude-button:hover {
+    background-color:darkorange;
+}
+#laugh-button:hover {
+    background-color:green;
+}
+#cry-button:hover {
+    background-color:rgb(60, 2, 219);
+}
+#excited-button:hover {
+    background-color:yellowgreen
+}
+#celebrate-button:hover {
+    background-color:gold;
+}
+#heart-button:hover {
+    background-color:crimson;
+}
+
+/* Button active states*/
+
+#happy-button:active {
+    background-color: gold;
+}
+#sad-button:active {
+    background-color: blue;
+}
+#angry-button:active {
+    background-color: darkred;
+}
+#cool-button:active {
+    background-color: deepskyblue;
+}
+#love-button:active {
+    background-color: lightcoral;
+}
+#sleepy-button:active {
+    background-color: thistle;
+}
+#rude-button:active {
+    background-color: orangered;
+}
+#laugh-button:active {
+    background-color: limegreen;
+}
+#cry-button:active {
+    background-color: rgb(53, 0, 178); 
+}
+#excited-button:active {
+    background-color: olive;
+}
+#celebrate-button:active {
+    background-color: goldenrod;
+}
+#heart-button:active {
+    background-color: darkred;
+}
+/* clear button styling */
+
+#clear-button {
+    background-color: #413128;
+    color: white;
+}
+#clear-button:hover {
+    background-color: #8e6953;
+}
+#clear-button:active {
+    background-color: #794e35;
+}
+
+/* Output area styling */
+#output-area {
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid #dcd5d5;
+    border-radius: 10px;
+    background-color: #fcf3edcc;
+    width: 50%;
+    margin: 20px auto;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+#output-area:empty::before {
+    content: 'Add your emojies here...';
+    color: rgb(89, 89, 89);
+    font-size: 18px;
+}

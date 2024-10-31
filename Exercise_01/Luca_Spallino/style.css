@@ -1,0 +1,149 @@
+html {
+    font-size: 28px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(29, 29, 29);
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* bop */
+
+.container-bop {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+}
+
+#button-bop {
+    border: none;
+    border-radius: 15px;
+    width: 230px;
+    height: 230px;
+    background-color: rgb(255, 72, 0);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.eye-bop {
+    width: 90px;
+    height: 65px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 -10px;
+}
+
+.pupil-bop {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mouth-bop {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(240, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+#mouth-bop.visible {
+    opacity: 1;
+}
+
+/* notes */
+
+.button-notes button {
+    border: none;
+    font-size: 1rem;
+    border-radius: 15px;
+    width: 120px;
+    height: 150px;
+    color: rgb(29, 29, 29);
+    background-color: rgb(226, 221, 214);
+    margin: 5px;
+    position: relative; 
+    margin-top: 350px;
+}
+
+.button-notes button:hover {
+    background-color: rgb(213, 208, 201);
+    cursor: pointer;
+    top: -0.25rem; 
+}
+
+.button-notes button:active {
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+    top: 0.1rem; 
+    color: rgb(226, 221, 214);
+}
+
+.button-notes {
+    display: flex;
+    justify-content: center;
+}
+
+/* text */
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+#correct-counter {
+    color: rgb(255, 72, 0);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.moving-text {
+    width: 99%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.75rem;
+     cursor: default;
+}
+
+.moving-text p {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#orange-text {
+    color: rgb(255, 72, 0);
+}
+
+#black-text {
+    color: rgb(29, 29, 29);
+}

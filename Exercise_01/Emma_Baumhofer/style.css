@@ -1,0 +1,288 @@
+/* Global styles */
+html {
+    background-color: #221c22;
+    color: #6dab48;
+    font-size: 20px;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    /* Remove overflow: hidden to allow scrolling */
+}
+
+/* Fonts */
+.creepster-regular {
+    font-family: 'Creepster', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Creepster';
+    font-size: clamp(5rem, 20vw, 50rem); 
+    margin-top: 1rem;
+    padding-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 5rem;
+}
+
+/* Button styles */ 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #221c22;
+    color: #fff;
+    border: #6dab48;
+    background-image: linear-gradient(to top, #221c22, #6dab48);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-size: 0.5rem; /* Base font size */
+    box-shadow: -4px 4px 8px rgba(109, 171, 72, 0.5); /* Green drop shadow */
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover and click effects */
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-container {
+    padding-left: 2rem;  
+    padding-right: 2rem; 
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 0.8rem;  
+    padding: 1rem;
+}
+
+button:hover {
+    background-image: linear-gradient(to top, #221c22, #52006a); 
+    color: #fff; 
+    cursor: pointer;
+    transform: translateY(0.1rem); /* Indentation effect */
+    box-shadow: -2px 2px 6px rgba(109, 171, 72, 0.4); /* Indentation */
+}
+
+/* Clear button styles */
+#clear-button {
+    background-color: #221c22;
+    color: #fff;
+    border: #6dab48;
+    background-image: linear-gradient(to top, #221c22, #6dab48);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-size: 0.7rem;
+    box-shadow: -4px 4px 8px rgba(109, 171, 72, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#clear-button:hover {
+    background-image: linear-gradient(to top, #221c22, #52006a); 
+}
+
+/* Style for the clear button container */
+#clear-button-container {
+    display: flex;  
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Gradually increase the size of each button */
+button:nth-child(1) {
+    font-size: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+button:nth-child(2) {
+    font-size: 1.2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+button:nth-child(3) {
+    font-size: 1.4rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+button:nth-child(4) {
+    font-size: 1.6rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+button:nth-child(5) {
+    font-size: 1.8rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+button:nth-child(6) {
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+button:nth-child(7) {
+    font-size: 2.2rem;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+button:nth-child(8) {
+    font-size: 2.4rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+/* Media container */
+#media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#jumpscare-container {
+    display: none;
+    position: fixed;  /* To cover whole screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);  
+    z-index: 1000; 
+}
+
+#jumpscare-container img {
+    width: 100vw;  
+    height: 100vh; 
+    object-fit: cover;
+}
+
+
+/* Centering the GIF and video */
+#gif, #youtube-video {
+    display: block;      
+    margin: 0 auto;     
+    max-width: 100%;
+}
+
+.spider-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;  
+    pointer-events: none; /* Prevent spiders from blocking interaction with buttons */
+    z-index: 1; 
+}
+
+/* Spider animation styles */
+.spider {
+    position: absolute;
+    font-size: 2rem; /* Size of the spider */
+    animation: fall 8s linear infinite forwards; /* Falling animation */
+    will-change: transform; 
+    top: calc(-10% - var(--random-start));
+    left: calc(100% * var(--random-x));
+    opacity: 0.8;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Random animation delay, position, and speed to each spider */
+.spider:nth-child(1) {
+    --random-x: 0.1;
+    --random-start: 10%; 
+    animation-duration: 6s;
+    animation-delay: 0s; 
+}
+
+.spider:nth-child(2) {
+    --random-x: 0.2;
+    --random-start: 20%; 
+    animation-duration: 7s;
+    animation-delay: 0.5s; 
+}
+
+.spider:nth-child(3) {
+    --random-x: 0.3;
+    --random-start: 15%; 
+    animation-duration: 6s;
+    animation-delay: 0.7s; 
+}
+
+.spider:nth-child(4) {
+    --random-x: 0.4;
+    --random-start: 25%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.spider:nth-child(5) {
+    --random-x: 0.5;
+    --random-start: 30%; 
+    animation-duration: 6s;
+    animation-delay: 0.6s;
+}
+
+.spider:nth-child(6) {
+    --random-x: 0.6;
+    --random-start: 35%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.spider:nth-child(7) {
+    --random-x: 0.7;
+    --random-start: 40%;
+    animation-duration: 7s;
+    animation-delay: 0.5s;
+}
+
+.spider:nth-child(8) {
+    --random-x: 0.8;
+    --random-start: 20%;
+    animation-duration: 6s;
+    animation-delay: 0.8s;
+}
+
+.spider:nth-child(9) {
+    --random-x: 0.9;
+    --random-start: 30%;
+    animation-duration: 7s;
+    animation-delay: 1.2s;
+}
+
+.spider:nth-child(10) {
+    --random-x: 1.0;
+    --random-start: 50%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
