@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jqh5tey.css">
+    <title>byte_board</title>
+</head>
+<body>
+    <h1>byte_board</h1>
+    <div class="button-container">
+        <label for="fileInput" class="custom-file-upload button">upload</label>
+        <input type="file" id="fileInput" multiple style="display: none;">
+        
+        <label for="colorTone" class="color-picker-label button">color</label>
+        <input type="color" id="colorTone" value="#ff0000" style="display: none;">
+        
+        <button id="generateBtn" class="button">generate</button>
+        
+        <button id="clearBtn" class="button" onclick="clearCanvas()">clear</button>
+    </div>
+    <div class="moving-text"> 
+        <p>
+    upload your file -> choose the color -> click generate -> the system will process a byte-based visualization of the file -> now you are free to create your data-file moodboard -max 10-
+        </p>
+    </div>
+
+    <div id="canvasContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html> 

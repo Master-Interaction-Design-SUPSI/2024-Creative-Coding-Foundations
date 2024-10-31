@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Memories</title>
+    <link rel="icon" type="image/png" href="assets/2708_preview_rev_1.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img id ="page-title" src="assets/TripMemoriestitle.png">
+    </header>
+    <main>
+        <div class="container">
+    
+            <div class="input-section">
+              <h2>Add info of a trip you did that you will never forget!</h2>
+              
+              <label for="country">City or Country:</label>
+              <input type="text" id="country" placeholder="Ex. Milan, Italy"><br>
+
+              <label for="flag">Country Flag:</label>
+              <input type="file" id="flag" accept="image/*">
+              
+              <label for="date">Date:</label>
+              <input type="month" id="date"><br>
+
+              <label for="place">Best place or monument seen:</label>
+              <input type="text" id="place" placeholder="Ex. Piazza Duomo"><br>
+
+              <label for="food">Best food eaten:</label>
+              <input type="text" id="food" placeholder="Ex. Pizza, Risotto alla milanese"><br>
+        
+              <label for="positives">Positive memories:</label>
+              <textarea id="positives" placeholder="What did you like most?"></textarea><br>
+        
+              <label for="negatives">Negative memories:</label>
+              <textarea id="negatives" placeholder="What did you dislike most?"></textarea><br>
+        
+              <label for="color">Choose a color you want to associate with the trip:</label>
+              <input type="color" id="color"><br>
+    
+              <label for="image">Best photo of the trip:</label>
+              <input type="file" id="image" accept="image/*"><br>
+        
+              <button onclick="addTrip()">Add Trip Memory</button>
+            </div>
+        
+            <div class="trip-list" id="tripList">
+              <h2>My trips</h2>
+            </div>
+        </div>
+        
+    </main>
+
+</body>
+</html>

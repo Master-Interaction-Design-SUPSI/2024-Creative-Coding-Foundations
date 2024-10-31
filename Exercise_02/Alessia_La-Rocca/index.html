@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Alessia La Rocca">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1&display=swap" rel="stylesheet">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+    </header>
+    
+    <main>
+        <aside>
+            <h2>Plan your next trip with ease! Organize your packing, reservations, and itinerary all in one place.</h2>
+        </aside>
+        
+        <article>
+            <section class="packing-section">
+                <h2>Packing List</h2>
+                <p>Add your essentials like clothing, toiletries, and gadgets.</p>
+                
+                <ul id="packing-list"></ul>
+                
+                <input type="text" id="new-item" placeholder="Add item..." />
+                <button onclick="addItem()">Add to List</button>
+            </section>
+
+            <section class="reservation-section">
+                <h2>Reservations</h2>
+                <p>Log your hotel bookings, flights, and activities with date and time information.</p>
+                
+                <div id="reservations">
+                    <label for="reservation-type">Type:</label>
+                    <select id="reservation-type">
+                        <option>Hotel</option>
+                        <option>Flight</option>
+                        <option>Activity</option>
+                    </select>
+                    
+                    <label for="reservation-name">Name:</label>
+                    <input type="text" id="reservation-name" placeholder="E.g., Hotel name or Flight number" />
+
+                    <label for="reservation-date">Date:</label>
+                    <input type="date" id="reservation-date" />
+
+                    <label for="reservation-time">Time:</label>
+                    <input type="time" id="reservation-time" />
+                    
+                    <button onclick="addReservation()">Add Reservation</button>
+                </div>
+                
+                <ul id="reservation-list"></ul>
+            </section>
+
+            <section class="itinerary-section">
+                <h2>Itinerary</h2>
+                <p>List your daily plans, sights to see, and restaurants to visit.</p>
+                
+                <textarea id="itinerary" placeholder="Day-by-day plans..."></textarea>
+                <button onclick="saveItinerary()">Save Itinerary</button>
+                
+                <div id="saved-itinerary"></div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
