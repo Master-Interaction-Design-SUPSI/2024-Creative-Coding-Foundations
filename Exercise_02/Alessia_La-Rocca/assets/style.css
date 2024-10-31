@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  vertical-align: baseline;
+}
+
+body {
+    background-color: #e8e7dd;
+}
+
+img {
+    display: block;
+}
+
+article {
+    padding: 1rem;
+}
+
+aside {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+section {
+    color: #e8e7dd;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+header {
+    color: #393939;
+    padding: 2rem 1rem;
+}
+aside{
+    color: #393939;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+p{
+    margin-bottom: 0.5rem;
+}
+#new-item{
+    background-color: #e3846f;
+    border-radius: 1rem;
+    border-style: none;
+    padding: 0.5rem;
+    color: #ffffff !important;
+}
+#packing-list{
+    list-style: none;
+    
+}
+
+#reservation-name,#reservation-date,#reservation-time,#reservation-type{
+    -webkit-appearance: none;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #b8bddf;
+    border-radius: 1rem;
+    border-style: none;
+    padding: 0.5rem;
+    color: #ffffff !important; 
+    opacity: 1;
+}
+#itinerary{
+    background-color: #c1d7b3;
+    border-radius: 1rem;
+    border-style: none;
+    padding: 1rem;
+    color: #393939; 
+}
+button{
+    background-color: #e8e7dd;
+    border-radius: 1rem;
+    border-style: none;
+    padding: 0.5rem;
+    color: #393939;
+    margin-bottom: 0.5rem;
+}
+.packing-section{
+    background-color: #d5573c;
+}
+.reservation-section{
+    background-color: #9ba3d9;
+}
+.itinerary-section{
+    background-color: #8db472;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex; 
+        justify-content: space-between; 
+    }
+
+    aside {
+        flex: 0 1 50%
+    }
+
+    article {
+        flex: 0 1 100%
+    }
+    section{
+        margin-right: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    aside {
+        flex: 0 1 25%
+    }
+    article {
+        display: flex; 
+        justify-content: space-between; 
+    }
+
+    section {
+        flex: 0 1 100%;
+    }
+}
