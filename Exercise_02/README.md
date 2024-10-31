@@ -1,7 +1,9 @@
-# Exercise 02
+# Antonia Andreea Siran
 
-Starting from the concept of a to-do list, implement a web page that:
+# Shopping List App
 
-- Allow the user to add and remove elements
-- Allows the user to customize the elements
-- The web page is responsive
+A simple, browser-based shopping list app built with HTML, CSS, and JavaScript. Users can browse items by category, add items to their list or add their custom items.
+## Features
+
+- **Category Browsing**: Select items from categories like Dairy, Bakery, and Snacks.
+- **Shopping List Management**: Add items to a list with quantity tracking.
