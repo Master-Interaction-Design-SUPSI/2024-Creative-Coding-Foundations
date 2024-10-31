@@ -1,0 +1,162 @@
+html {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #7c33c0;
+  background-color: black;
+}
+
+body {
+  cursor: crosshair;
+}
+
+li {
+  margin: 0px 0px 7px 0px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px 0px 10px 0px;
+  color: black;
+  background-color: #7c33c0;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 5px;
+}
+
+.class {
+  margin: 5px;
+  height: 50px;
+}
+
+#intro {
+  padding: 10px 0px 10px 0px;
+}
+header,
+aside,
+section {
+  padding: 10px 10px 10px 10px;
+  margin: 15px;
+  border: 2px solid #7c33c0;
+  border-radius: 0.5rem;
+}
+
+section {
+  width: 90%;
+}
+
+input,
+button {
+  font-size: 0.7rem;
+  color: #7c33c0;
+  background-color: black;
+  padding: 5px;
+  margin: 5px 0px 5px 0px;
+  border: 0.5px solid #7c33c0;
+  border-radius: 0.2rem;
+}
+
+button {
+  background-color: #25003d;
+  display: inline-flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #521b85;
+  position: relative;
+  top: -0.1rem;
+  cursor: cell;
+}
+
+button:active {
+  background-color: darkblue;
+  position: relative;
+  top: 0.1rem;
+}
+
+#text-input {
+  cursor: text;
+}
+
+input:hover {
+  cursor: cell;
+}
+
+#XP-progress {
+  width: 90%;
+  height: 10px;
+  margin: 15px 0px 10px 0px;
+  border: 0.5px solid #7c33c0;
+}
+
+#XP-progress-fill {
+  width: 2%;
+  height: 100%;
+  background-color: darkblue;
+}
+
+#level {
+  width: 55%;
+  margin: 15px 5px 5px 0px;
+  padding: 2px 0px 2px 0px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  background: #7c33c0;
+  box-shadow: 4px 4px darkblue;
+}
+
+/*allow the design to be responsible*/
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 1.2rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  aside {
+    flex: 0 1 10%;
+    min-width: 250px;
+  }
+
+  #container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: space-between;
+  }
+
+  li {
+    flex: 0 1 45%;
+    margin: 10px 0px 5px 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 1.3rem;
+  }
+
+  aside {
+    flex: 0 1 20%;
+  }
+
+  #container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: space-between;
+  }
+
+  li {
+    flex: 0 1 30%;
+    margin: 15px 0px 10px 15px;
+  }
+}
