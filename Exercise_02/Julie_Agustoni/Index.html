@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	  <meta name="Author" content="Julie Agustoni">
+    <title>To do list</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>To do list gamification</h1>
+        <p id="intro">gamification of life refer to using game-bases mechanics, asthetics and game-thinking to improve motivation
+            and engagment in your daily routine</p>
+        <h2>how it work :</h2>
+        <ol>
+            <li>Enter your task</li>
+            <li>Add how much XP you will obtain when the task is done</li>
+            <li>Add how much stamina it will cost</li>
+            <li>When collected enough XP collect reward</li>
+            <li>When energy reduce to 0 -> (×_×) </li>
+        </ol>
+    </header>
+    <main>
+        <aside>
+            <h2>Add your task :</h2>
+            <input type="text" id="text-input" value="write your task here"><br>
+            <Label>XP : <input type="number" id="XP-input" min="5" max="30" step="5" value="5"></Label><br>
+            <Label>Stamina : <input type="number" id="stamina-input" min="5" max="30" step="5" value="5"></Label><br>
+            <button id="button-add">Add</button>
+            <button id="button-clear">Clear</button>
+        </aside>
+        <section>
+            <h3>Your task :</h3>
+            <ol id="container"></ol>
+        </section>
+        <aside>
+            <h2>Your stat : </h2>
+            <p>Tasks done : <span id="output-number-task-done">0</span></p>
+            <p>XP : <span id="output-xp">0</span></p>
+            <div id="XP-progress">
+                <div id="XP-progress-fill"></div>
+            </div>
+            <p>Stamina : <span id="output-stamina">100</span></p>
+            <button id="button-restore-stamina">Restore Stamina</button>
+            <p id="level">Level : <span id="output-level">0</span></p>
+            <button id="button-reward">Reward</button>
+        </aside>
+    </main>
+</body>
+</html>
