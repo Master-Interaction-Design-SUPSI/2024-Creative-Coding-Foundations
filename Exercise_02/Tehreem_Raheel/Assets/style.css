@@ -1,0 +1,277 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #dddbfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+header {
+    width: 100%;
+    width: 600px;
+    background-color: #a56ee0;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.self-care-app {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.tag-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.add-tag-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.add-tag-container input {
+    border:0px;
+    padding:0px;
+}
+
+
+.self-care-tag {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #451b5d;
+    background-color: #e1d0ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.self-care-tag:hover {
+    background-color: #a56ee0;
+    transform: scale(1.05);
+}
+
+.self-care-tag:focus {
+    outline: 2px solid #b875ff;
+}
+
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center; 
+}
+
+#taskInput {
+    flex: 1;
+    padding: 0.7rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#addTaskButton {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #9d4eeb;
+    color: #fff;
+    cursor: pointer;
+}
+#addTaskButton:hover {
+    background-color: #7a36b1; /* Darker shade for hover state */
+}
+
+#addTaskButton:active {
+    background-color: #6b2d9a; /* Even darker shade for active state */
+    transform: scale(0.95); /* Slightly scale down on click */
+}
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    border-radius: 10px;
+    background-color: #d8c1ed;
+    color: #4f4f4f;
+    justify-content: space-between;
+}
+
+.task-content {
+    flex: 1;
+    text-align: left;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.edit-button,
+.remove-button {
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #ba6efc;
+}
+
+.remove-button {
+    background-color: #ff7b7b;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 1.5rem;
+        max-width: 800px;
+    }
+
+    .self-care-app {
+        padding: 1.5rem;
+        max-width: 800px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    #taskInput {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    #addTaskButton {
+        padding: 0.6rem;
+    }
+
+    .task-item {
+        padding: 0.6rem;
+    }
+
+    .self-care-tag {
+        font-size: 0.9rem;
+    }
+
+    .edit-button,
+    .remove-button {
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        padding: 1.5rem;
+        max-width: 600px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .self-care-app {
+        padding: 1.5rem;
+        max-width: 600px;
+    }
+
+    #taskInput {
+        padding: 0.5rem;
+    }
+
+    #addTaskButton {
+        padding: 0.5rem;
+    }
+
+    .task-item {
+        padding: 0.5rem;
+    }
+
+    .self-care-tag {
+        font-size: 0.9rem;
+    }
+
+    .edit-button,
+    .remove-button {
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .self-care-app {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    #taskInput,
+    #addTaskButton {
+        font-size: 0.8rem;
+    }
+
+    .self-care-tag {
+        padding: 0.4rem 0.8rem;
+    }
+}
