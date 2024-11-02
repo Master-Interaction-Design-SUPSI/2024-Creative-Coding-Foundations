@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>My Diary</h1>
+    </header>
+    <main>
+      <aside>
+        <h2>Entries</h2>
+        <ul id="date-list"></ul>
+      </aside>
+      <div class="posts-container">
+        <div class="grid" id="board">
+          <div class="posts"></div>
+        </div>
+        <div class="user-post">
+          <div class="user-custom">
+            <div class="text">
+              <input
+                class="title"
+                id="title"
+                type="text"
+                placeholder="Write a title..." />
+              <textarea
+                name=""
+                id="post-text"
+                placeholder="Write your thoughts here..."
+                maxlength="250"></textarea>
+            </div>
+            <input class="color" id="color" type="color" value="#bcfff0" />
+          </div>
+          <div class="button-container">
+            <button class="button" id="clear-button">CLEAR</button>
+            <button class="button" id="button">POST</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
