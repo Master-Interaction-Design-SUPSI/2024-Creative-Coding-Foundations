@@ -1,7 +1,5 @@
-# Exercise 02
+# Party to-do list
 
-Starting from the concept of a to-do list, implement a web page that:
+## Giada stranieri
 
-- Allow the user to add and remove elements
-- Allows the user to customize the elements
-- The web page is responsive
+## This to-do list will help you organize your party better. In fact, you can mark the tasks you have to do, modify them and then delete them. If you realize that you have deleted a task that has not yet been completed, you can restore it.
