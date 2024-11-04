@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        body { 
+            font-family: 'DM Sans';
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>To Do List</h1>
+        
+        <button id="addListButton" class="add-list">Add New List</button>
+    </header>
+
+    <div class="container">
+        <div id="listsContainer" class="lists-container">
+          <!-- Initial List -->
+          <div class="list">
+            <span class="delete-list">&times;</span>
+            <h2 contenteditable="true">My first list</h2>
+            <select class="color-selector">
+                <option disabled selected>Choose list color</option>
+                <option value="#f3733e">Orange</option>
+                <option value="#e04636">Red</option>
+                <option value="#33818f">Icy Blue</option>
+                <option value="#171f30">Dark Blue</option>
+            </select>
+            <ul class="tasks"></ul>
+            <input type="text" placeholder="Add a task" class="task-input">
+            <button class="add-task">+</button>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
