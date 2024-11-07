@@ -39,8 +39,9 @@ function checkStatus(cp) {
 }
 
 //This function check the possible movements on the matrix grid. (e.g. If i'm on the cell #4 I cannot move to the left - desktop version).
-//It is for the Desktop and Mobile version 
+//It is for the Desktop, Tablet Mobile version 
 function checkPath(idCell, key) {
+    //Desktop check
     if (key == " ") {
         switch (idCell) {
             case 0:
@@ -191,6 +192,159 @@ function checkPath(idCell, key) {
                 return "Enter a valid number";
         }
     }
+    //Tablet Check
+    if (key == "img-ts") {
+        switch (idCell) {
+            case 0:
+                return 2;
+            case 1:
+                return 1;
+            case 2:
+                return 2;
+            case 3:
+                return 5;
+            case 4:
+                return 4;
+            case 5:
+                return 5;
+            case 6:
+                return 8;
+            case 7:
+                return 7;
+            case 8:
+                return 8;
+            case 9:
+                return 11;
+            case 10:
+                return 10;
+            case 11:
+                return 11;
+            default:
+                return "Enter a valid number";
+        }
+    }
+    if (key == "img-tr") {
+        switch (idCell) {
+            case 0:
+                return 1;
+            case 1:
+                return 2;
+            case 2:
+                return 2;
+            case 3:
+                return 4;
+            case 4:
+                return 5;
+            case 5:
+                return 5;
+            case 6:
+                return 7;
+            case 7:
+                return 8;
+            case 8:
+                return 8;
+            case 9:
+                return 10;
+            case 10:
+                return 11;
+            case 11:
+                return 11;
+            default:
+                return "Enter a valid number";
+        }
+    }
+    if (key == "img-tl") {
+        switch (idCell) {
+            case 0:
+                return 0;
+            case 1:
+                return 0;
+            case 2:
+                return 1;
+            case 3:
+                return 3;
+            case 4:
+                return 3;
+            case 5:
+                return 4;
+            case 6:
+                return 6;
+            case 7:
+                return 6;
+            case 8:
+                return 7;
+            case 9:
+                return 8;
+            case 10:
+                return 9;
+            case 11:
+                return 11;
+            default:
+                return "Enter a valid number";
+        }
+    }
+    if (key == "img-tu") {
+        switch (idCell) {
+            case 0:
+                return 0;
+            case 1:
+                return 1;
+            case 2:
+                return 2;
+            case 3:
+                return 0;
+            case 4:
+                return 1;
+            case 5:
+                return 2;
+            case 6:
+                return 3;
+            case 7:
+                return 4;
+            case 8:
+                return 5;
+            case 9:
+                return 6;
+            case 10:
+                return 7;
+            case 11:
+                return 11;
+            default:
+                return "Enter a valid number";
+        }
+    }
+    if (key == "img-td") {
+        switch (idCell) {
+            case 0:
+                return 3;
+            case 1:
+                return 4;
+            case 2:
+                return 5;
+            case 3:
+                return 6;
+            case 4:
+                return 7;
+            case 5:
+                return 8;
+            case 6:
+                return 9;
+            case 7:
+                return 19;
+            case 8:
+                return 11;
+            case 9:
+                return 9;
+            case 10:
+                return 10;
+            case 11:
+                return 11;
+            default:
+                return "Enter a valid number";
+        }
+    }
+
+    //Mobile check
     if (key == "img-r") {
         switch (idCell) {
             case 0:
@@ -329,13 +483,13 @@ function movementKeys(keys) {
         document.getElementById("img-" + (currentPosition)).setAttribute("src", "assets/img/alien.png");
         DIALOGTEXT.innerText = "Trap! Too bad, game over";
         DIALOGIMG.setAttribute("src", "assets/img/alien.png");
-        favDialog.showModal();
+        dialog.showModal();
 
     }
     else if (checkStatus(currentPosition) == "winner") {
         DIALOGTEXT.innerText = "WINNER! You get to the crown!";
         DIALOGIMG.setAttribute("src", "assets/img/crown.png");
-        favDialog.showModal();
+        dialog.showModal();
 
     }
     else {
@@ -385,6 +539,21 @@ for (var i = 0; i < ARROWS.length; i++) {
             case 'img-d':  // arrow key up
                 movementKeys('img-d');
                 break;
+            case 'img-tr':  // arrow key right
+                movementKeys('img-tr');
+                break;
+            case 'img-tl':  // arrow key left
+                movementKeys('img-tl');
+                break;
+            case 'img-tu':  // arrow key down
+                movementKeys('img-tu');
+                break;
+            case 'img-td':  // arrow key up
+                movementKeys('img-td');
+                break;
+            case 'img-ts':  // arrow key up
+                    movementKeys('img-ts');
+                    break;
         }
     });
 }
