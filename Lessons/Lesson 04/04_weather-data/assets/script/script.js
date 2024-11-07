@@ -1,4 +1,4 @@
-const MY_API_KEY = "abc" // add your API kjey here
+const MY_API_KEY = "abc" // add your API key here
 const API_URL = "https://api.openweathermap.org/data/2.5/forecast?lat=45.8708064&lon=8.97917556&units=metric&appid=" + MY_API_KEY
 const MAX_TEMP = 40;
 const MIN_TEMP = 10;
