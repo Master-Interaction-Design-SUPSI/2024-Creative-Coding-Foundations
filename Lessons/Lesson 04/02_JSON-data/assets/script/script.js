@@ -3,15 +3,15 @@ const CONTAINER = document.getElementById("container")
 
 fetch(DATABASE_PATH)
   .then(response => response.json()) 
-  .then(data => display_data(data))
-  .catch(error => display_error(error)); 
+  .then(data => displayData(data))
+  .catch(error => displayError(error)); 
 
-function display_error(error){
+function displayError(error){
     console.error('Error:', error)
     CONTAINER.innerHTML = "I'm sorry. The data are not available."
 }
 
-function display_data(data){
+function displayData(data){
 
     // first, I filter the array
     let filteredArray = [...data].filter((a) => a.age >= 30)

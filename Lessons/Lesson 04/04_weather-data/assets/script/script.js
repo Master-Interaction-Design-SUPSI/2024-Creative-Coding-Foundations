@@ -8,15 +8,15 @@ const CONTAINER = document.getElementById("container")
 
 fetch(API_URL)
   .then(response => response.json()) 
-  .then(data => display_data(data))
-  .catch(error => display_error(error));
+  .then(data => displayData(data))
+  .catch(error => displayError(error));
 
-function display_error(error){
+function displayError(error){
     console.error('Error:', error)
     CONTAINER.innerHTML = "I'm sorry. The data are not available."
 }
 
-function display_data(data){
+function displayData(data){
     console.log(data)
 
     let output = ""
@@ -27,6 +27,7 @@ function display_data(data){
         console.log(wetherObj.main.temp)
 
         let temp = wetherObj.main.temp * 100 / MAX_TEMP;
+        let time = wetherObj.dt_txt.slice(0,-3)
         let barColor = "orange";
         
         if (wetherObj.main.temp < MIN_TEMP){
@@ -34,8 +35,8 @@ function display_data(data){
         }
 
         output += `
-            <div style="background-color: ${barColor}; height: 30px; width: ${temp}%;" class="wether_bar">
-                ${wetherObj.dt_txt} -  ${wetherObj.main.temp} °C
+            <div style="background-color: ${barColor}; height: 30px; width: ${temp}%;" class="wether-bar">
+                ${time} -  ${wetherObj.main.temp} °C
             </div>
         `
     }
