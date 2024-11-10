@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Riccardo",
+        "age": 27,
+        "address": {
+            "street": "Piazza Molino Nuovo 3",
+            "city": "Lugano"
+        },
+        "hobbies": [
+            "video games",
+            "movies",
+            "hicking"
+        ],
+        "favourite_color": "red"
+    },
+    {
+        "name": "Tommaso",
+        "age": 26,
+        "address": {
+            "street": "Corso Elvezia 13",
+            "city": "Lugano"
+        },
+        "hobbies": [
+            "footbal",
+            "cycling"
+        ],
+        "favourite_color": "blue"
+    }
+]

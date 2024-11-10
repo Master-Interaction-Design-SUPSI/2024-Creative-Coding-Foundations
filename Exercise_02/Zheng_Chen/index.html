@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>To do list</title>
+</head>
+
+<body>
+	<div id="navbar">
+        <h1>My To Do List</h1>
+        <img src="assets/user-icon.png" alt="Logo">
+    </div>
+
+    <div id="main-box">
+        <div id="box-add-list">
+            <h2>Do you have something to be done?</h2>
+            <textarea id="taskInput" placeholder="Add a to do thing"></textarea>
+            <h3>Select the day you want to do it</h3>
+            <input type="date" id="taskDate">
+            <h3>When is the deadline?</h3>
+            <input type="date" id="taskDeadline">
+            <div id="button-container">
+              <button id="add-task">Add a task</button>
+              <button id="clear-up">Delete</button>
+            </div>
+        </div>
+
+        <div id="box-list">
+            <h2>To do</h2>
+            <div id="to-do-list"></div>
+        </div>
+
+        <div id="box-done">
+            <h2>Done</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

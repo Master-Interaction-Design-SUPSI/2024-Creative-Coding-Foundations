@@ -1,0 +1,108 @@
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a40;
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* Container */
+.container {
+  background: #262673;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Headers */
+h1 {
+  font-size: 2rem;
+  color: #cddc39;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #ff9800;
+}
+
+/* Task Input */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65100;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+}
+
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #39396b;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #8c9eff;
+}
+
+#task-list .planet {
+  border-left: 5px solid #cddc39;
+}
+
+#task-list .star {
+  border-left: 5px solid #ff9800;
+}
+
+/* Reward List */
+#reward-list {
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .task-input {
+    flex-direction: column;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

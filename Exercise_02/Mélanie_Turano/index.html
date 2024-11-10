@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="AAAA">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title of the page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>The Chef's Pantry - Enter the ingredients you need and run to the grocery store!</h1>
+    </header>
+    <main>
+    </main>
+    <p id="process-description">Type an ingredient you need, choose what is the category and pick the color (using color picker) related to
+        that category. Here's a suggestions of colors you can use:</p>
+    <div>
+        <img id="images-legend" src="assets/color-carb.png">
+        <img id="images-legend" src="assets/color-fruit.png">
+        <img id="images-legend" src="assets/color-protein.png">
+        <img id="images-legend" src="assets/color-beverage.png">
+        <img id="images-legend" src="assets/color-vegetable.png">
+        <img id="images-legend" src="assets/color-other.png">
+    </div>
+    <article id="container">
+        <input type="text" id="text_input">
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <button class="dropbtn" id="dropdownButton">Choose food category</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#" data-category="Protein">Protein</a>
+                <a href="#" data-category="Carb">Carb</a>
+                <a href="#" data-category="Vegetables">Vegetable</a>
+                <a href="#" data-category="Fruits">Fruit</a>
+                <a href="#" data-category="Beverage">Beverage</a>
+                <a href="#" data-category="Other">Other</a>
+            </div>
+        </div>
+
+        <input type="color" id="color_input" value="#cccccc">
+        <button id="button">Click me</button>
+        <button id="clear">Clear</button>
+    </article>
+    <div id="generatedItemsContainer"></div> <!-- in modo che i contenuti generati vengano riprodotti direttamente qua dentro -->
+    <footer>
+        <nav></nav>
+    </footer>
+</body>
+
+</html>

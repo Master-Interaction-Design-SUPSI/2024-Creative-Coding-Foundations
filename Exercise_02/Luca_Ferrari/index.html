@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex02</title>
+</head>
+
+<body>
+    <header>
+        <div>
+          <h1>TODO List</h1>
+          <p>What do you have to do today?</p>
+        </div>
+      </header>
+    <main class="container">
+
+        <aside>
+            <div class="todo-header">
+                <img src="assets/img/shopping.png" />
+                <h2>Shopping</h2>
+            </div>
+            <div class="todo-body">
+                <input type="text" id="shop-text" class="todo-input" placeholder="Add your items" />
+                <img src="assets/img/plus.png" alt="+" id="addclick-shop" onclick="CreateToDoItems('shop');" />
+            </div>
+            <h5 id="alert-shop"></h5>
+            <div id="shop-items" class="list-items">
+            <div>
+        </aside>
+        <article>
+            <section id="sport">
+                <div class="todo-header">
+                    <img src="assets/img/sport.png" />
+                    <h2>Sport</h2>
+                </div>
+                <div class="todo-body">
+                    <input type="text" id="sport-text" class="todo-input" placeholder="Add your items" />
+                    <img src="assets/img/plus.png" alt="+" id="add-click-sport" onclick="CreateToDoItems('sport');" />
+                </div>
+                <h5 id="alert-sport"></h5>
+                <ul id="sport-items" class="list-items"></ul>
+            </section>
+            <section id="study">
+                <div class="todo-header">
+                    <img src="assets/img/study.png" />
+                    <h2>Study</h2>
+                </div>
+                <div class="todo-body">
+                    <input type="text" id="study-text" class="todo-input" placeholder="Add your items" />
+                    <img src="assets/img/plus.png" alt="+" id="add-click-study" onclick="CreateToDoItems('study');" />
+                </div>
+                <h5 id="alert-study"></h5>
+                <ul id="study-items" class="list-items"></ul>
+            </section>
+        </article>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

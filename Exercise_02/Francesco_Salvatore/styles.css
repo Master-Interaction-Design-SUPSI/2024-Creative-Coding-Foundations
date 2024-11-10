@@ -1,0 +1,195 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    margin: 2rem;
+}
+
+a {
+    color: white;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: .5rem;
+}
+
+#logotipo {
+    margin: 1rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+#logotipo:hover {
+    cursor: cell;
+    color: blueviolet;
+}
+
+.page-explanation {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/*styling the game container at the center and with the flex inside*/
+#main-content {
+    border: 2px solid rgb(235, 229, 229);
+    border-radius: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Flex container for images */
+.flex-container {
+    width: 90%;
+    min-height: 20rem;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* Image text container */
+.image-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+img {
+    width: 10rem;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+
+/* Text box styling */
+.text-box {
+    padding: 1rem;
+    background-color: black;
+    color: white; 
+    border-radius: 0.5rem;
+    max-width: 9rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+}
+
+.text-box:hover {
+    background-color: blueviolet;
+    cursor: cell;
+}
+
+/* Delete button */
+.delete-button {
+    background-color: red; 
+    color: white;
+    border-radius: 0.5rem; 
+    padding: 0.5rem 1rem; 
+    margin-top: 0.5rem; 
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+
+/* General button styling */
+button {
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s, transform 0.2s, opacity 0.3s;
+    opacity: 0.5;
+    margin: 0.5rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    background-color: rgba(0, 128, 255, 0.137);
+    cursor: cell;
+}
+
+button:active {
+    background-color: white;
+    position: relative;
+    top: 0.2rem;
+    opacity: 100%;
+}
+
+/* AddImage and Erase button specific styles */
+#addImageBtn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#erase {
+    background-color: #008cba;
+    color: white;
+}
+
+
+/* Media Query for Smartphones (up to 600px) */
+@media (max-width: 600px) {
+    body {
+        margin: 1rem; 
+    }
+    img {
+        width: 80%; 
+    }
+    #logotipo {
+        font-size: 2.5rem;
+    }
+    button {
+        font-size: 0.9rem;
+    }
+    .text-box {
+        max-width: 15rem; /* to make the text match the image size */
+    }
+}
+
+/* Media Query for iPads/Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        margin: 1.5rem;
+    }
+    img {
+        width: 60%; 
+    }
+    #logotipo {
+        font-size: 2.8rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+    .text-box {
+        max-width: 18rem; /* to make the text match the image size */
+    }
+}
