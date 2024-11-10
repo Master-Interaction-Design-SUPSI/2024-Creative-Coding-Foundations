@@ -85,7 +85,7 @@ h1 {
     transition: left 0.5s ease-in-out, top 0.5s ease-in-out;
     width: 50px;
     height: 50px;
-    background-image: url(assets/NEW-no-back-character.gif);
+    background-image: url(assets/no-back-character.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
