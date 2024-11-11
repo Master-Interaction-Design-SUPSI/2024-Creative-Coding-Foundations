@@ -1,0 +1,181 @@
+#game-container {
+    position: relative;
+    width: 100%;
+    background-image: url('./images/BG.png');
+    height: 90vh;
+    overflow: hidden;
+}
+
+.platform-container {
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    bottom: 0;
+}
+
+.platform, .dirt{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-size: cover;
+}
+
+.platform.normal {
+    background-image: url('./images/Tile Simple.png');
+}
+
+.platform.ice {
+    background-image: url('./images/IceBox.png');
+}
+
+.platform.tree {
+    background-image: url('./images/Tree.png');
+    bottom: 60px;
+    z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.platform.snowman {
+    background-image: url('./images/SnowMan.png');
+    bottom: 60px;
+    z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dirt {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url('./images/Tile Simple.png');
+    background-size: cover;
+}
+.snow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url('./images/Tile\ Snowman.png');
+    background-size: cover;
+}
+
+#player {
+    position: absolute;
+    bottom: 60px;
+    width: 50px;
+    height: 60px;
+    background-size: cover;
+    transition: left 1s;
+    z-index: 3;
+}
+
+.player.sliding {
+    background-image: url('./images/Sliding Santa.png');
+    animation: slidingAnimation 1s infinite;
+}
+
+
+/* Adjusted hit state to prevent cutoff */
+.player.hit {
+    background-image: url('./images/Dead Santa.png');
+    background-size: contain; 
+    width: 100px; 
+    bottom: 60px; 
+    animation: hitAnimation 0.5s forwards;
+}
+
+.player.normal {
+    background-image: url('./images/Static Santa.png');
+}
+
+@keyframes jumpAnimation {
+    0% { bottom: 60px; }
+    30% { bottom: 130px; }
+    60% { bottom: 130px; }
+    100% { bottom: 60px; }
+}
+
+@keyframes moveAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fallAnimation {
+    0% { bottom: 60px; opacity: 1; }
+    100% { bottom: 0; opacity: 0; }
+}
+
+@keyframes slidingAnimation {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+
+@keyframes hitAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.player.jumping {
+    background-image: url('./images/Jumping Santa.png');
+    animation: jumpAnimation 0.8s ease-out forwards;
+}
+
+.player.moving {
+    background-image: url('./images/Walking Santa.png');
+    animation: moveAnimation 0.3s ease-out;
+}
+
+.player.falling {
+    background-image: url('./images/Dead Santa.png');
+    animation: fallAnimation 0.6s ease-in forwards;
+}
+ 
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Above game elements */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.modal-content img {
+    width: 400px;
+
+}
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+
+#new-game {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
