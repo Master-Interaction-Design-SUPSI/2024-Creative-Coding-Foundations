@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogger</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Frogger</h1>
+    <h2>Catch the flies, avoid the mowers!</h2>
+    
+    <!-- Main container for the icons and rectangles -->
+    <div id="main-container" style="position: relative;">
+        <div class="line-container">
+            <div class="line"></div>
+            <img id="frog-icon" src="assets/icons/frog2.png" alt="Frog Icon" />
+        </div>
+        <div id="rectangle-container">
+        </div>
+        <div class="line-container">
+            <div class="line"></div>
+            <img id="fly-icon" src="assets/icons/fly.png" alt="Fly Icon" />
+        </div>
+    </div>
+    
+    <!-- Lawn mower icons container -->
+    <div id="lawn-mower-row"></div>
+   
+    <div>
+        <p>Directions: 
+            <br> Press the right arrow to move one square or space to jump over a square. 
+            <br> Check your status in the Console.
+        </p>
+    </div>
+</body>
+</html>
