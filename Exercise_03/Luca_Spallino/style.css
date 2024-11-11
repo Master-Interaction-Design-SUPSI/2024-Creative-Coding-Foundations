@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    /* body position centered */
+    background-color: black; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#container {
+    /* overall position */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#first-character {
+    /* robot position */
+    position: absolute;
+    left: 20px;
+    bottom: 400px;
+    width: 100px;
+    transition: left 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+#tiles {
+    /* tile position */
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.tile {
+    /* tile style*/
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('https://i.postimg.cc/fbYdLh0Q/wall.png');
+    transition: background-color 0.3s ease;
+    flex: 1;
+}
+
+.tile.falling {
+    /* tile fall */
+    animation: fall 1s forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+}
+
+#second-character {
+    /* human position */
+    position: absolute;
+    bottom: -2px;
+    left: 0%;
+    width: 150px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.modal {
+    /* advice position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    /* advice style */
+    background-color: rgb(83, 83, 83);
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border: 8px solid #444;
+}
+
+#restart-button {
+    /* restart button style */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #80a9a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#restart-button:hover {
+    background-color: #a5d8cc;
+}
+
+#title {
+    /* title style */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 36px;
+    color: #a5d8cc;
+    font-weight: bold;
+    font-family: "lores-12", sans-serif;
+    z-index: 10;
+}
+
+#intro-text {
+    /* intro text style */
+    position: absolute;
+    top: 100px;
+    width: 40%;
+    color: #a5d8cc;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    z-index: 20;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    /* fade text */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

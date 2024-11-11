@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaggio in movimento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vdn0kir.css">
+</head>
+<body>
+
+    <audio id="fail-audio" src="sounds/fail.mp3" preload="auto"></audio>
+    <audio id="jump-audio" src="sounds/jump.mp3" preload="auto"></audio>
+    <audio id="walk-audio" src="sounds/walk.mp3" preload="auto"></audio>
+    <audio id="win-audio" src="sounds/win.mp3" preload="auto"></audio>
+
+    <div id="title">Go Bot, Go!</div>
+    <div id="intro-text">In the year 2100, humanity has turned against machines. Bot, a small robot, is on the run, fleeing across a dangerous bridge while a hostile human is searching for him. One misstep, and Bot’s escape could come to a swift end.</div>
+
+    <div id="container">
+        <img id="first-character" src="https://i.postimg.cc/TwGb2xsm/stand.png" alt="bot">
+        <div id="tiles">
+        </div>
+    </div>
+
+    <img id="second-character" src="https://i.postimg.cc/hG3htYWT/human-still-1.png" alt="human">
+
+    <div id="game-modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-message">Game message</span>
+            <button id="restart-button">Want to retry?</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
