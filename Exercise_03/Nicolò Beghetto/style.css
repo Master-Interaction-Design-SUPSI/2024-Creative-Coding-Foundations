@@ -1,0 +1,69 @@
+body, div, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenitore della griglia */
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(5, 3fr); /* 5 colonne */
+    grid-template-rows: repeat(5, 3fr);    /* 5 righe */
+    gap: 5px;
+    width: 100vw; /* Raddoppia la larghezza rispetto a prima */
+    height: 100vw; /* Raddoppia anche l'altezza */
+    max-width: 100vmin;
+    max-height: 100vmin;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+/* Celle della griglia */
+.grid-cell {
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Celle invisibili */
+    display: none; /* Nasconde le celle non necessarie */
+}
+
+/* Stile del personaggio */
+.player {
+    width: 100%;
+    height: 100%;
+    background-color: #4CAF50; /* Colore verde per il personaggio */
+    border-radius: 50%; /* Forma circolare */
+}
+
+/* Ostacoli */
+.obstacle {
+    background-color: #e74c3c; /* Colore rosso */
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive per schermi piccoli */
+@media (max-width: 768px) {
+    #game-container {
+        width: 160vw; /* Cambia per adattarsi meglio al dispositivo */
+        height: 160vw;
+    }
+}
+
+/* Responsive design per schermi molto piccoli, come smartphone */
+@media (max-width: 480px) {
+    #game-container {
+        width: 150vw; /* Larghezza ridotta per schermi molto piccoli */
+        height: 150vw;
+    }
+}
