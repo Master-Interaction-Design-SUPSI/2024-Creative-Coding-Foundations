@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Labyrinth</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- import 8bit font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <header>
+            <img src="assets/img/logo.png">
+        </header>
+        <!-- the grid with the steps the knoght can do-->
+        <div class="container">
+            <div class="section-8bit cell" id="0">
+                <div class="wrapper">
+                    <img id="img-0" src="assets/img/player.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="1">
+                <div class="wrapper">
+                    <img id="img-1" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="2">
+                <div class="wrapper">
+                    <img id="img-2" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="3">
+                <div class="wrapper">
+                    <img id="img-3" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="4">
+                <div class="wrapper">
+                    <img id="img-4" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="5">
+                <div class="wrapper">
+                    <img id="img-5" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="6">
+                <div class="wrapper">
+                    <img id="img-6" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="7">
+                <div class="wrapper">
+                    <img id="img-7" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="8">
+                <div class="wrapper">
+                    <img id="img-8" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="9">
+                <div class="wrapper">
+                    <img id="img-9" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="10">
+                <div class="wrapper">
+                    <img id="img-10" src="assets/img/question.png">
+                </div>
+            </div>
+            <div class="section-8bit cell" id="11">
+                <div class="wrapper">
+                    <img id="img-11" src="assets/img/crown.png">
+                </div>
+            </div>
+
+            
+            <!--This is the dialog box opening when you find a trap or you reach the crown-->
+            <dialog id="dialog">
+                <form class="inner-modal" method="dialog">
+                    <img id="dialog-img" src="assets/img/crown.png">
+                    <p id="dialog-text"></p>
+                    <img class="modal-btn" id="new-game" src="assets/img/new_game.png">
+                </form>
+            </dialog>
+
+        </div>
+        <!--Mobile footer-->
+        <footer id="mobile-foot">
+            <div class="foot-container">
+                <img class="foot-btn" id="img-l" src="assets/img/arrow_left.png">
+
+                <img class="foot-btn" id="img-r" src="assets/img/arrow_right.png">
+
+                <img class="foot-btn" id="img-u" src="assets/img/arrow_up.png">
+
+                <img class="foot-btn" id="img-d" src="assets/img/arrow_down.png">
+            </div>
+        </footer>
+        <!--Tablet footer-->
+        <footer id="tablet-foot">
+            <div class="foot-container">
+                <p>Please! Don't use keyboard for a better Knight experience</p>
+                <img class="foot-btn" id="img-tl" src="assets/img/arrow_left.png">
+
+                <img class="foot-btn" id="img-tr" src="assets/img/arrow_right.png">
+
+                <img class="foot-btn" id="img-tu" src="assets/img/arrow_up.png">
+
+                <img class="foot-btn" id="img-td" src="assets/img/arrow_down.png">
+
+                <img class="foot-btn" id="img-ts" src="assets/img/space.png">
+            </div>
+        </footer>
+
+    </body>
+
+</html>
