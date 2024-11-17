@@ -15,6 +15,11 @@ main {
   flex-direction: row;
 }
 
+h2 {
+  margin-bottom: -1rem;
+}
+
+/* Styling of the sidebar */
 aside {
   width: 10%;
   height: 100%;
@@ -22,14 +27,13 @@ aside {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 aside img {
   padding: 1rem;
   width: 80%;
   height: auto;
 }
-
-.menu-container {
+/* The btn container */
+.btn-container {
   margin: 1rem;
   padding: 1rem;
   width: 100%;
@@ -40,17 +44,16 @@ aside img {
   align-items: center;
   flex-direction: column;
 }
-
-.menu-container img {
+.btn-container img {
   width: 60%;
   height: auto;
   padding: 1rem;
 }
-
 #back {
   display: none;
 }
 
+/* The main container  */
 .right-container {
   width: 90%;
   display: flex;
@@ -58,29 +61,16 @@ aside img {
   flex-wrap: wrap;
   flex-direction: column;
 }
-
 .right-container h2 {
   margin-left: 1rem;
 }
 
-.results {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-section {
-  margin: 1rem;
-  flex: 0 0 21%;
-}
-
+/* The search bar and section */
 .search {
   width: 100%;
   position: relative;
   display: flex;
 }
-
 .searchTerm {
   width: 100%;
   border: 0.4rem solid #7a8fad;
@@ -91,11 +81,9 @@ section {
   outline: none;
   color: #000000;
 }
-
 .searchTerm:focus {
   color: #7a8fad;
 }
-
 .searchButton {
   width: 4rem;
   height: auto;
@@ -108,16 +96,12 @@ section {
   cursor: pointer;
   font-size: 20px;
 }
-
 .searchButton:hover {
   color: #000;
 }
-
 .searchButton:active {
   color: #9e9191;
 }
-
-/*Resize the wrap to see the search bar change!*/
 .wrap {
   display: none;
   width: 50%;
@@ -127,6 +111,21 @@ section {
   transform: translate(-50%);
 }
 
+/* The image displayed when there are no results */
+#no-results {
+  display: none;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
+/* The image displayed in the homepage */
+#welcome {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* The header with the artist cover image */
 header {
   display: none;
   background-repeat: no-repeat;
@@ -140,7 +139,6 @@ header {
   overflow: hidden;
   border-radius: 0 0 90% 90% / 30%;
 }
-
 header .overlay {
   width: 100%;
   height: 100%;
@@ -150,33 +148,40 @@ header .overlay {
   background-image: linear-gradient(135deg, #14253d69 10%, #2f415b6b 100%);
 
 }
-
-h1 {
+header h1 {
   font-size: 4rem;
   margin-bottom: 2rem;
 }
-
-h2 {
-  margin-bottom: -1rem;
-}
-
-h3 {
+header h3 {
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: 2rem;
 }
-
-h3 img {
+/* The icon on the total followers */
+header h3 img {
   width: 2rem;
   margin-right: .5rem;
 }
 
+/* The result area */
+.results {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section {
+  margin: 1rem;
+  flex: 0 0 21%;
+}
+
+/* The padding of the title of the album track list */
 .album-details {
   padding-left: 1rem;
 }
 
+/* The cards displaying artist and/or albums */
 .card {
-  /* Add shadows to create the "card" effect */
   transition: 0.3s;
   background-color: #7a8fad;
   color: black;
@@ -186,68 +191,44 @@ h3 img {
   flex-grow: 1;
 
 }
-
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   background-color: #b2c4dd;
 }
-
 .card em {
   font-size: 0.6rem;
 }
-
 .card img {
-  width: 100%;
-  height: auto;
-}
-.img-artist {
+  width: 11rem;
+  height: 11rem;
+  object-fit: cover;
   border-radius: 80rem;
-  width: 100%;
-  height: auto;
 }
 
-#no-results {
-  display: none;
-  width: 30%;
-  height: auto;
-  margin: 0 auto;
-}
-#welcome {
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-}
-
+/* The table displaying the track list */
 table {
   margin: 1rem;
   table-layout: fixed;
   width: 100%;
   text-align: left;
 }
-
 th,
 td {
   border-bottom: 0.01rem solid #b2c4dd;
 }
-
 th {
   padding-bottom: 0.5rem;
 }
-
 td {
   padding-top: 1rem;
   padding-bottom: 1rem;
 
 }
-
 #col-1 {
   width: 5%;
 }
-
 #col-2 {
   width: 80%;
 }
-
 #col-3 {
   width: 15%;
 }
@@ -255,11 +236,9 @@ td {
 
 /* Responsive layout - Tablet devices */
 @media only screen and (max-width: 1200px) {
-
   section {
     flex: 0 0 28%;
   }
-
 }
 
 /* Responsive layout - Mobile devices*/
@@ -267,37 +246,46 @@ td {
   main {
     flex-direction: column;
   }
-
+  /* Left sidebar */
   aside {
     width: 100%;
     flex-direction: row;
   }
-
   aside img {
     width: 20%;
     height: auto;
   }
 
-  .menu-container {
+  /* the home, search and back btns */
+  .btn-container {
     height: 1rem;
     flex-direction: row;
   }
-
-  .menu-container img {
+  .btn-container img {
     width: auto;
     height: 1.3rem;
     padding: 1rem;
   }
 
+  /* The main container */
   .right-container {
     width: 100%;
   }
-
   section {
     margin-right: 1rem;
     flex: 0 0 95%;
   }
+  /* In he mobile version the reaults are displayed aligned in the center */
+  .card {
+    text-align: center;
+  }
+  .card img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+  }
 
+  /* The width of the columns is slightly different in mobile */
   #col-2 {
     width: 70%;
   }
@@ -306,11 +294,5 @@ td {
     width: 25%;
   }
 
-  .card {
-    text-align: center;
-  }
-  .card img {
-    width: 8rem;
-    height: auto; 
-  }
+  
 }
