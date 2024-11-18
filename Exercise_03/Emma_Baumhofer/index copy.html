@@ -6,32 +6,27 @@
     <title>Frogger</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
     <h1>Frogger</h1>
     <h2>Catch the flies, avoid the mowers!</h2>
     
-    <!-- Main container for the icons and rectangles -->
+    <!-- Main game container -->
     <div id="main-container" style="position: relative;">
-        <div class="line-container">
-            <div class="line"></div>
-            <img id="frog-icon" src="assets/icons/frog2.png" alt="Frog Icon" />
-        </div>
-        <div id="rectangle-container">
-        </div>
-        <div class="line-container">
-            <div class="line"></div>
-            <img id="fly-icon" src="assets/icons/fly.png" alt="Fly Icon" />
-        </div>
+        <!-- Rectangles container -->
+        <div id="rectangle-container"></div>
+        <!-- Lawn mower row -->
+        <div id="lawn-mower-row" style="display: flex; justify-content: center; margin-top: 20px;"></div>
+        <!-- Frog icon -->
+        <img id="frog-icon" src="assets/icons/frog2.png" alt="Frog Icon">
+        <!-- Fly icon -->
+        <img id="fly-icon" src="assets/icons/fly.png" alt="Fly Icon">
     </div>
-    
-    <!-- Lawn mower icons container -->
-    <div id="lawn-mower-row"></div>
-   
+
+    <!-- Game instructions -->
     <div>
-        <p>Directions: 
+        <p>
+            Directions: 
             <br> Press the right arrow to move one square or space to jump over a square. 
             <br> Check your status in the Console.
         </p>
