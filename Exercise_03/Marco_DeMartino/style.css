@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    background-color: #3c2c3e;
+}
+
+.player{
+    background-image: url(./imgs/Player@300x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+.board{
+    background-image: url(./imgs/Level@300x.png);
+    height: 360px;
+    width: 360px;
+    background-size: contain;
+    position: relative;
+    
+}
+
+.trap{
+    background-image: url(https://media.tenor.com/KXakpzVoGJgAAAAj/feuer-fire.gif);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+.victory{
+    background-image: url(./imgs/victory@300x.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contenitore{
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+
+.cornice{
+    border: solid;
+    border-color: #ec6663;
+    padding: 5vw 5vw;
+    border-radius: 10px;
+    border-width: 10px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.game-over{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3c2c3ece;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+
+h2{
+    font-family: monospace;
+    font-size: 100px;
+    text-align: center;
+    top: 20vh;
+    position: relative;
+    color: #b42b65;
+}
+
+button{
+    padding: 2vw 10vw;
+    align-self: center;
+    border: solid;
+    border-color: #b42b65;
+    border-width: 10px;
+    border-radius: 20px;
+    background-color: #593f5b;
+    font-family: monospace;
+    font-size: 30px;
+    color: #ec6663;
+}
+
+button:hover{
+    background-color: #786179;
+}
+
+button:active{
+    background-color: #352636;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.timer{
+    color: white;
+    font-family: monospace;
+    font-weight: 800;
+}

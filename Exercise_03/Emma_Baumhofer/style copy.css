@@ -1,11 +1,10 @@
-
 * {
     box-sizing: border-box;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'JI-Chubby-Caps';
-    src:url('assets/webfonts/JI-Chubby-Caps.ttf.woff') format('woff');
+    src: url('assets/webfonts/JI-Chubby-Caps.ttf.woff') format('woff');
 }
 
 html {
@@ -16,16 +15,16 @@ html {
 
 h1 {
     font-family: 'JI-Chubby-Caps';
-    font-size: 4rem; 
+    font-size: 4rem;
     margin-top: 1rem;
     padding-top: 0;
-    margin-bottom: 0;    
+    margin-bottom: 0;
     color: lightgray;
-    text-shadow: 
+    text-shadow:
         5px 5px 0 #df0005,   /* Bottom-right */
-        -5px 5px 0 #df0005,   /* Bottom-left */
+        -5px 5px 0 #df0005,  /* Bottom-left */
         5px -5px 0 #df0005,  /* Top-right */
-        -5px -5px 0 #df0005;  /* Top-left */
+        -5px -5px 0 #df0005; /* Top-left */
     text-align: center;
     position: relative;
 }
@@ -37,11 +36,10 @@ h2 {
     margin-bottom: 8rem;
     text-align: center;
     color: #307a07;
-    text-align: center;
     position: relative;
 }
 
-p{
+p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8rem;
     color: #307a07;
@@ -51,30 +49,20 @@ p{
 
 #main-container {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
 
-.line-icon {
-    position: absolute;
-    bottom: 10px; /* over the line */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 50px;
-}
-
 #rectangle-container {
-    display: flex; 
-    gap: 10px; 
-   
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .rectangle {
-    width: 60px;  
-    height: 20px; 
+    width: 60px;
+    height: 20px;
     display: inline-block;
 }
 
@@ -82,27 +70,41 @@ p{
     position: absolute;
     width: 50px;
     height: 50px;
-    transition: transform 0.3s ease;
-    z-index: 1; /* frog above rectangles */
+    transition: left 0.3s ease, top 0.3s ease;
+    z-index: 2; /* Frog above rectangles */
+    display: none; /* Initially hidden until positioned */
+}
+
+#fly-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 2; /* Fly above rectangles */
+    display: none; /* Initially hidden until positioned */
 }
 
 
 #lawn-mower-row {
     display: flex;
-    justify-content: center; 
-    gap: 80px; 
-    margin-top: 175px; 
+    justify-content: center;
+    gap: 80px;
+    margin-top: 175px;
     margin-bottom: 100px;
 }
 
 .lawn-mower-icon {
-    width: 80px; 
+    width: 80px;
     height: 80px;
 }
 
-#fly-icon {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    z-index: 1; /* fly above rectangles */
+#lawn-mower-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#lawn-mower-row img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
 }
