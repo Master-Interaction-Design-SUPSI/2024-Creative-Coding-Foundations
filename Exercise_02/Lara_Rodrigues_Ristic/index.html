@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="Author" content="Lara Rodrigues Ristic">
+    <title>Lego generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+</head>
+<body>
+    <header>
+        <h1>Lego Brick Generator</h1>
+        <h3>Instructions</h3>
+            <p>Enter a number between 1 and 20 to generate a LEGO brick of that width.</p>
+            <p>Choose a color for your brick and click the "Click me" button.</p>
+            <p>Use the "Clear" button to reset the input or "Delete" to remove all bricks.</p>
+    </header>
+    
+    <main>
+        <article>
+            <section>
+                <h2> Write a number from 1 to 20 </h2>
+                    <input type="text" id="number_input"/>
+                    <button type="button" id="clear">Clear</button>
+
+            </section>
+            
+            
+            <section>
+                <h2>Choose your color</h2>
+                <input type="color" id="color" value="#233671"/>
+                <button type="button" id="generate">Click me</button>
+            </section>
+            
+            <section>
+                <h2>Your creation is here!</h2>
+                <div id="brick_container">
+                </div>
+                <button type="button" id="delete">Delete</button>
+
+            </section>
+        
+        </article>
+    </main>
+    
+    <footer>
+        <h3>Thanks for playing!</h3>
+    </footer>
+</body>
+</html>
