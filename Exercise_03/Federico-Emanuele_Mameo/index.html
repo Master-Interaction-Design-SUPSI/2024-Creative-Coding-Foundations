@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOG RESCUE MISSION</title>
+    <link rel="icon" type="image/png" href="assets/dog-scared_preview_rev_1.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1>DOG RESCUE MISSION</h1>
+        <h2>Oh no! Your dog Nalan got lost! Cross the bridge to reach and save him. But be careful, the bridge hide some traps!
+            <br>
+            <ul>Movements:
+                <li>Arrow right: 1 step forward</li>
+                <li>Arrow up: 2 steps forward</li>
+            </ul>
+        </h2>
+        <div class="scoreboard">
+            <p>Attempts: <span id="attempts">0</span></p>
+            <p>Safe Crossings: <span id="saves">0</span></p>
+        </div>
+        <div class="enemy-row">
+            <div class="enemy"></div>
+            <div class="enemy"></div>
+            <div class="enemy"></div>
+            <div class="enemy"></div>
+            <div class="enemy"></div>
+        </div>
+        <div id="bridge" class="bridge"></div>
+        <div class="enemy-row">
+            <div class="enemy"></div>
+            <div class="enemy"></div>
+            <div class="enemy"></div>
+            <div class="enemy"></div>
+            <div class="enemy"></div>
+        </div>
+        <div id="bridge" class="bridge"></div>
+        <p id="message" class="message"></p>
+        <button id="restartButton" onclick="startGame()">Restart Game</button>
+    </div>
+    <audio id="moveSound" src="assets/jump-game-sound-effect.mp3"></audio>
+    <audio id="trapSound" src="assets/trap-game-sound-effect.mp3"></audio>
+    <audio id="winSound" src="assets/win-game-sound-effect.mp3"></audio>
+    
+</body>
+</html>
