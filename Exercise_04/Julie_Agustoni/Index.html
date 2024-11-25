@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Julie Agustoni" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nasa pic of the day</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
+        alt="NASA Logo"
+        id="nasa-logo"
+      />
+      <h1>NASA picture of the day</h1>
+      <p id="intro">
+        This is a gallery of the picture form the NASA astronomy picture of the
+        days from the last 30days
+      </p>
+      <label for="filter">Search by keyword</label>
+      <select name="filter" id="filter">
+        <option value="comet">Comet</option>
+        <option value="aurora">Aurora</option>
+        <option value="galaxy">Galaxy</option>
+        <option value="mars">Mars</option>
+        <option value="pluto">Pluto</option>
+        <option value="universe">Universe</option>
+        <option value="cassiopeia">Cassiopeia</option>
+        <option value="star">Star</option>
+        <option value="all">all</option>
+      </select>
+    </header>
+    <main>
+      <section id="container"></section>
+    </main>
+  </body>
+</html>
