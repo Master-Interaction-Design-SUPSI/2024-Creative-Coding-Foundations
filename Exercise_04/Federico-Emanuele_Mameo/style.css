@@ -1,0 +1,171 @@
+body {
+    font-family: system-ui, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height: min-content;
+}
+
+#head-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.header-objects img {
+    height: 80px;
+    width: auto;
+    padding: 0 0.5rem;
+}
+
+.header-objects h1 {
+    margin: 0;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+
+h1{
+    margin-top: 0%;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+p{
+    margin: 0.25rem auto;
+    font-size: small;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0 auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.team-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex-basis: 22%;
+    box-sizing: border-box;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-badge {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.team-details {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.team-details-badge {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.team-socials{
+    margin: 1rem auto;
+}
+
+.social-images{
+    margin: 1rem 1rem;
+}
+
+@keyframes scrolling-text {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(320%);
+    }
+}
+
+footer p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrolling-text 20s linear infinite;
+}
+
+.footer-text-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        flex-basis: 45%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .team-card {
+        flex-basis: 30%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .team-card {
+        flex-basis: 22%; 
+    }
+}

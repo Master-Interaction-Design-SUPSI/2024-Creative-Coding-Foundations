@@ -1,0 +1,214 @@
+/* General styling */
+html {
+    background-color: lightgray;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #0c0b0a;
+}
+body {
+    margin: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 50px 0 30px 0;
+}
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+/* Layout for two Columns */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    position: relative;
+}
+/* Middle dividing line */
+.columns::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: whitesmoke;
+    transform: translateX(-50%);
+}
+/* Left column */
+.left-column {
+    flex: 1;
+    padding-right: 10px;
+}
+/* Right column */
+.right-column {
+    flex: 1;
+    padding-left: 10px;
+}
+/* Search Ccntainers and dropdowns */
+.search-container {
+    position: relative;
+}
+/* Input fields inside dropdowns */
+.search-container input {
+    font-size: 1rem; 
+    padding: 12px 16px; 
+    border: 1.5px solid whitesmoke; 
+    border-radius: 5px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    background: lightgray; 
+    color: #0c0b0a; 
+}
+.search-container input::placeholder {
+    color: #0c0b0a; 
+    opacity: 1;
+}
+.search-container input:focus {
+    border-color: whitesmoke;
+    outline: none;
+    background: lightgray;
+}
+ul.dropdown {
+    margin: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: whitesmoke;
+    border: 1px solid whitesmoke;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    border-radius: 5px;
+}
+ul.dropdown.hidden {
+    display: none;
+}
+ul.dropdown li {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+ul.dropdown li:hover {
+    background: #f0f0f0;
+}
+/* Buttons inside search dropdown */
+ul.dropdown li button {
+    background: #0c0b0a;
+    color: whitesmoke;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+ul.dropdown li button:hover {
+    background-color: #800039; 
+    color: #ff01b9; 
+}
+/* Meeting time container */
+.meeting-time-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+/* Style time dropdown */
+#meetingTime {
+    font-size: 1rem; 
+    padding: 10px 12px; 
+    border: 1px solid whitesmoke; 
+    border-radius: 5px; 
+    background: lightgray; 
+    color: #0c0b0a; 
+    width: 100%; /* Width of column */
+    appearance: none; /* Remove default browser styling */
+    box-sizing: border-box; 
+}
+#meetingTime:focus {
+    border-color: whitesmoke; 
+    outline: whitesmoke; 
+    background: lightgray; 
+}
+/* Custom arrow for dropdown */
+#meetingTime::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #0c0b0a; 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    pointer-events: none; 
+}
+/* Timezone containers */
+.left-timezones,
+.right-timezones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Group timezone item */
+.timezone-item {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: whitesmoke;
+    margin-top: 10px; 
+}
+/* Selected timezone styling */
+.selected-timezone {
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    padding: 20px;
+    background: whitesmoke;
+    border-radius: 5px;
+    border-color: whitesmoke;
+    font-size: 1rem;
+    display: none; 
+}
+.proposed-time {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-size: 1rem;
+    border-color: whitesmoke;
+    color: #ff01b9; 
+}
+.update-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0c0b0a;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover */
+}
+.update-button:hover {
+    background-color: #800039; 
+    color: #ff01b9; 
+}
