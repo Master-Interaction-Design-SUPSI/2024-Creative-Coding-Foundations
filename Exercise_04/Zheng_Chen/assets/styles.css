@@ -1,0 +1,137 @@
+/* Basic reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2e2e2;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main container */
+main {
+    max-width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Input and button container */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Input box style */
+input {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* buttons div style */
+#buttonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Search button style */
+#searchButton {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Search button hover effect */
+#searchButton:hover {
+    background-color: #45a049;
+}
+
+/* Clear button style */
+#clearButton {
+    background-color: #eb2c2c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Clear button hover effect */
+#clearButton:hover {
+    background-color: #cf1818;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 40px;
+    display: none; /* 默认隐藏 */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+#scrollToTopBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Results container */
+#container {
+    margin-top: 20px;
+}
+
+/* List style */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
