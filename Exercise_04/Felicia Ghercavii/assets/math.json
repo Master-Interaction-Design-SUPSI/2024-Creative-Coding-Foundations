@@ -1,0 +1,790 @@
+{
+    "key": "/subjects/math",
+    "name": "math",
+    "subject_type": "subject",
+    "work_count": 82,
+    "works": [
+        {
+            "key": "/works/OL17840708W",
+            "title": "Weapons of Math Destruction",
+            "edition_count": 15,
+            "cover_id": 8136557,
+            "cover_edition_key": "OL26427189M",
+            "subject": [
+                "math",
+                "big data",
+                "inequality",
+                "democracy",
+                "Social indicators",
+                "Moral and ethical aspects",
+                "Social conditions",
+                "Mathematical models",
+                "Data mining",
+                "Algorithms",
+                "Mathematics",
+                "award:euler_book_prize",
+                "nyt:education=2016-10-09",
+                "New York Times bestseller",
+                "Human behavior, mathematical models",
+                "Computer algorithms",
+                "Computers, social aspects",
+                "Données volumineuses",
+                "Aspect social",
+                "Aspect politique",
+                "Indicateurs sociaux",
+                "Modèles mathématiques",
+                "Aspect moral",
+                "Conditions sociales",
+                "COMPUTERS",
+                "Data Modeling & Design",
+                "Political aspects",
+                "Social aspects",
+                "Human behavior"
+            ],
+            "ia_collection": [
+                "americanuniversity-ol",
+                "binghamton-ol",
+                "cua-ol",
+                "dartmouthlibrary-ol",
+                "drakeuniversity-ol",
+                "gwulibraries-ol",
+                "hamiltonpubliclibrary-ol",
+                "internetarchivebooks",
+                "ithacacollege-ol",
+                "johnshopkins-ol",
+                "occidentalcollegelibrary-ol",
+                "openlibrary-d-ol",
+                "printdisabled",
+                "rochester-ol",
+                "the-claremont-colleges-ol",
+                "tulsacc-ol",
+                "unb-ol",
+                "uni-ol",
+                "universityofarizona-ol",
+                "universityofoklahoma-ol",
+                "wilsoncollege-ol"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "",
+            "lending_identifier": "",
+            "authors": [
+                {
+                    "key": "/authors/OL7412371A",
+                    "name": "Cathy O'Neil"
+                }
+            ],
+            "first_publish_year": 2016,
+            "ia": "weaponsofmathdes0000onei",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "private",
+                "available_to_browse": false,
+                "available_to_borrow": false,
+                "available_to_waitlist": false,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": false,
+                "is_previewable": true,
+                "identifier": "weaponsofmathdes0000onei",
+                "isbn": "9780553418811",
+                "oclc": null,
+                "openlibrary_work": "OL17862181W",
+                "openlibrary_edition": "OL26445402M",
+                "last_loan_date": null,
+                "num_waitlist": null,
+                "last_waitlist_date": null,
+                "is_restricted": true,
+                "is_browseable": false,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL2943600W",
+            "title": "Everything and more",
+            "edition_count": 11,
+            "cover_id": 6590991,
+            "cover_edition_key": "OL24361769M",
+            "subject": [
+                "maths",
+                "math",
+                "mathematics",
+                "infinity",
+                "abstraction",
+                "Infinite",
+                "History",
+                "Infini"
+            ],
+            "ia_collection": [
+                "internetarchivebooks",
+                "printdisabled"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "",
+            "lending_identifier": "",
+            "authors": [
+                {
+                    "key": "/authors/OL448939A",
+                    "name": "David Foster Wallace"
+                },
+                {
+                    "key": "/authors/OL19430A",
+                    "name": "Neal Stephenson"
+                },
+                {
+                    "key": "/authors/OL9124157A",
+                    "name": "Juan Vilaltella Castanyer"
+                }
+            ],
+            "first_publish_year": 2003,
+            "ia": "everythingmore00davi",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "private",
+                "available_to_browse": false,
+                "available_to_borrow": false,
+                "available_to_waitlist": false,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": false,
+                "is_previewable": true,
+                "identifier": "everythingmore00davi",
+                "isbn": "0393003388",
+                "oclc": null,
+                "openlibrary_work": "OL17914255W",
+                "openlibrary_edition": "OL26489088M",
+                "last_loan_date": null,
+                "num_waitlist": null,
+                "last_waitlist_date": null,
+                "is_restricted": true,
+                "is_browseable": false,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL72091W",
+            "title": "Precalculus",
+            "edition_count": 10,
+            "cover_id": 4736568,
+            "cover_edition_key": "OL6800190M",
+            "subject": [
+                "Mathematics",
+                "Precalculus",
+                "Calculus & mathematical analysis",
+                "Pre-Calculus",
+                "Science/Mathematics",
+                "Juvenile Nonfiction",
+                "Children: Young Adult (Gr. 10-12)",
+                "Mathematics / General",
+                "Mathematics - Advanced",
+                "Algebra - General",
+                "Math",
+                "Trigonometry"
+            ],
+            "ia_collection": [
+                "americana",
+                "inlibrary",
+                "internetarchivebooks",
+                "openlibrary-d-ol",
+                "printdisabled",
+                "uni-ol"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "OL1014321M",
+            "lending_identifier": "precalculusfunct0000mune",
+            "authors": [
+                {
+                    "key": "/authors/OL35469A",
+                    "name": "Mustafa A. Munem"
+                },
+                {
+                    "key": "/authors/OL2624977A",
+                    "name": "M. A. Munem"
+                },
+                {
+                    "key": "/authors/OL2834398A",
+                    "name": "J. P. Yizze"
+                },
+                {
+                    "key": "/authors/OL2871670A",
+                    "name": "James P. Yizze"
+                },
+                {
+                    "key": "/authors/OL2834361A",
+                    "name": "Mustafa Munem"
+                }
+            ],
+            "first_publish_year": 1978,
+            "ia": "precalculusfunct0000mune",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "borrow_available",
+                "available_to_browse": true,
+                "available_to_borrow": false,
+                "available_to_waitlist": true,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": true,
+                "is_previewable": true,
+                "identifier": "precalculusfunct0000mune",
+                "isbn": "1572591579",
+                "oclc": null,
+                "openlibrary_work": "OL72091W",
+                "openlibrary_edition": "OL1014321M",
+                "last_loan_date": "2020-08-25T16:45:38Z",
+                "num_waitlist": "0",
+                "last_waitlist_date": null,
+                "is_restricted": true,
+                "is_browseable": true,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL46363W",
+            "title": "Realm of numbers",
+            "edition_count": 10,
+            "cover_id": 9300873,
+            "cover_edition_key": "OL6270568M",
+            "subject": [
+                "Number concept",
+                "Number theory",
+                "Numeration",
+                "Number systems",
+                "Mathematics",
+                "Math",
+                "Juvenile literature",
+                "Arithmetic",
+                "Teoria dels Nombres"
+            ],
+            "ia_collection": [
+                "americana",
+                "bostonpubliclibrary",
+                "bplhoughton",
+                "bpljordan-ol",
+                "inlibrary",
+                "internetarchivebooks",
+                "printdisabled"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "OL6270568M",
+            "lending_identifier": "realmofnumbers00asim",
+            "authors": [
+                {
+                    "key": "/authors/OL34221A",
+                    "name": "Isaac Asimov"
+                }
+            ],
+            "first_publish_year": 1959,
+            "ia": "realmofnumbers00asim",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "borrow_available",
+                "available_to_browse": true,
+                "available_to_borrow": true,
+                "available_to_waitlist": false,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": true,
+                "is_previewable": true,
+                "identifier": "realmofnumbers00asim",
+                "isbn": null,
+                "oclc": null,
+                "openlibrary_work": "OL46363W",
+                "openlibrary_edition": "OL6270568M",
+                "last_loan_date": "2020-08-30T15:04:30Z",
+                "num_waitlist": "0",
+                "last_waitlist_date": "2020-03-17T06:54:19Z",
+                "is_restricted": true,
+                "is_browseable": true,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL46335W",
+            "title": "Realm of algebra",
+            "edition_count": 9,
+            "cover_id": 12884276,
+            "cover_edition_key": "OL39480343M",
+            "subject": [
+                "Mathematics",
+                "Math",
+                "Algebra",
+                "Numeração",
+                "Aritmetica",
+                "Algèbre"
+            ],
+            "ia_collection": [
+                "inlibrary",
+                "internetarchivebooks",
+                "printdisabled"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "OL39480343M",
+            "lending_identifier": "realmofalgebra0000isaa",
+            "authors": [
+                {
+                    "key": "/authors/OL34221A",
+                    "name": "Isaac Asimov"
+                }
+            ],
+            "first_publish_year": 1961,
+            "ia": "realmofalgebra0000isaa",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "borrow_available",
+                "available_to_browse": true,
+                "available_to_borrow": false,
+                "available_to_waitlist": false,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": true,
+                "is_previewable": true,
+                "identifier": "realmofalgebra0000isaa",
+                "isbn": null,
+                "oclc": null,
+                "openlibrary_work": "OL46335W",
+                "openlibrary_edition": "OL39480343M",
+                "last_loan_date": null,
+                "num_waitlist": null,
+                "last_waitlist_date": null,
+                "is_restricted": true,
+                "is_browseable": true,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL46209W",
+            "title": "An Easy Introduction to the Slide Rule",
+            "edition_count": 8,
+            "cover_id": 7226789,
+            "cover_edition_key": "OL5947336M",
+            "subject": [
+                "Mathematics",
+                "Math",
+                "multiplication",
+                "division",
+                "calculation",
+                "Slide-rule"
+            ],
+            "ia_collection": [
+                "americana",
+                "bpljordan-ol",
+                "inlibrary",
+                "internetarchivebooks",
+                "printdisabled",
+                "thecomputermuseumarchive"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "OL31929920M",
+            "lending_identifier": "easyintroduction00isaa",
+            "authors": [
+                {
+                    "key": "/authors/OL34221A",
+                    "name": "Isaac Asimov"
+                }
+            ],
+            "first_publish_year": 1965,
+            "ia": "easyintroduction00isaa",
+            "public_scan": true,
+            "has_fulltext": true,
+            "availability": {
+                "status": "open",
+                "available_to_browse": false,
+                "available_to_borrow": false,
+                "available_to_waitlist": false,
+                "is_printdisabled": false,
+                "is_readable": true,
+                "is_lendable": false,
+                "is_previewable": true,
+                "identifier": "easyintroduction00isaa",
+                "isbn": null,
+                "oclc": null,
+                "openlibrary_work": "OL46209W",
+                "openlibrary_edition": "OL31929920M",
+                "last_loan_date": null,
+                "num_waitlist": null,
+                "last_waitlist_date": null,
+                "is_restricted": false,
+                "is_browseable": false,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL16988436W",
+            "title": "Tutorium Analysis 1 und Lineare Algebra 1",
+            "edition_count": 8,
+            "cover_id": 8730086,
+            "cover_edition_key": "OL25568348M",
+            "subject": [
+                "math",
+                "textbook",
+                "linear algebra",
+                "mathematical analysis",
+                "Calculus",
+                "Linear Algebras",
+                "Analysis - Einführung",
+                "Analysis",
+                "Lehrmittel",
+                "Lineare Algebra",
+                "Einführung",
+                "Lineare Algebra - Einführung"
+            ],
+            "ia_collection": [
+                ""
+            ],
+            "lendinglibrary": false,
+            "printdisabled": false,
+            "lending_edition": "",
+            "lending_identifier": "",
+            "authors": [
+                {
+                    "key": "/authors/OL7211826A",
+                    "name": "Florian Modler"
+                },
+                {
+                    "key": "/authors/OL7458136A",
+                    "name": "Martin Kreh"
+                }
+            ],
+            "first_publish_year": 2009,
+            "ia": "tutoriumanalysis00flor",
+            "public_scan": false,
+            "has_fulltext": false,
+            "availability": {
+                "status": "error",
+                "error_message": "not found",
+                "identifier": "tutoriumanalysis00flor",
+                "is_restricted": true,
+                "is_browseable": false,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL46265W",
+            "title": "Science, Numbers, and I",
+            "edition_count": 7,
+            "cover_id": 12991831,
+            "cover_edition_key": "OL40233715M",
+            "subject": [
+                "Science",
+                "Mathematics",
+                "Math"
+            ],
+            "ia_collection": [
+                "inlibrary",
+                "internetarchivebooks",
+                "printdisabled"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "OL40233715M",
+            "lending_identifier": "sciencenumbersi0000isaa",
+            "authors": [
+                {
+                    "key": "/authors/OL34221A",
+                    "name": "Isaac Asimov"
+                }
+            ],
+            "first_publish_year": 1968,
+            "ia": "sciencenumbersi0000isaa",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "borrow_available",
+                "available_to_browse": true,
+                "available_to_borrow": false,
+                "available_to_waitlist": false,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": true,
+                "is_previewable": true,
+                "identifier": "sciencenumbersi0000isaa",
+                "isbn": null,
+                "oclc": null,
+                "openlibrary_work": "OL46265W",
+                "openlibrary_edition": "OL40233715M",
+                "last_loan_date": null,
+                "num_waitlist": null,
+                "last_waitlist_date": null,
+                "is_restricted": true,
+                "is_browseable": true,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL16102184W",
+            "title": "The Man of Numbers",
+            "edition_count": 6,
+            "cover_id": 6943804,
+            "cover_edition_key": "OL24997287M",
+            "subject": [
+                "math",
+                "history",
+                "biography",
+                "Fibonacci",
+                "Italy",
+                "Mathematics in nature",
+                "Mathematicians",
+                "Fibonacci numbers",
+                "Sequences (Mathematics)",
+                "Fibonacci, Leonardo, ca. 1170-ca. 1240",
+                "Biografi",
+                "Matematiker",
+                "Fibonacci, leonardo, approximately 1170-approximately 1240",
+                "Mathematicians, biography",
+                "Arithmetic, history",
+                "Mathematics",
+                "Italy, biography",
+                "Arithmetic",
+                "Medieval Mathematics",
+                "Arithmetik"
+            ],
+            "ia_collection": [
+                "binghamton-ol",
+                "dartmouthlibrary-ol",
+                "drakeuniversity-ol",
+                "gwulibraries-ol",
+                "hamiltonpubliclibrary-ol",
+                "internetarchivebooks",
+                "ithacacollege-ol",
+                "marymount-ol",
+                "printdisabled",
+                "randolph-macon-college-ol",
+                "rochester-ol",
+                "uhmauicollege-ol",
+                "universityofoklahoma-ol",
+                "worthingtonlibraries-ol"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "",
+            "lending_identifier": "",
+            "authors": [
+                {
+                    "key": "/authors/OL23757A",
+                    "name": "Keith J. Devlin"
+                }
+            ],
+            "first_publish_year": 2011,
+            "ia": "manofnumbersfibo0000devl_r9f4",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "private",
+                "available_to_browse": false,
+                "available_to_borrow": false,
+                "available_to_waitlist": false,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": false,
+                "is_previewable": true,
+                "identifier": "manofnumbersfibo0000devl_r9f4",
+                "isbn": "9781408815762",
+                "oclc": null,
+                "openlibrary_work": "OL16102184W",
+                "openlibrary_edition": "OL27538529M",
+                "last_loan_date": null,
+                "num_waitlist": null,
+                "last_waitlist_date": null,
+                "is_restricted": true,
+                "is_browseable": false,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL16980432W",
+            "title": "Tutorium Analysis 2 und Lineare Algebra 2",
+            "edition_count": 5,
+            "cover_id": 8730085,
+            "cover_edition_key": "OL25564037M",
+            "subject": [
+                "math",
+                "textbook",
+                "linear algebra",
+                "mathematical analysis",
+                "Lineare Algebra",
+                "Analysis"
+            ],
+            "ia_collection": [
+                ""
+            ],
+            "lendinglibrary": false,
+            "printdisabled": false,
+            "lending_edition": "",
+            "lending_identifier": "",
+            "authors": [
+                {
+                    "key": "/authors/OL7211826A",
+                    "name": "Florian Modler"
+                },
+                {
+                    "key": "/authors/OL7458136A",
+                    "name": "Martin Kreh"
+                }
+            ],
+            "first_publish_year": 2011,
+            "ia": "tutoriumanalysis00modl_047",
+            "public_scan": false,
+            "has_fulltext": false,
+            "availability": {
+                "status": "error",
+                "error_message": "not found",
+                "identifier": "tutoriumanalysis00modl_047",
+                "is_restricted": true,
+                "is_browseable": false,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL3541446W",
+            "title": "Essential Mathematics",
+            "edition_count": 5,
+            "cover_id": 12640653,
+            "cover_edition_key": "OL37070533M",
+            "subject": [
+                "Mathematics",
+                "Mathematics, problems, exercises, etc.",
+                "Arithmetic",
+                "Math",
+                "Student Solution Manual"
+            ],
+            "ia_collection": [
+                "inlibrary",
+                "internetarchivebooks",
+                "printdisabled"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "OL37404732M",
+            "lending_identifier": "studentsolutionm0000wrig",
+            "authors": [
+                {
+                    "key": "/authors/OL594633A",
+                    "name": "D. Franklin Wright"
+                }
+            ],
+            "first_publish_year": 1986,
+            "ia": "studentsolutionm0000wrig",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "borrow_available",
+                "available_to_browse": true,
+                "available_to_borrow": false,
+                "available_to_waitlist": false,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": true,
+                "is_previewable": true,
+                "identifier": "studentsolutionm0000wrig",
+                "isbn": "0669394823",
+                "oclc": null,
+                "openlibrary_work": "OL3541446W",
+                "openlibrary_edition": "OL37404732M",
+                "last_loan_date": null,
+                "num_waitlist": null,
+                "last_waitlist_date": null,
+                "is_restricted": true,
+                "is_browseable": true,
+                "__src__": "core.models.lending.get_availability"
+            }
+        },
+        {
+            "key": "/works/OL15105098W",
+            "title": "The sub",
+            "edition_count": 5,
+            "cover_id": 1269182,
+            "cover_edition_key": "OL1719392M",
+            "subject": [
+                "Juvenile fiction",
+                "Fiction",
+                "Substitute teachers",
+                "Schools",
+                "Friendship",
+                "Grade 3-4",
+                "8-9 yrs +",
+                "The SUB",
+                "P.J. Petersen",
+                "Children",
+                "Children's",
+                "Kid's",
+                "Juvenile",
+                "Young Adult",
+                "Realistic fiction",
+                "Books",
+                "Stories",
+                "Literature",
+                "Chapters",
+                "Substitute",
+                "Teachers",
+                "Math",
+                "Exams",
+                "Pranks",
+                "Sports",
+                "Children's fiction",
+                "Schools, fiction",
+                "Friendship, fiction",
+                "Teachers, fiction"
+            ],
+            "ia_collection": [
+                "americana",
+                "cnusd-ol",
+                "delawarecountydistrictlibrary",
+                "delawarecountydistrictlibrary-ol",
+                "inlibrary",
+                "internetarchivebooks",
+                "library_of_atlantis",
+                "printdisabled"
+            ],
+            "lendinglibrary": false,
+            "printdisabled": true,
+            "lending_edition": "OL24220924M",
+            "lending_identifier": "subpeter00pete",
+            "authors": [
+                {
+                    "key": "/authors/OL31273A",
+                    "name": "P. J. Petersen"
+                },
+                {
+                    "key": "/authors/OL2687042A",
+                    "name": "Meredith Johnson"
+                }
+            ],
+            "first_publish_year": 1993,
+            "ia": "subpeter00pete",
+            "public_scan": false,
+            "has_fulltext": true,
+            "availability": {
+                "status": "borrow_available",
+                "available_to_browse": true,
+                "available_to_borrow": false,
+                "available_to_waitlist": false,
+                "is_printdisabled": true,
+                "is_readable": false,
+                "is_lendable": true,
+                "is_previewable": true,
+                "identifier": "subpeter00pete",
+                "isbn": "0590624024",
+                "oclc": null,
+                "openlibrary_work": "OL15153308W",
+                "openlibrary_edition": "OL24220924M",
+                "last_loan_date": null,
+                "num_waitlist": null,
+                "last_waitlist_date": null,
+                "is_restricted": true,
+                "is_browseable": true,
+                "__src__": "core.models.lending.get_availability"
+            }
+        }
+    ]
+}
