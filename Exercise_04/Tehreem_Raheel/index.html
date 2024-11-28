@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Explorer</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="/assets/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Viewer</title>
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-    <main>
-        <h1>Plant Explorer</h1>
-        <p>Use the slider to filter plants by height.</p>
-        <input type="range" id="heightSlider" min="0" max="500" step="10">
-        <span id="sliderValue">500 cm</span>
-        <section id="container"></section>
-    </main>
+  <header>
+    <h1>Plant Planet</h1>
+  </header>
+  <main>
+    <div class="controls">
+      <select id="plantDropdown" class="dropdown">
+        <option value="">-- Select a Plant --</option>
+      </select>
+    </div>
+
+    <div class="plant-display">
+      <div class="image-column">
+        <img id="plantImage" class="plant-image" src="/assets/images/lush-houseplant-in-stylish-pot-0410-5699127.webp" alt="Plant Image">
+        <button id="saveButton" class="save-button">
+          <img src="assets/images/Vector.png" alt="Save Icon">
+          Save to Favorites
+        </button>
+      </div>
+      <div class="details-column">
+        <h2 id="plantCommonName">Common Name: </h2>
+        <p id="plantScientificName">Scientific Name: </p>
+        <p id="plantYear">Year: </p>
+        <p id="plantBibliography">Bibliography: </p>
+        <p id="plantAuthor">Author: </p>
+        <p id="plantStatus">Status: </p>
+        <p id="plantRank">Rank: </p>
+        <p id="plantGenusId">Genus ID: </p>
+      </div>
+    </div>
+
+    <section class="favorites">
+      <h2>Favorites</h2>
+      <ul id="favoritesList" class="favorites-list">
+        <!-- Favorites will be dynamically added here -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Plant Viewer - Built with Love 🌱</p>
+  </footer>
+  <script src="assets/script.js"></script>
 </body>
 </html>
