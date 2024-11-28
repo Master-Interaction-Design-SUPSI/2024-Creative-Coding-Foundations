@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rover Roll</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/hzt3nsk.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rover Roll</h1>
+
+    <button id="fetch-image">Find an image</button>
+
+    <div class="image-wrapper">
+      <img src="https://i.postimg.cc/nhHRCX9v/New-Piskel.png" alt="Rover" class="rover-image">
+      <div id="image-container" class="image-container"></div>
+    </div>
+
+    <div id="details" class="image-details-container"></div>
+
+    <div id="message" class="message"></div>
+
+    <div id="loader" class="loader" style="display: none;">
+      <img src="https://cache.teia.rocks/ipfs/Qmd9nnTo2dZzHNimghZ7YHjuNiz5DAp4jR3WNLUjwW2yJU" alt="Loading...">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
