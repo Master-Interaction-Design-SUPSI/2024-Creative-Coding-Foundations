@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magical Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section id="first-screen" class="active">
+            <h1>Welcome to the magical world!</h1>
+            <div id="press-space">
+                <h3>Press space to begin your adventure!</h3>
+            </div>
+        </section>
+
+        <section id="game-section" class="hidden">
+            <h3>How to play:</h3>
+            <h3>Move one step forward using the right arrow ➡️</h3>
+            <h3>Move two steps by jumping with the up arrow ⬆️</h3>
+            <h3>Avoid the traps and pass all three levels to win the game!</h3>
+            <div id="level-info">
+                <p id="level-text">Level: 1, Step: 1</p>
+            </div>
+            <div>
+                <img id="character" src="Assets/character.png" height="5" width="5">
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p id="popup-message"></p>
+                    <img id="popup-image">
+                </div>
+            </div>
+            <div>
+                <button id="restart-button" class="restart-button">Restart Game</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

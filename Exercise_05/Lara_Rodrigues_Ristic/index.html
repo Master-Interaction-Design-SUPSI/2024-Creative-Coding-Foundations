@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="Author" content="Lara">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Music Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <main>
+        <div id="container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <aside>
+            <div>
+                <h3>Start Your Sound Visualisation!</h3>
+            </div>
+            <div id="microphone">
+                <button id="startListening">Allow Microphone</button>
+                <h3>Choose your color</h3>
+                <p>Try changing the of your circle color while the mic is on!</p>
+                <p>Circle color</p>
+                <input type="color" id="circleColor" value="#554688"/>
+                <p>Lines color</p>
+                <input type="color" id="linesColor" value="#554688"/>
+            </div>
+            <div id="reset">
+                <h3>Reset Your Canvas</h3>
+                <button id="resetButton">
+                    <img src="Assets/resetButton.svg" width="40px" height="40px" id="playPauseIcon" alt="Play/Pause" />
+                </button>
+            </div>
+        </aside>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0; 
+    background-color: bisque;
+}
+
+#logotipo {
+    background-color: whitesmoke;
+    margin: 20px;
+    font-size: 4rem;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 1.5rem;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+
+#instructions {
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+    padding: 1rem;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+
+#game-board {
+    background-color: whitesmoke;
+    padding: 1rem;
+    border: 2px black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#left-path, #right-path {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* style for each platform */
+.step {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    border: 1px solid #000;
+    border-radius: 5px; 
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#steps-count {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(175, 59, 59);
+}
+
+
+
+/* Highlight and colors styles for each step */
+.highlight {
+    border: 3px solid blue;
+}
+
+.safe {
+    background-color: limegreen;
+}
+
+.trap {
+    background-color: red;
+}
+

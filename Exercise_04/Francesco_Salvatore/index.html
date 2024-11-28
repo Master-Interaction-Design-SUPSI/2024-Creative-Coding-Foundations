@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Pokèmon</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <!--header with logotipo-->
+    <header id="logotipo">Pokémon - ポケモン</header>
+    
+    <!--div with explanation of the concept-->
+    <div id="explanation">
+        <h1>Are you a graphic design enthusiast feeling bored or stuck?</h1>
+        <h2>follow this exercise</h2>
+        <p>Are you a graphic design enthusiast feeling bored or stuck? Need a creative exercise to ignite your imagination and rekindle your passion for design? Look no further! This project invites you to explore the art of creating stunning vintage-style Japanese posters, inspired by one of the most beloved franchises of all time: Pokémon.
+
+            Whether you're running low on inspiration or feeling unfulfilled by your work, this exercise provides the perfect opportunity to break free from creative blocks. With just a few clicks, you can gather all the essential elements needed to craft a unique poster.</p>
+    </div>
+    
+    <!--div for play and for display the data-->
+    <div id="container">
+        <h1>Insert your Pokémon name</h1>
+        <input type="text" class="user-interaction" id="pokemonName" placeholder="Enter Pokémon name">
+        <button type="button" class="user-interaction" onclick="fetchData()">Fetch Pokémon</button>
+        <div id="result"></div>
+    </div>
+    
+    <!--div for external link if help is needed-->
+    <div id="end-page">
+        <p>If you don't remember any name, you are asking yourself if the pokémon you are thinking about is really a gen-1 pokémon, or you are interest in watching the graphical evolution of the pokèmon you like, follow this link and you can find averything you need</p>
+        <a href="https://pokemondb.net/sprites#gen1" target="_blank">*The Answer</a>
+    </div>
+
+
+</body>
+</html>

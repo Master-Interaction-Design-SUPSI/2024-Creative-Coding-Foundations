@@ -1,0 +1,3 @@
+#Weather Cards
+##Lara Rodrigues Ristic
+###As the user scrolls the weather data changes for three cities: Lugano, Mendrisio and Zurich, the data taken into consideration is the maximum and minimum temperarture of the city and the weather description. Based on the weather description the photo on the card changes. There are some problems I couldn't fix, sometimes the photos of the weather description are not appearing as they should and the maximum and the minimum temperature become the same value at one point because in the json file they are the same.

@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: pink;
+}
+
+/* Main container */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+}
+
+/* Canvas container */
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    margin-top: 100px; 
+    background-color: rgba(249, 244, 237, 10);
+    border: 2px solid #dcd3c3;
+    border-radius: 8px;
+    box-shadow: -1px -1px 0 black;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: bold;
+    box-shadow: -1px -1px 0 black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: -3px -3px 0 black;
+}
+
+button:active {
+    transform: translate(0, 0);
+    box-shadow: -1px -1px 0 black;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #333;
+    text-align: center;
+}
+
+/* Color pickers */
+#color_picker, #bg_color_picker {
+    width: 100%;
+    max-width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f0e3;
+    cursor: pointer;
+}
+
+/* Slider */
+#slider-x {
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+#slider-x:hover {
+    background: #bbb;
+}
+
+#slider-x::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f97777;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#slider-x::-webkit-slider-thumb:hover {
+    transform: scale(1.2); /* Slightly enlarge thumb on hover */
+}
+
+#slider-x::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f97777;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#slider-x::-moz-range-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 350px) {
+    aside {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    #container {
+        display: flex;
+    }
+}

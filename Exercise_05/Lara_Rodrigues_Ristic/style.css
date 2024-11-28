@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    align-items: baseline;
+    background: #9989d3;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+}
+
+#container {
+    width: 100%;
+    height: 70%;
+}
+
+canvas {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+aside {
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#songs {
+    display: flex;
+    flex-direction: row;
+}
+
+select {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke
+}
+
+#resetButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    width: 50px;
+    height: 50px;
+}
+
+#startListening {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #canvas-container {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
