@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Timezone Calculator</h1>
+        <p>A tool that simplifies finding meeting times with dispersed teammates around the world.</p>
+        <br><br><br>
+       
+    </header>
+    <main>
+        <div class="columns">
+            <!-- Left Column -->
+            <div class="left-column">
+                <h2>Your timezone</h2>
+                <div class="search-container">
+                    <input type="text" id="locationSearch1" placeholder="Search for a timezone...">
+                    <ul id="timezoneDropdown1" class="dropdown hidden"></ul>
+                </div>
+                <div id="selectedTimezone" class="selected-timezone"></div> 
+                <!-- Meeting time container -->
+                <br><div class="meeting-time-container">
+                    <label for="meetingTime">What time do you want to have your meeting?</label>
+                    <select id="meetingTime"></select>
+                    <br>
+                    <button id="updateButton" class="update-button">Update</button>
+                </div>
+                
+            </div>
+                      
+            <!-- Right Column -->
+            <div class="right-column">
+                <h2>Timezones in your group</h2>
+                <div class="search-container">
+                    <input type="text" id="locationSearch2" placeholder="Search for a timezone...">
+                    <ul id="timezoneDropdown2" class="dropdown hidden"></ul>
+                </div>
+                <div id="rightTimezones" class="right-timezones"></div>
+            </div>
+        </div>
+        
+        
+    </main>
+</body>
+</html>

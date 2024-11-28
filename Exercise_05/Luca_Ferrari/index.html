@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- The canvas -->
+    <canvas id="grid"></canvas>
+    <!-- The grid with the three slicer that change the RGB of the rectangle -->
+    <div class="container">
+        <div class="slider">
+            <div class="wrapper">
+                <input id="red" type="range" min="0" max="128" value="50" />
+            </div>
+        </div>
+        <div class="slider">
+            <div class="wrapper">
+                <input id="green" type="range" min="0" max="128" value="50" />
+            </div>
+        </div>
+        <div class="slider">
+            <div class="wrapper">
+                <input id="blue" type="range" min="0" max="128" value="50" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

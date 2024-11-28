@@ -1,0 +1,110 @@
+html, body {
+    height: 100%; /* 确保html和body的高度是100% */
+}
+
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(76, 76, 76);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* 自动换行 */
+    justify-content: center; /* 居中对齐 */
+    width: 630px; /* 设置容器宽度为 7 个格子 */
+    gap: 10px; /* 格子之间的间距 */
+}
+
+.flex-item {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/way.png);
+    background-size: cover;
+}
+
+.flex-item:hover {
+    transform: translateY(-5px);
+}
+
+input {
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+button {
+    font-size: 2rem;
+    border-radius: 1rem;
+    color: rgb(76, 76, 76);
+}
+
+#button-start {
+    background-color: rgb(75, 205, 105);
+}
+
+#button-cancel {
+    background-color: rgba(255, 49, 49, 0.64);
+}
+
+.button:hover{
+    scale: 110%;
+}
+h1{
+
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#WSAD {
+    height: 1.5rem;
+}
+
+#car {
+    width: 4rem;
+}
+
+#hp {
+    font-size: 1rem;
+}
+
+#notice {
+    font-size: 1rem;
+}
+
+#hp-icon {
+    width: 1rem;
+    height: 1rem;
+}
+#game {
+    height: 450px;
+    display: none;
+    flex-grow: 1;
+}
+
+.on-background {
+    background-color:cadetblue;
+}
+
+footer {
+    text-align: center;
+    padding:10px 0;
+    font-size: 0.8rem;
+}
+
+#cell-17 {
+    background-image: url(assets/final.png);
+    background-color: rgb(56, 183, 56);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Felicia Ghercavii">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini-game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+    <header> 
+        <div id="message"></div>
+        <div id="progress-bar"></div>
+    </header>
+    <main>
+        <div id="game-message"></div>
+        <section class="game-container">
+            <div id="tiles" class="tiles"></div>
+            <img id="game-hero" src="assets/game-hero.svg" alt="hero"/></section>
+        <div id="help-mark-container"> 
+            <section id="help-mark">
+                ?
+            </section> 
+        </div>
+        <section id="help-container" class="invisible">
+            <div class="rectangle-div">
+                <button id="close-button" onclick="toggleHelp()">x</button>
+                <h3>Instructions:</h3>
+                     <p>Get to the end tile, <br> careful around the traps!</p>
+                     <br>
+                <h3>Controls:</h3>
+                     <p>Press [space] to jump 2 tiles
+                    <br>Press [right arrow] to step 1 tile</p>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+
+</html>

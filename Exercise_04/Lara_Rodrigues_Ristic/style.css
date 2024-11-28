@@ -1,0 +1,137 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #083D77;
+  color: #EBEBD3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* when the height is set to 100vh it makes sure the content is centered verticaly */
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+#weather-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#zurich, #mendrisio, #lugano {
+  background-color: #EBEBD3;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  width: 15rem;
+  height: 20rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.weather-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* the image is below the text */
+}
+
+h3 {
+  font-size: 1rem;
+  color: #083D77;
+  text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2; /* makes sure the text is on top of the image */
+}
+
+.clear h3 {
+  color: white;
+}
+
+.rain h3 {
+  color:white;
+}
+
+.slider {
+  width: 80%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #EBEBD3;
+  cursor: pointer;
+}
+
+#selected-date-time {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+
+/* For screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+  #container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #zurich, #mendrisio, #lugano {
+      width: 80%;
+      margin-bottom: 2rem;
+  }
+
+  #selected-date-time {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #zurich, #mendrisio, #lugano {
+      width: 90%;
+      padding: 1rem;
+  }
+
+  h3 {
+      font-size: 0.8rem;
+  }
+
+  #selected-date-time {
+      font-size: 0.8rem;
+  }
+}

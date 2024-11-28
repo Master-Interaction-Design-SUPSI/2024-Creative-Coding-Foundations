@@ -1,0 +1,192 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  background-color: darkgrey;
+  user-select: none;
+}
+
+header {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+}
+
+article {
+  width: 500px;
+  border-radius: 0.6rem;
+  position: relative;
+  justify-items: center;
+  margin: auto;
+  background-color: white;
+}
+
+
+#character {
+  margin: 15px 10px 15px 10px;
+  position: absolute;
+}
+
+#character img {
+  width: 40px;
+  height: auto;
+}
+
+#path {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+  margin: auto;
+}
+
+.tile {
+  width: 40px;
+  height: 40px;
+  margin: 15px 10px 15px 10px;
+}
+
+#start,
+#end {
+  width: 40px;
+  height: 40px;
+  margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#end {
+  color: rgb(73, 73, 73);
+}
+
+.tile {
+  border-bottom: 0.1rem solid rgb(73, 73, 73);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#enemy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3%;
+  padding: 10px 5px;
+}
+
+#enemy img {
+  width: auto;
+  height: 40px;
+  margin: 3px;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 1rem;
+    background-color: gray;
+  }
+  header {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+
+  article {
+    width: 800px;
+    border-radius: 0.8rem;
+  }
+
+  #character {
+    margin: 20px 15px 20px 15px;
+  }
+
+  #character img {
+    width: 60px;
+  }
+
+  #path {
+    gap: 8px;
+  }
+
+  .tile,  #start,
+  #end {
+    width: 60px;
+    height: 60px;
+    margin: 20px 15px 20px 15px;
+  }
+
+  .tile {
+    border-bottom: 0.2rem solid rgb(73, 73, 73);
+  }
+
+  #enemy {
+    gap: 4%;
+    padding: 20px 10px;
+  }
+  
+  #enemy img {
+    width: auto;
+    height: 50px;
+    margin: px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 1.3rem;
+    background-color: rgb(73, 73, 73);
+  }
+  header {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  article {
+    width: 1150px;
+    border-radius: 1rem;
+  }
+
+  #character {
+    margin: 40px 30px 40px 30px;
+  }
+
+  #character img {
+    width: 80px;
+  }
+
+  #path {
+    gap: 10px;
+
+  }
+
+  .tile,   #start,
+  #end {
+    width: 80px;
+    height: 80px;
+    margin: 40px 30px 40px 30px;
+  }
+  
+  .tile {
+    border-bottom: 0.3rem solid rgb(73, 73, 73);
+
+  }
+
+  #enemy {
+    gap: 7%;
+    padding: 20px 10px;
+  }
+  
+  #enemy img {
+    width: auto;
+    height: 70px;
+    margin: 5px;
+  }
+}

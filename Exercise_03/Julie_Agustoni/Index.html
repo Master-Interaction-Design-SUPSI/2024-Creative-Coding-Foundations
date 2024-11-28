@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Julie Agustoni" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Squid game</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Squid game</h1>
+      <p id="intro">
+        You play as a dino whose goal is to reach the end while avoiding the
+        trap tiles
+      </p>
+      <h2>Your stat :</h2>
+      <p>Life : <span id="output-life">5</span></p>
+      <p id="level">Level : <span id="output-level">0</span></p>
+    </header>
+    <main>
+      <article id="game">
+        <div id="top">
+          <div id="character">
+            <img
+              src="assets/dino_stationary.png"
+              alt="icon"
+              id="character-img"
+            />
+          </div>
+          <div id="path">
+            <div class="tile" id="start"></div>
+            <div class="tile" ></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile" ></div>
+            <div class="tile" ></div>
+            <div class="tile" id="end">End</div>
+          </div>
+        </div>
+        <div id="enemy">
+          <div><img src="assets/cactus.png" alt="Enemy" /></div>
+          <div><img src="assets/cactus.png" alt="Enemy" /></div>
+          <div><img src="assets/cactus.png" alt="Enemy" /></div>
+          <div><img src="assets/cactus.png" alt="Enemy" /></div>
+          <div><img src="assets/cactus.png" alt="Enemy" /></div>
+          <div><img src="assets/cactus.png" alt="Enemy" /></div>
+          <div><img src="assets/cactus.png" alt="Enemy" /></div>
+      </article>
+    </main>
+  </body>
+</html>

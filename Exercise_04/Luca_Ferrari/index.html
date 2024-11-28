@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotiMaynd</title>
+    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="container">
+        <!--This is the lkeft sidebar with the logo and the home, search and back buttons -->
+        <aside id="sidebar" class="sidebar">
+            <img src="assets/img/logo_spotimaynd_white.png" alt="">
+            <div class="btn-container">
+                <img id="home" src="assets/img/home.png" alt="">
+                <img id="search" src="assets/img/find.png" alt="">
+                <img id="back" src="assets/img/back.png" alt="">
+            </div>
+        </aside>
+        <!-- This is the main container -->
+        <div class="right-container">
+            <!-- The search bar - hidden -->
+            <div id="search-wrap" class="wrap">
+                <div class="search">
+                    <input id="search-artist" type="text" class="searchTerm" placeholder="Search for an artist">
+                    <button id="search-btn" type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- The cover image and info for the artist - hidden -->
+            <header id="cover-artist"></header>
+
+            <!-- This is the label that disoplay the album name dynamically - hidden -->
+            <h2 id="title"></h2><br>
+            <!-- This is the label displaying the quesry string and the image if the query returns no results - hidden -->
+            <h3 id="search-query" class='album-details'></em></h3>
+            <img id="no-results" src="assets/img/no_results.png">
+
+            <!-- This is the area where all the artist, album and tracks are displayed -->
+            <div id="results" class="results">
+
+            </div>
+
+            <!-- This is the homepage -->
+            <div id="home-content" class="results">
+                <img id="welcome" src="assets/img/welcome_page.png">
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
