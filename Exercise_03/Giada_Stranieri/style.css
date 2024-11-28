@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('lava.jpg!d');
+  font-family: 'Press Start 2P', cursive;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.bridge {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  position: relative;
+  background-color: rgb(61, 59, 59);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.cell {
+  width: 8.33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-image: url('depositphotos_473161500-stock-photo-black-white-grunge-background-rock.jpg');
+  background-size: cover;
+  border: 2px solid #000;
+}
+
+.character {
+  width: 50px;
+  height: 70px;
+  background-image: url('mario.png');
+  background-size: cover;
+  position: absolute;
+  bottom: 10px;
+  transition: left 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.princess {
+  width: 70px;
+  height: 90px;
+  background-image: url('princess.png');
+  background-size: cover;
+  right: 0;
+  bottom: 10px;
+}
+
+.game-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px #000;
+  animation: titleAnimation 2s ease-in-out infinite alternate;
+}
+
+#status {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.win-message {
+  display: none;
+  font-size: 4rem;
+  color: gold;
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  margin-top: 30px;
+  text-align: center;
+  animation: winMessageAnimation 1s ease-in-out;
+}
+
+@keyframes winMessageAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+.reset {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: yellow;
+}
+
+.controls {
+  display: none;
+  margin-top: 20px;
+}
+
+.control-btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+  background-color: #e67e22;
+}
+
+@media (max-width: 600px) {
+  .bridge {
+    height: 60px;
+  }
+
+  .cell {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+  }
+
+  .control-btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
