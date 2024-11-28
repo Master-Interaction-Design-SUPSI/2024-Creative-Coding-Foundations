@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Audio Visualizer</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
+</head>
+
+
+<body>
+  <!-- Text used as Logotipo -->
+  <header id="logotipo">
+    <h1>Understandable Visualization</h1>
+  </header>
+
+  <!-- Controls -->
+  <div id="controls">
+    <button id="toggle">Start/Stop Visualizing</button>
+    <label for="lineWidthSlider">Stroke Color</label>
+    <input type="range" id="hueSlider" min="1" max="20" value="1">
+    
+    <label for="minRadiusSlider">Min Radius</label>
+    <input type="range" id="minRadiusSlider" min="10" max="200" value="50">  
+  </div>
+
+  <div id="container">
+    <canvas id="visualizer"></canvas> <!-- Canva -->
+  </div>
+  
+
+</body>
+</html>
