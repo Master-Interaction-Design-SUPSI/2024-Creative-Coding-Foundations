@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0d0d0d;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 100;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #1e1e1e;
+}
+
+#cursorCircle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #00ff00;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+}
+
+#cursorCross {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cursorCross::before, #cursorCross::after {
+    content: '';
+    position: absolute;
+    background-color: #00ff00;
+}
+
+#cursorCross::before {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#cursorCross::after {
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+        left: 5px;
+        bottom: 5px;
+    }
+}
