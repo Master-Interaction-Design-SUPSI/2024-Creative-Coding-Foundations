@@ -1,5 +1,6 @@
 int pot1 = 0;   // variable declaration to store the value of the first potentiometer
 int pot2 = 0;   // variable declaration to store the value of the second potentiometer
+int pot3 = 0;   // variable declaration to store the value of the third potentiometer
 
 void setup() {
 
