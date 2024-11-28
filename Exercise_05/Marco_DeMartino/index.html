@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Visualizer</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Audio Vizualizer</h1>
+    <canvas id="audioCanvas"></canvas>
+    <div class="controls">
+      <button id="startButton">Start Recording</button>
+      <button id="stopButton" disabled>Stop Recording</button>
+      <div class="slider-container">
+        <label for="waveThickness">Wave Thickness:</label>
+        <input type="range" id="waveThickness" min="1" max="10" value="2" />
+        <span id="waveThicknessValue">2</span>
+      </div>
+      <div class="slider-container">
+        <label for="circleRadius">Circle Radius:</label>
+        <input type="range" id="circleRadius" min="50" max="300" value="150" />
+        <span id="circleRadiusValue">150</span>
+      </div>
+    </div>
+  </body>
+</html>
