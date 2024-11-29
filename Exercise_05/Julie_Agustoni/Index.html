@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Julie Agustoni" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EX 5</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div id="button_slicer">
+        <button id="start-listening">Start listening</button><br />
+        <label for="slider-x">Color :</label>
+        <input type="color" id="color-input" min="0" max="1000" value="#ADD8E6" /><br />
+        <label for="circle_size">Circle size</label>
+        <input type="range" id="circle_size" min="0" max="400" value="0" class="slider"/>
+        <button id="reset">Reset</button><br />
+      </div>
+      <div id="container">
+        <canvas id="canvas" width="500" height="400"></canvas>
+      </div>
+    </main>
+  </body>
+</html>
