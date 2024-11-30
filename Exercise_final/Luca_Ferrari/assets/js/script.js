@@ -382,4 +382,60 @@ LUCKY.addEventListener("click", function () {
     }
 })
 
+function updateWebPage(data) {
 
+    const dacVal = 1023;    // Arduino is 1023, ESP32 is 4095
+
+    const pot1 = data[0];   
+
+    if (change === "artist") {
+        position = Math.trunc(pot1/(dacVal/(artistArray.length))) 
+        if (position > artistArray.length-1) {
+            position = artistArray.length-1;
+        }
+        else if(isNaN(position)){
+            position = 0;
+        }
+        LUCKYIMG.style.display = "none";
+        changeArtist(position);
+        //console.log(pot1 + "  " + position + "   " + (artistArray.length-1));
+    }
+    else if (change === "album") {
+        position = Math.trunc(pot1/(dacVal/(albumArray.length))) 
+        if (position > albumArray.length-1) {
+            position = albumArray.length-1;
+        }
+        else if(isNaN(position)){
+            position = 0;
+        }
+        LUCKYIMG.style.display = "none";
+        
+        changeAlbum(position);
+            
+    }
+    else if (change === "track") {
+        position = Math.trunc(pot1/(dacVal/(trackArray.length))) 
+        if (position > trackArray.length-1) {
+            position = trackArray.length-1;
+        }
+        else if(isNaN(position)){
+            position = 0;
+        }
+        LUCKYIMG.style.display = "none";
+        changeAlbumTracks(position);
+    }
+    
+
+    // const pot1_bar = document.getElementById('pot1');
+    // const pot2_bar = document.getElementById('pot2');
+    // const pot3_bar = document.getElementById('pot3');
+    
+    // pot1_bar.style.width = pot1 * 100 + '%';
+    // pot2_bar.style.width = pot2 * 100 + '%';
+    // pot3_bar.style.width = pot3 * 100 + '%';
+
+    // pot1_bar.innerHTML = "pot1: " + (pot1 * 100).toFixed(0) + "%";
+    // pot2_bar.innerHTML = "pot2: " + (pot2 * 100).toFixed(0) + "%";
+    // pot3_bar.innerHTML = "pot3: " + (pot3 * 100).toFixed(0) + "%";
+
+}
