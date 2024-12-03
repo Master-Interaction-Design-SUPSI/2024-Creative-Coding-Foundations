@@ -26,6 +26,10 @@ let album_position = 0;
 let trackArray = [];
 let track_position = 0;
 let change = "";
+let id_artist = "";
+let id_album = "";
+let album_img = "";
+let album_name = "";
 
 
 //in order to use the Spotify API is mandatory to receive an access token. By sneding a POST request with personal keys you get the token
@@ -119,7 +123,7 @@ async function getAlbumTracks(album_id, album_title, image_album) {
             artist_selected_album = album_title;
             selected_album_img = image_album;
             displayAlbumTracks(data);
-            console.log(data);
+            //console.log(data);
         }).catch(error => {
             console.error(error);
         });
@@ -137,13 +141,14 @@ function displayArtist(data) {
     console.log(artistArray);
 
     changeArtist(artist_position);
-    console.log("art: "+artist_position);
+    console.log("art: " + artist_position);
 
 }
 
 function changeArtist(id) {
     TITLE.innerText = "Top artists";
     change = "artist";
+    id_artist = artistArray[id].id;
     let artist = "";
     let img = "";
     let genres = "";
@@ -154,7 +159,7 @@ function changeArtist(id) {
         img = "assets/img/user_noimg.png"
     }
     for (const element of artistArray[id].genres) {
-        genres = genres + element+ ", ";
+        genres = genres + element + ", ";
     }
     artist += `
     <div class="card-result" onclick="getAlbums('${artistArray[id].id}')">
@@ -187,7 +192,7 @@ function displayAlbum(data) {
     console.log(albumArray);
 
     changeAlbum(album_position);
-    console.log("alb: "+album_position);
+    console.log("alb: " + album_position);
 
 }
 
@@ -196,7 +201,7 @@ function changeAlbum(id) {
     change = "album";
     let album = "";
     let img;
-    let arts="";
+    let arts = "";
     if ((albumArray[id].images).length > 0) {
         img = albumArray[id].images[0].url
     }
@@ -204,7 +209,7 @@ function changeAlbum(id) {
         img = "assets/img/user_noimg.png"
     }
     for (const element of albumArray[id].artists) {
-        arts = arts + element.name+ ", ";
+        arts = arts + element.name + ", ";
     }
     const date = new Date(albumArray[id].release_date);
     const formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
@@ -224,6 +229,10 @@ function changeAlbum(id) {
     //change the display of the different alement within the page
     RESULTS.innerHTML = album;
 
+    id_album = albumArray[id].id;
+    album_name = albumArray[id].name;
+    album_img = img;
+
 }
 
 function displayAlbumTracks(data) {
@@ -237,27 +246,32 @@ function displayAlbumTracks(data) {
     console.log(trackArray);
 
     changeAlbumTracks(track_position);
-    console.log("tra: "+track_position);
+    //console.log("tra: "+track_position);
 
 }
 
 function changeAlbumTracks(id) {
-    console.log(selected_album_img);
     TITLE.innerText = artist_selected_album;
     change = "track";
     let track = "";
-    let duration = msToTime(trackArray[id].duration_ms);
+    let duration = "";
+    if (trackArray[id].duration_ms != "") {
+        duration = msToTime(trackArray[id].duration_ms);
+    }
+    else {
+        duration = "0:00";
+    }
     track += `
     <div class="card-result">
                 <div class="picture">   
-                    <img class="img-fluid" src="${selected_album_img}"></img>
+                    <img class="img-fluid" src="${album_img}"></img>
                 </div>
                 <div class="team-content">
                     <h3 class="name">${trackArray[id].track_number}. ${trackArray[id].name}</h3>
                     <h4 class="title">Duration: ${duration}</h4>
                 </div>
                 <div class="social">
-                    <a href="${trackArray[id].external_urls.spotify}" target="_blank"><img src="assets/img/listen_btn.png"></a>
+                    <a id="go-to-spotify" href="${trackArray[id].external_urls.spotify}" target="_blank"><img src="assets/img/listen_btn.png"></a>
                 </div>
             </div>`;
     //change the display of the different alement within the page
@@ -296,146 +310,123 @@ function getRandomInt(max) {
 
 //the actions done by clicking on the Home button on the sidebar
 CREDITS.addEventListener("click", function () {
-    if (change === "album") {
-        LUCKYIMG.style.display = "none";
-        if (album_position < albumArray.length - 1) {
-            album_position++;
-            console.log("alb: "+album_position);
-        }
-        else {
-            album_position = 0;
-        }
-
-        changeAlbum(album_position);
-    }
-    else if (change === "artist") {
-        LUCKYIMG.style.display = "none";
-        if (artist_position < artistArray.length - 1) {
-            artist_position++;
-            console.log("art:" + artist_position);
-        }
-        else {
-            artist_position = 0;
-        }
-
-        changeArtist(artist_position);
-    }
-    else if (change === "track") {
-        LUCKYIMG.style.display = "none";
-        if (track_position < trackArray.length - 1) {
-            track_position++;
-            console.log("tra:" + track_position);
-        }
-        else {
-            track_position = 0;
-        }
-
-        changeAlbumTracks(track_position);
-    }
-})
-UP.addEventListener("click", function () {
-    if(change === "album"){
-        LUCKYIMG.style.display = "none";
-        changeArtist(artist_position);
-        album_position = 0;
-    }
-    else if(change === "track"){
-        LUCKYIMG.style.display = "none";
-        changeAlbum(album_position);
-        track_position = 0;
-    }
-    else {
-        console.log("No more up!");
-    }
-})
-
-HOME.addEventListener("click", function(){
+    
     LUCKYIMG.style.display = "none";
-    TITLE.innerText ="";
+    TITLE.innerText = "";
+    RESULTS.innerHTML = `
+        <div id="credits-info">
+                    <h2>SpotiMaYnd</h2>
+                    <h4>The MaInD Spotify Player</h4>
+                    <p>Luca Ferrari</p>
+                    <p>A.Y 2024/2025</p>
+                    <p>Creative Coding Foundation</p>
+                </div>
+    `;
+})
+
+HOME.addEventListener("click", function () {
+    LUCKYIMG.style.display = "none";
+    TITLE.innerText = "";
     RESULTS.innerHTML = `
         <img src="assets/img/welcome_page.png" style="width: 30rem; height: auto; margin: 0 auto;">
     `;
 })
 
-LUCKY.addEventListener("click", function () {
-    if (change === "artist") {
-        console.log(artistArray.length-1 + " " + getRandomInt(artistArray.length-1));
-        artist_position = getRandomInt(artistArray.length-1);
-        changeArtist(artist_position);
-        LUCKYIMG.style.display = "flex";
-    }
-    else if (change === "album") {
-        console.log(albumArray.length-1 + " " + getRandomInt(albumArray.length-1));
-        album_position = getRandomInt(albumArray.length-1);
-        changeAlbum(album_position);
-        LUCKYIMG.style.display = "flex";
-    }
-    else if (change === "track") {
-        console.log(trackArray.length-1 + " " + getRandomInt(trackArray.length-1));
-        track_position = getRandomInt(trackArray.length-1);
-        changeAlbumTracks(track_position);
-        LUCKYIMG.style.display = "flex";
-    }
-    else {
-        console.log("not lucky");
-        change="";
-    }
-})
-
+let day = "";
 function updateWebPage(data) {
-
-    const dacVal = 1023;    // Arduino is 1023, ESP32 is 4095
-
-    const pot1 = data[0];   
-
-    if (change === "artist") {
-        position = Math.trunc(pot1/(dacVal/(artistArray.length))) 
-        if (position > artistArray.length-1) {
-            position = artistArray.length-1;
+    const encode = data[0];
+    console.log(encode);
+    if (encode == "back"){
+        if(day === "day"){
+            console.log("day");
+            document.body.style.backgroundColor = "#fbfafa";
+            day = "night";
         }
-        else if(isNaN(position)){
-            position = 0;
+        else {
+            console.log("night");
+            document.body.style.backgroundColor = "#20222b";
+            day = "day";
         }
-        LUCKYIMG.style.display = "none";
-        changeArtist(position);
-        //console.log(pot1 + "  " + position + "   " + (artistArray.length-1));
-    }
-    else if (change === "album") {
-        position = Math.trunc(pot1/(dacVal/(albumArray.length))) 
-        if (position > albumArray.length-1) {
-            position = albumArray.length-1;
-        }
-        else if(isNaN(position)){
-            position = 0;
-        }
-        LUCKYIMG.style.display = "none";
         
-        changeAlbum(position);
-            
     }
-    else if (change === "track") {
-        position = Math.trunc(pot1/(dacVal/(trackArray.length))) 
-        if (position > trackArray.length-1) {
-            position = trackArray.length-1;
-        }
-        else if(isNaN(position)){
-            position = 0;
-        }
-        LUCKYIMG.style.display = "none";
-        changeAlbumTracks(position);
+   
+    if (change === "artist") {
+            if ((encode == "+") && (artist_position < 12)) {
+                LUCKYIMG.style.display = "none";
+                artist_position++;
+                console.log(artist_position);
+                changeArtist(artist_position);
+            }
+            else if ((encode == "-") && (artist_position > 0)) {
+                LUCKYIMG.style.display = "none";
+                artist_position--;
+                console.log(artist_position);
+                changeArtist(artist_position);
+            }
+            else if (encode == "enter") {
+                LUCKYIMG.style.display = "none";
+                getAlbums(id_artist);
+            }
+            else if (encode == "lucky") {
+                artist_position = getRandomInt(artistArray.length - 1);
+                changeArtist(artist_position);
+                LUCKYIMG.style.display = "flex";
+            }
     }
-    
-
-    // const pot1_bar = document.getElementById('pot1');
-    // const pot2_bar = document.getElementById('pot2');
-    // const pot3_bar = document.getElementById('pot3');
-    
-    // pot1_bar.style.width = pot1 * 100 + '%';
-    // pot2_bar.style.width = pot2 * 100 + '%';
-    // pot3_bar.style.width = pot3 * 100 + '%';
-
-    // pot1_bar.innerHTML = "pot1: " + (pot1 * 100).toFixed(0) + "%";
-    // pot2_bar.innerHTML = "pot2: " + (pot2 * 100).toFixed(0) + "%";
-    // pot3_bar.innerHTML = "pot3: " + (pot3 * 100).toFixed(0) + "%";
-
+    if (change === "album") {
+        if ((encode == "+") && (album_position < albumArray.length-1)) {
+            LUCKYIMG.style.display = "none";
+            album_position++;
+            console.log(album_position);
+            changeAlbum(album_position);
+        }
+        else if ((encode == "-") && (album_position > 0)) {
+            LUCKYIMG.style.display = "none";
+            album_position--;
+            console.log(album_position);
+            changeAlbum(album_position);
+        }
+        else if (encode == "enter") {
+            LUCKYIMG.style.display = "none";
+            getAlbumTracks(id_album, album_name, album_img);
+        }
+        else if (encode == "up") {
+            LUCKYIMG.style.display = "none";
+            changeArtist(artist_position);
+        }
+        else if (encode == "lucky") {
+            album_position = getRandomInt(albumArray.length - 1);
+            changeAlbum(album_position);
+            LUCKYIMG.style.display = "flex";
+        }
+    }
+    if (change === "track") {
+        if ((encode == "+") && (track_position < trackArray.length-1)) {
+            LUCKYIMG.style.display = "none";
+            track_position++;
+            console.log(track_position);
+            changeAlbumTracks(track_position);
+        }
+        else if ((encode == "-") && (track_position > 0)) {
+            LUCKYIMG.style.display = "none";
+            track_position--;
+            console.log(track_position);
+            changeAlbumTracks(track_position);
+        }
+        else if (encode == "enter") {
+            LUCKYIMG.style.display = "none";
+            const SPOTIFY = document.getElementById("go-to-spotify");
+            console.log(SPOTIFY.getAttribute("href"));
+            window.open(SPOTIFY.getAttribute("href"));
+        }
+        else if (encode == "up") {
+            LUCKYIMG.style.display = "none";
+            changeAlbum(album_position);
+        }
+        else if (encode == "lucky") {
+            track_position = getRandomInt(trackArray.length - 1);
+            changeAlbumTracks(track_position);
+            LUCKYIMG.style.display = "flex";
+        }
+    }
 }

@@ -68,6 +68,11 @@ body {
 .group-list-item * {
   cursor: pointer;
 }
+
+#serial_control_bar {
+  margin: 2rem;
+}
+
 .main-container {
   display: flex;
   flex: 8;

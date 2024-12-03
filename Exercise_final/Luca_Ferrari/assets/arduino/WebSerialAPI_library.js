@@ -50,7 +50,7 @@ if('serial' in navigator) {
         };
 
         if(device_connected) {
-            await port.open({ baudRate: 250000 }).then(() => {
+            await port.open({ baudRate: 9600 }).then(() => {
                 addSerialLoggerLine("Serial connection started!");
             })
             .catch((error) => {
