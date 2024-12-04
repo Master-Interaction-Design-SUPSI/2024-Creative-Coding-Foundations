@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Alessia La Rocca">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Characters</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>MARVEL CHARACTERS</h1>
+
+        <input type="text" id="searchInput" placeholder="Search by character name...">
+        
+        <select id="comicsFilter">
+            <option value="all">All Characters</option>
+            <option value="withComics">With Available Comics</option>
+            <option value="withoutComics">Without Available Comics</option>
+        </select>
+
+      
+        <select id="sortFilter">
+            <option value="asc">Sort by Comics: Ascending</option>
+            <option value="desc">Sort by Comics: Descending</option>
+        </select>
+        
+    </header>
+
+    <main id="content">
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marvel Data Viewer</p>
+    </footer>
+</body>
+</html>
