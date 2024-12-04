@@ -1,7 +1,7 @@
 //variable declarations
 //api variable
-const CLIENTID = '3357a822b05f4f35a315deefe60b4621';
-const CLIENTSECRET = '6b39ff6e37a9488d9a6ecc30aa47a2c1';
+const CLIENTID = 'a';
+const CLIENTSECRET = 'b';
 
 //get the html elements
 const RESULTS = document.getElementById("middle");
