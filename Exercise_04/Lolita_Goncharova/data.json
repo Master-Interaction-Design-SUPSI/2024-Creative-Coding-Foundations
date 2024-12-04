@@ -1,0 +1,2606 @@
+
+
+
+{
+  "pagination": {
+    "total": 126333,
+    "limit": 12,
+    "offset": 0,
+    "total_pages": 10528,
+    "current_page": 1,
+    "next_url": "https://api.artic.edu/api/v1/artworks?page=2"
+  },
+  "data": [
+    {
+      "id": 131816,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/131816",
+      "is_boosted": false,
+      "title": "Painted Banner (paubha) of Goddess Ushnishavijaya Within a Funerary Mound (chaitya) and Surrounded by Chaityas",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBQAFAPQAAH1ULY1TKJBTK55RK4pZNpxZMZhdMpxfNo5iOJhkM5tiOJ1mOphpP6hvPZdlQpdpQJtrQZ1sQZ5vQ5tuSZxuSJNxTJ5wSqB1SaJ3VAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAFAAUAAAUV4FAAAWExCVJRUSNhy3NBk2IcghMCADs=",
+        "width": 766,
+        "height": 768,
+        "alt_text": "A work made of opaque watercolor with gold on cotton."
+      },
+      "main_reference_number": "2014.1040",
+      "has_not_been_viewed_much": false,
+      "boost_rank": null,
+      "date_start": 1508,
+      "date_end": 1518,
+      "date_display": "1513",
+      "date_qualifier_title": "",
+      "date_qualifier_id": null,
+      "artist_display": "Nepal\nKathmandu Valley",
+      "place_of_origin": "Nepal",
+      "description": "<p>At the center of this cloth painting <em>(paubha)</em> from Nepal the goddess Ushnishavijaya is enshrined within a large Buddhist funeral mound or shrine <em>(chaitya),</em> flanked by a red and green bodhisattva. As the personification of the Buddha’s cranial bump <em>(ushnisha),</em> Ushnishavijaya is associated with wisdom and is worshipped for long life and freedom from rebirth. At the periphery, she is surrounded by the guardians of the four directions. The blank red spaces are areas where the painting was damaged and then restored. An upper section is also missing. The many small <em>chaityas</em> represent the multiplication of merit accumulated in this painting, which symbolically allow for the donation of 100,000 <em>chaityas</em> in a ceremony known as <em>lakshachaitya</em> (100,000 <em>chaityas</em>). This ceremony is depicted in the bottom register, where priests officiate at the lower left and donors officiate at the lower right.</p>\n",
+      "short_description": null,
+      "dimensions": "58.2 × 57.2 cm (23 3/16 × 22 1/2 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 57,
+          "height": 58,
+          "diameter": null,
+          "clarification": null
+        }
+      ],
+      "medium_display": "Opaque watercolor with gold on cotton",
+      "inscriptions": null,
+      "credit_line": "Gift of Marilynn B. Alsdorf",
+      "catalogue_display": null,
+      "publication_history": "Pratapaditya Pal, with contributions by Stephen Little, A Collecting Odyssey: Indian, Himalayan, and Southeast Asian Art from the James and Marilynn Alsdorf Collection (The Art Institute of Chicago in association with Thames and Hudson, 1997), p. 216, cat. 198, pl. p. 151.\n\nVictoria Blyth-Hill, “A History of Thanka Conservation in Western Collections”, Western Association of Art Conservators Newsletter, (Los Angeles, 1993), vol. 15, no. 2, p. 18.\n\nAlsop, Ian. \"The Conservations of Tibetan Thangkas,\" in asianart.com an online magazine, March 5, 1998.",
+      "exhibition_history": "Chicago, IL, Art Institute of Chicago, A Collecting Odyssey: Indian, Himalayan, and Southeast Asian Art from the James and Marilynn Alsdorf Collection, August 2- October 26, 1997",
+      "provenance_text": "James W. Alsdorf (1913–1990) and Marilynn B. Alsdorf (1925–2019), Winnetka and Chicago, IL; by descent to Marilynn B. Alsdorf, Chicago, 1990 [on long-term loan at the Art Institute of Chicago, Apr. 6, 1983; promised as a gift to the Art Institute of Chicago, Mar. 11, 2002]; given to the Art Institute of Chicago, Nov. 19, 2014.",
+      "edition": null,
+      "publishing_verification_level": "Web Cataloged",
+      "internal_department_id": 8,
+      "fiscal_year": 2015,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": true,
+      "is_zoomable": true,
+      "max_zoom_window_size": -1,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 71.2024,
+      "color": {
+        "h": 47,
+        "l": 67,
+        "s": 88,
+        "percentage": 0.03355162950016495,
+        "population": 239
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Painting",
+      "artwork_type_id": 1,
+      "department_title": "Arts of Asia",
+      "department_id": "PC-7",
+      "artist_id": null,
+      "artist_title": null,
+      "alt_artist_ids": [],
+      "artist_ids": [],
+      "artist_titles": [],
+      "category_ids": [
+        "PC-7"
+      ],
+      "category_titles": [
+        "Arts of Asia"
+      ],
+      "term_titles": [
+        "watercolor",
+        "Himalayan",
+        "painting",
+        "asian art"
+      ],
+      "style_id": "TM-5376",
+      "style_title": "Himalayan",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-5376"
+      ],
+      "style_titles": [
+        "Himalayan"
+      ],
+      "classification_id": "TM-39",
+      "classification_title": "watercolor",
+      "alt_classification_ids": [
+        "TM-9",
+        "TM-26"
+      ],
+      "classification_ids": [
+        "TM-39",
+        "TM-9",
+        "TM-26"
+      ],
+      "classification_titles": [
+        "watercolor",
+        "painting",
+        "asian art"
+      ],
+      "subject_id": null,
+      "alt_subject_ids": [],
+      "subject_ids": [],
+      "subject_titles": [],
+      "material_id": null,
+      "alt_material_ids": [],
+      "material_ids": [],
+      "material_titles": [],
+      "technique_id": null,
+      "alt_technique_ids": [],
+      "technique_ids": [],
+      "technique_titles": [],
+      "theme_titles": [],
+      "image_id": "d9624683-20a2-5073-1406-8ff451f2068a",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "2014.1040"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Painted Banner (paubha) of Goddess Ushnishavijaya Within a Funerary Mound (chaitya) and Surrounded by Chaityas"
+          ],
+          "weight": 371,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2024-11-26T09:17:21-06:00",
+      "updated_at": "2024-11-26T09:20:32-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 238920,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/238920",
+      "is_boosted": false,
+      "title": "Untitled",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBwAFAPUAAHY7KXpEMHVPP35UP45JMYhMN5dQOJ5SOKBOOKlaPZFeRplYQItgSpJjTZJsU5ZtUqJjR6VkSatpS71rSKJyVL99X5R7c8JtScdxScN4Vs6RcqyOhKiTjL+bkbqblM+ij8WilMOpnNW6rgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhQMciIoEUBo/ABTM5KCiGjKZCaDAQiY8IIOB4OqDQxhIEADs=",
+        "width": 6971,
+        "height": 5316,
+        "alt_text": "A work made of silver dye-bleach print."
+      },
+      "main_reference_number": "2019.45",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1975,
+      "date_end": 1985,
+      "date_display": "c. 1980",
+      "date_qualifier_title": "Made",
+      "date_qualifier_id": 4,
+      "artist_display": "Luis Medina\nAmerican, born Cuba, 1942-1985",
+      "place_of_origin": "Cuba",
+      "description": "<p>Born in Cuba, <a href=\"http://www.artic.edu/artists/35721/luis-medina\">Luis Medina</a> immigrated to Miami after a multiyear tour of Europe in his teens. He relocated to Chicago in 1967 to study first sculpture, then photography, at the School of the Art Institute of Chicago. As a boy in Havana, Medina had, as he put it, “explored the brightest and darkest corners of that city . . . in search of ineffable essences, contradictions, and tragedies contained in anything human.” This interest in his immediate surroundings continued in Chicago, where he turned to the territorial gang graffiti he found in his own neighborhood northwest of Wrigley Field. Medina approached these images as an archivist and as someone familiar with power struggles, photographing several walls after gang members had swung cans of white paint at them to efface a rival gang’s graffiti. He eventually gained the trust of members of several Latino gangs, who allowed him to take their portraits in front of their graffiti, in a further gesture of power and defiance.</p>\n",
+      "short_description": null,
+      "dimensions": "Image: 25.5 × 33 cm (10 1/16 × 13 in.); Paper: 27.7 × 35.4 cm (10 15/16 × 13 15/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 33,
+          "height": 25,
+          "diameter": null,
+          "clarification": "Image"
+        },
+        {
+          "depth": null,
+          "width": 35,
+          "height": 27,
+          "diameter": null,
+          "clarification": "Paper"
+        }
+      ],
+      "medium_display": "Silver dye-bleach print",
+      "inscriptions": null,
+      "credit_line": "Purchased with funds provided by Lucia Woods Lindley and Daniel A. Lindley, Jr.",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": 2019,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 52.9887,
+      "color": {
+        "h": 5,
+        "l": 32,
+        "s": 93,
+        "percentage": 0.0036897033294037993,
+        "population": 20
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 35721,
+      "artist_title": "Luis Medina",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        35721
+      ],
+      "artist_titles": [
+        "Luis Medina"
+      ],
+      "category_ids": [
+        "PC-154",
+        "PC-12"
+      ],
+      "category_titles": [
+        "Chicago Artists",
+        "Photography and Media"
+      ],
+      "term_titles": [
+        "color photograph",
+        "color photography",
+        "20th Century",
+        "Chicago",
+        "photography",
+        "photograph",
+        "photography",
+        "latinX",
+        "photograph",
+        "photographic images",
+        "photographic materials",
+        "photographic print"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-12091",
+      "classification_title": "color photograph",
+      "alt_classification_ids": [
+        "TM-240",
+        "TM-67"
+      ],
+      "classification_ids": [
+        "TM-12091",
+        "TM-240",
+        "TM-67"
+      ],
+      "classification_titles": [
+        "color photograph",
+        "photograph",
+        "photography"
+      ],
+      "subject_id": "TM-12075",
+      "alt_subject_ids": [
+        "TM-14471"
+      ],
+      "subject_ids": [
+        "TM-12075",
+        "TM-14471"
+      ],
+      "subject_titles": [
+        "Chicago",
+        "latinX"
+      ],
+      "material_id": "TM-14147",
+      "alt_material_ids": [
+        "TM-13858",
+        "TM-13158",
+        "TM-3250",
+        "TM-13906"
+      ],
+      "material_ids": [
+        "TM-14147",
+        "TM-13858",
+        "TM-13158",
+        "TM-3250",
+        "TM-13906"
+      ],
+      "material_titles": [
+        "photography",
+        "photograph",
+        "photographic images",
+        "photographic materials",
+        "photographic print"
+      ],
+      "technique_id": "TM-13061",
+      "alt_technique_ids": [],
+      "technique_ids": [
+        "TM-13061"
+      ],
+      "technique_titles": [
+        "color photography"
+      ],
+      "theme_titles": [
+        "Chicago Artists"
+      ],
+      "image_id": "4e634fc2-1bda-1361-9d31-a3b9b3bbb54c",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "2019.45"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Untitled"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2022-09-21T19:19:33-05:00",
+      "updated_at": "2024-11-26T09:20:29-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 241536,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/241536",
+      "is_boosted": false,
+      "title": "Untitled",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAADAsKjAtKzUxLjo3ND88OEA9OEA+O0NAPURBPEVBPUVDP0ZEQVJOSVtXUWFdV2ZiW3NvZ356comFfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAUR4HIoRiFFQgM9COEwQpAMQAgAOw==",
+        "width": 3074,
+        "height": 3986,
+        "alt_text": "A work made of gelatin silver prints, collage."
+      },
+      "main_reference_number": "2017.385",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": null,
+      "date_end": null,
+      "date_display": null,
+      "date_qualifier_title": "",
+      "date_qualifier_id": null,
+      "artist_display": "Robert Sengstacke\nAmerican, 1943-2017",
+      "place_of_origin": "United States",
+      "description": "<p>In the early 1970s <a href=\"http://www.artic.edu/artists/57701/robert-sengstacke\">Robert “Bobby” A. Sengstacke</a> created photographic assemblages for exhibitions at spaces such as the South Side Community Arts Center. This assemblage focuses on the work of the Zambezi Art Guild, which was founded in 1966 by artist Nii Oti (born Timothy Williams) on Chicago’s South Side. The guild was created to encourage pride in Black history and expose local residents to crafts that reflect Africa’s rich cultural heritage. Oti ran several storefront operations on the South Side, one of which is seen at center. Sengstacke’s collage depicts exhibitions, examples of the guild’s crafts, and members at work. This range of images and the collage format emphasize unity and community pride—driving forces behind the many artistic collectives that emerged at the height of Chicago’s Black Arts Movement.</p>\n",
+      "short_description": null,
+      "dimensions": "Mount: 96.5 × 76.2 cm (38 × 30 in.)",
+      "dimensions_detail": [
+        {
+          "depth_cm": 0,
+          "depth_in": 0,
+          "width_cm": 76.2,
+          "width_in": 30,
+          "height_cm": 96.5,
+          "height_in": 37.9922,
+          "diameter_cm": 0,
+          "diameter_in": 0,
+          "clarification": "Mount"
+        }
+      ],
+      "medium_display": "Gelatin silver prints, collage",
+      "inscriptions": null,
+      "credit_line": "Gift of David Lusenhop",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": 2018,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 7.0412,
+      "color": {
+        "h": 37,
+        "l": 65,
+        "s": 10,
+        "percentage": 0.024962041417453243,
+        "population": 230
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 57701,
+      "artist_title": "Robert Sengstacke",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        57701
+      ],
+      "artist_titles": [
+        "Robert Sengstacke"
+      ],
+      "category_ids": [
+        "PC-12",
+        "PC-830",
+        "PC-142"
+      ],
+      "category_titles": [
+        "Photography and Media",
+        "African Diaspora",
+        "African American artists"
+      ],
+      "term_titles": [
+        "photography",
+        "black-and-white photography",
+        "20th Century",
+        "civil rights",
+        "photography",
+        "photograph",
+        "Chicago",
+        "gelatin",
+        "photographic processes",
+        "photographic techniques",
+        "photography",
+        "photograph",
+        "photographic images",
+        "photographic materials",
+        "photographic print"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-67",
+      "classification_title": "photography",
+      "alt_classification_ids": [
+        "TM-240"
+      ],
+      "classification_ids": [
+        "TM-67",
+        "TM-240"
+      ],
+      "classification_titles": [
+        "photography",
+        "photograph"
+      ],
+      "subject_id": "TM-13480",
+      "alt_subject_ids": [
+        "TM-12075"
+      ],
+      "subject_ids": [
+        "TM-13480",
+        "TM-12075"
+      ],
+      "subject_titles": [
+        "civil rights",
+        "Chicago"
+      ],
+      "material_id": "TM-14147",
+      "alt_material_ids": [
+        "TM-3713",
+        "TM-13858",
+        "TM-13158",
+        "TM-3250",
+        "TM-13906"
+      ],
+      "material_ids": [
+        "TM-14147",
+        "TM-3713",
+        "TM-13858",
+        "TM-13158",
+        "TM-3250",
+        "TM-13906"
+      ],
+      "material_titles": [
+        "photography",
+        "gelatin",
+        "photograph",
+        "photographic images",
+        "photographic materials",
+        "photographic print"
+      ],
+      "technique_id": "TM-12089",
+      "alt_technique_ids": [
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_ids": [
+        "TM-12089",
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_titles": [
+        "black-and-white photography",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "theme_titles": [
+        "African Diaspora",
+        "African American artists"
+      ],
+      "image_id": "84f55b64-b9ec-71f6-d39c-f03d2e95f6e6",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "2017.385"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Untitled"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2023-01-19T17:11:19-06:00",
+      "updated_at": "2024-11-26T09:20:28-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 239566,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/239566",
+      "is_boosted": false,
+      "title": "University of Islam School Assembly, 1966",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBwAFAPUAAA8PDRcWEyAeHCEgHiIiICQjISUlJDU0Mjc1Mjc3NTg3NUFAPUlIRldVU1pYV1tZWFxbWV1cWl9dW15dXGJhX2JhYGhnZWppZ3BvbXNxbn98eH99eoF/fIF/fYKAfYiGg4yIg42LiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhwInl8gl1OI6HJBKhZBIHBgGkWAgGBYMGEahANh5AAxMEADs=",
+        "width": 5312,
+        "height": 3689,
+        "alt_text": "Black-and-white photograph of a large group of very young dark-skinned boys in formal attire, standing in three rows on a stage. Behind them is a backdrop with domed buildings. In front is a figure with a white head covering, back to us."
+      },
+      "main_reference_number": "Obj: 239566",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": null,
+      "date_end": null,
+      "date_display": "1972/1978",
+      "date_qualifier_title": "",
+      "date_qualifier_id": null,
+      "artist_display": "Ozier Muhammad\nAmerican, born 1950",
+      "place_of_origin": null,
+      "description": null,
+      "short_description": null,
+      "dimensions": "Image: 16.9 × 24.2 cm (6 11/16 × 9 9/16 in.); Paper: 20.2 × 25.1 cm (8 × 9 15/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 24,
+          "height": 16,
+          "diameter": null,
+          "clarification": "Image"
+        },
+        {
+          "depth": null,
+          "width": 25,
+          "height": 20,
+          "diameter": null,
+          "clarification": "Paper"
+        }
+      ],
+      "medium_display": "Gelatin silver print",
+      "inscriptions": null,
+      "credit_line": "Promised gift of Raven Thomas Abdul-Aleem and Zaid Abdul-Aleem",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": 1966,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": true,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 3.9906,
+      "color": {
+        "h": 39,
+        "l": 41,
+        "s": 1,
+        "percentage": 0.1214628260891606,
+        "population": 599
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 115375,
+      "artist_title": "Ozier Muhammad",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        115375
+      ],
+      "artist_titles": [
+        "Ozier Muhammad"
+      ],
+      "category_ids": [
+        "PC-12"
+      ],
+      "category_titles": [
+        "Photography and Media"
+      ],
+      "term_titles": [
+        "gelatin silver print",
+        "civil rights",
+        "black-and-white film",
+        "20th Century",
+        "black-and-white photography",
+        "photograph",
+        "photography",
+        "silver gelatin print",
+        "African American",
+        "people",
+        "gelatin",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-966",
+      "classification_title": "gelatin silver print",
+      "alt_classification_ids": [
+        "TM-240",
+        "TM-67",
+        "TM-10440"
+      ],
+      "classification_ids": [
+        "TM-966",
+        "TM-240",
+        "TM-67",
+        "TM-10440"
+      ],
+      "classification_titles": [
+        "gelatin silver print",
+        "photograph",
+        "photography",
+        "silver gelatin print"
+      ],
+      "subject_id": "TM-13480",
+      "alt_subject_ids": [
+        "TM-12272",
+        "TM-8810"
+      ],
+      "subject_ids": [
+        "TM-13480",
+        "TM-12272",
+        "TM-8810"
+      ],
+      "subject_titles": [
+        "civil rights",
+        "African American",
+        "people"
+      ],
+      "material_id": "TM-3441",
+      "alt_material_ids": [
+        "TM-3713"
+      ],
+      "material_ids": [
+        "TM-3441",
+        "TM-3713"
+      ],
+      "material_titles": [
+        "black-and-white film",
+        "gelatin"
+      ],
+      "technique_id": "TM-12089",
+      "alt_technique_ids": [
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_ids": [
+        "TM-12089",
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_titles": [
+        "black-and-white photography",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "theme_titles": [],
+      "image_id": "fcefb0f5-a52e-13e9-f4db-9454bdf26ff9",
+      "alt_image_ids": [],
+      "document_ids": [
+        "d02e8df8-df18-34f7-5574-28a0ce38efc0"
+      ],
+      "sound_ids": [
+        "d02e8df8-df18-34f7-5574-28a0ce38efc0"
+      ],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "Obj: 239566"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "University of Islam School Assembly, 1966"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2022-09-21T19:19:33-05:00",
+      "updated_at": "2024-11-26T09:20:28-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 239565,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/239565",
+      "is_boosted": false,
+      "title": "Shoeshine Boys, Old Town, Chicago, 1973",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBwAFAPUAADk5OEhHRllZV2BfXWtpZ2ppaGxraXNxb3d1dHh3dXl3dXx7eX99eoSBfouJhpWTkJ6bmJ+cmqKgnaShnqSinqmlobazr7e0sbi0sMK+udXQzNjU0NzW0dzX0t7Z1d/a1eDb1ujj3uvl4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhwM6HI6pkQA1MSIOIbAgMzwJykFAKCYNjcJkoHoCAwBIEADs=",
+        "width": 5340,
+        "height": 3641,
+        "alt_text": "Black-and-white photograph of two dark-skinned boys. The one on the right leans back in a tall chair, eyeing the camera with an angry expression, wearing torn jeans. The boy to the left stands and looks off with a similar expression."
+      },
+      "main_reference_number": "Obj: 239565",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1977,
+      "date_end": 1977,
+      "date_display": "1977",
+      "date_qualifier_title": "Made",
+      "date_qualifier_id": 4,
+      "artist_display": "Ozier Muhammad\nAmerican, born 1950",
+      "place_of_origin": null,
+      "description": null,
+      "short_description": null,
+      "dimensions": "Image: 21.4 × 31.5 cm (8 7/16 × 12 7/16 in.); Paper: 27.6 × 35.3 cm (10 7/8 × 13 15/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 31,
+          "height": 21,
+          "diameter": null,
+          "clarification": "Image"
+        },
+        {
+          "depth": null,
+          "width": 35,
+          "height": 27,
+          "diameter": null,
+          "clarification": "Paper"
+        }
+      ],
+      "medium_display": "Gelatin silver print",
+      "inscriptions": null,
+      "credit_line": "Promised gift of Raven Thomas Abdul-Aleem and Zaid Abdul-Aleem",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": null,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 5.3101,
+      "color": {
+        "h": 40,
+        "l": 47,
+        "s": 1,
+        "percentage": 0.036721852596833256,
+        "population": 178
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 115375,
+      "artist_title": "Ozier Muhammad",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        115375
+      ],
+      "artist_titles": [
+        "Ozier Muhammad"
+      ],
+      "category_ids": [
+        "PC-12"
+      ],
+      "category_titles": [
+        "Photography and Media"
+      ],
+      "term_titles": [
+        "gelatin silver print",
+        "civil rights",
+        "black-and-white film",
+        "20th Century",
+        "black-and-white photography",
+        "photograph",
+        "photography",
+        "silver gelatin print",
+        "African American",
+        "people",
+        "gelatin",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-966",
+      "classification_title": "gelatin silver print",
+      "alt_classification_ids": [
+        "TM-240",
+        "TM-67",
+        "TM-10440"
+      ],
+      "classification_ids": [
+        "TM-966",
+        "TM-240",
+        "TM-67",
+        "TM-10440"
+      ],
+      "classification_titles": [
+        "gelatin silver print",
+        "photograph",
+        "photography",
+        "silver gelatin print"
+      ],
+      "subject_id": "TM-13480",
+      "alt_subject_ids": [
+        "TM-12272",
+        "TM-8810"
+      ],
+      "subject_ids": [
+        "TM-13480",
+        "TM-12272",
+        "TM-8810"
+      ],
+      "subject_titles": [
+        "civil rights",
+        "African American",
+        "people"
+      ],
+      "material_id": "TM-3441",
+      "alt_material_ids": [
+        "TM-3713"
+      ],
+      "material_ids": [
+        "TM-3441",
+        "TM-3713"
+      ],
+      "material_titles": [
+        "black-and-white film",
+        "gelatin"
+      ],
+      "technique_id": "TM-12089",
+      "alt_technique_ids": [
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_ids": [
+        "TM-12089",
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_titles": [
+        "black-and-white photography",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "theme_titles": [],
+      "image_id": "1413302b-88cb-d090-5630-0e249acf8bc2",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "Obj: 239565"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Shoeshine Boys, Old Town, Chicago, 1973"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2022-09-21T19:19:33-05:00",
+      "updated_at": "2024-11-26T09:20:28-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 239109,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/239109",
+      "is_boosted": false,
+      "title": "Untitled, from the series \"Black Muslims\"",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhCAAFAPUAAA0NCw4NCw4NDBYVEx4dGyQjICUkIikoJS0sKDQzMDU1MjY2Mzc2Mzc3NDk5Nj07ODw8Oj8+O0RDP0VFQktKSE1NS05NSk9OTFZWU1dXVGNjYGdmZHh4dXp6eIWEgZmZlKCfnaurpaysqre3tdTU0fHx8Pn59/7//QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAIAAUAAAYlQEkoQlAsEozHxzIQAAyBggc0cUA4HcTIlLlgNqeDqKShNCqkIAA7",
+        "width": 5513,
+        "height": 3621,
+        "alt_text": "A work made of gelatin silver print."
+      },
+      "main_reference_number": "2017.174",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1960,
+      "date_end": 1980,
+      "date_display": "About 1975",
+      "date_qualifier_title": "Made",
+      "date_qualifier_id": 4,
+      "artist_display": "Valeria “Mikki” Ferrill\nAmerican, born 1937",
+      "place_of_origin": "United States",
+      "description": "<p>On February 25, 1975, one day before the Nation of Islam’s annual Saviours’ Day convention, Elijah Muhammad, the group’s leader, died of congestive heart failure. The event that year became a memorial, attended by thousands of followers and many community leaders. South Side photojournalist <a href=\"http://www.artic.edu/artists/53221/mikki-ferrill\">Mikki Ferrill</a> photographed the funeral procession and the many tributes paid to Muhammad, including a eulogy by the Reverend Jesse Jackson.</p>\n",
+      "short_description": null,
+      "dimensions": "Image: 15.6 × 23.7 cm (6 3/16 × 9 3/8 in.); Paper: 20.1 × 25.2 cm (7 15/16 × 9 15/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 23,
+          "height": 15,
+          "diameter": null,
+          "clarification": "Image"
+        },
+        {
+          "depth": null,
+          "width": 25,
+          "height": 20,
+          "diameter": null,
+          "clarification": "Paper"
+        }
+      ],
+      "medium_display": "Gelatin silver print",
+      "inscriptions": null,
+      "credit_line": "Through prior gift of Emanuel and Edithann M. Gerard",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": 2017,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 2.3228,
+      "color": {
+        "h": 57,
+        "l": 52,
+        "s": 2,
+        "percentage": 0.04453751643391532,
+        "population": 208
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 53221,
+      "artist_title": "Mikki Ferrill",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        53221
+      ],
+      "artist_titles": [
+        "Mikki Ferrill"
+      ],
+      "category_ids": [
+        "PC-825",
+        "PC-830",
+        "PC-12",
+        "PC-142"
+      ],
+      "category_titles": [
+        "Women artists",
+        "African Diaspora",
+        "Photography and Media",
+        "African American artists"
+      ],
+      "term_titles": [
+        "black-and-white photography",
+        "photography",
+        "photographic paper",
+        "African American",
+        "photograph",
+        "portraits",
+        "Chicago",
+        "people",
+        "photography",
+        "photographic processes",
+        "photographic techniques",
+        "photography",
+        "portrait",
+        "portraits: African American subject",
+        "20th Century"
+      ],
+      "style_id": null,
+      "style_title": null,
+      "alt_style_ids": [
+        "TM-13130"
+      ],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-67",
+      "classification_title": "photography",
+      "alt_classification_ids": [
+        "TM-240"
+      ],
+      "classification_ids": [
+        "TM-67",
+        "TM-240"
+      ],
+      "classification_titles": [
+        "photography",
+        "photograph"
+      ],
+      "subject_id": "TM-12272",
+      "alt_subject_ids": [
+        "TM-8658",
+        "TM-12075",
+        "TM-8810",
+        "TM-8578",
+        "TM-14105",
+        "TM-8646"
+      ],
+      "subject_ids": [
+        "TM-12272",
+        "TM-8658",
+        "TM-12075",
+        "TM-8810",
+        "TM-8578",
+        "TM-14105",
+        "TM-8646"
+      ],
+      "subject_titles": [
+        "African American",
+        "portraits",
+        "Chicago",
+        "people",
+        "photography",
+        "portrait",
+        "portraits: African American subject"
+      ],
+      "material_id": "TM-3046",
+      "alt_material_ids": [],
+      "material_ids": [
+        "TM-3046"
+      ],
+      "material_titles": [
+        "photographic paper"
+      ],
+      "technique_id": "TM-12089",
+      "alt_technique_ids": [
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_ids": [
+        "TM-12089",
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_titles": [
+        "black-and-white photography",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "theme_titles": [
+        "Women artists",
+        "African Diaspora",
+        "African American artists"
+      ],
+      "image_id": "db3d2f07-2f4d-f0b2-ba22-f8caeb93ed55",
+      "alt_image_ids": [
+        "cc23b843-90b2-fb75-b80f-366107f46fe5"
+      ],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "2017.174"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Untitled, from the series \"Black Muslims\""
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2024-05-22T16:15:54-05:00",
+      "updated_at": "2024-11-26T09:20:28-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 238921,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/238921",
+      "is_boosted": false,
+      "title": "Untitled",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBgAFAPQAADQvKjYwKTs3MUA4MEI8NEk+MUg+NUQ+OEpBNk1DOFFHO1FHPFJJPklISV5QRFVSV2JURm1YRm1jWXJmXmljZnBoZn50eoFyZIF3coyIhY2CiI+EiaefovLs8gAAAAAAACH5BAAAAAAALAAAAAAGAAUAAAUY4MEoixMkkHRFBlFk3TQICMZVQENtmvWEADs=",
+        "width": 6958,
+        "height": 5412,
+        "alt_text": "A work made of silver dye-bleach print."
+      },
+      "main_reference_number": "2019.46",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1975,
+      "date_end": 1985,
+      "date_display": "c. 1980",
+      "date_qualifier_title": "Made",
+      "date_qualifier_id": 4,
+      "artist_display": "Luis Medina\nAmerican, born Cuba, 1942-1985",
+      "place_of_origin": "Cuba",
+      "description": "<p>Born in Cuba, <a href=\"http://www.artic.edu/artists/35721/luis-medina\">Luis Medina</a> immigrated to Miami after a multiyear tour of Europe in his teens. He relocated to Chicago in 1967 to study first sculpture, then photography, at the School of the Art Institute of Chicago. As a boy in Havana, Medina had, as he put it, “explored the brightest and darkest corners of that city . . . in search of ineffable essences, contradictions, and tragedies contained in anything human.” This interest in his immediate surroundings continued in Chicago, where he turned to the territorial gang graffiti he found in his own neighborhood northwest of Wrigley Field. Medina approached these images as an archivist and as someone familiar with power struggles, photographing several walls after gang members had swung cans of white paint at them to efface a rival gang’s graffiti. He eventually gained the trust of members of several Latino gangs, who allowed him to take their portraits in front of their graffiti, in a further gesture of power and defiance.</p>\n",
+      "short_description": null,
+      "dimensions": "Image: 26.8 × 34.2 cm (10 9/16 × 13 1/2 in.); Paper: 27.7 × 35.4 cm (10 15/16 × 13 15/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 34,
+          "height": 26,
+          "diameter": null,
+          "clarification": "Image"
+        },
+        {
+          "depth": null,
+          "width": 35,
+          "height": 27,
+          "diameter": null,
+          "clarification": "Paper"
+        }
+      ],
+      "medium_display": "Silver dye-bleach print",
+      "inscriptions": null,
+      "credit_line": "Purchased with funds provided by Lucia Woods Lindley and Daniel A. Lindley, Jr.",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": 2019,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 15.697,
+      "color": {
+        "h": 5,
+        "l": 55,
+        "s": 9,
+        "percentage": 0.07450163469606226,
+        "population": 412
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 35721,
+      "artist_title": "Luis Medina",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        35721
+      ],
+      "artist_titles": [
+        "Luis Medina"
+      ],
+      "category_ids": [
+        "PC-154",
+        "PC-12"
+      ],
+      "category_titles": [
+        "Chicago Artists",
+        "Photography and Media"
+      ],
+      "term_titles": [
+        "color photograph",
+        "color photography",
+        "20th Century",
+        "Chicago",
+        "photography",
+        "photograph",
+        "photography",
+        "latinX",
+        "photograph",
+        "photographic images",
+        "photographic materials",
+        "photographic print"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-12091",
+      "classification_title": "color photograph",
+      "alt_classification_ids": [
+        "TM-240",
+        "TM-67"
+      ],
+      "classification_ids": [
+        "TM-12091",
+        "TM-240",
+        "TM-67"
+      ],
+      "classification_titles": [
+        "color photograph",
+        "photograph",
+        "photography"
+      ],
+      "subject_id": "TM-12075",
+      "alt_subject_ids": [
+        "TM-14471"
+      ],
+      "subject_ids": [
+        "TM-12075",
+        "TM-14471"
+      ],
+      "subject_titles": [
+        "Chicago",
+        "latinX"
+      ],
+      "material_id": "TM-14147",
+      "alt_material_ids": [
+        "TM-13858",
+        "TM-13158",
+        "TM-3250",
+        "TM-13906"
+      ],
+      "material_ids": [
+        "TM-14147",
+        "TM-13858",
+        "TM-13158",
+        "TM-3250",
+        "TM-13906"
+      ],
+      "material_titles": [
+        "photography",
+        "photograph",
+        "photographic images",
+        "photographic materials",
+        "photographic print"
+      ],
+      "technique_id": "TM-13061",
+      "alt_technique_ids": [],
+      "technique_ids": [
+        "TM-13061"
+      ],
+      "technique_titles": [
+        "color photography"
+      ],
+      "theme_titles": [
+        "Chicago Artists"
+      ],
+      "image_id": "a8d24ed2-d8bb-b91d-f4cd-d3ec31760826",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "2019.46"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Untitled"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2022-09-21T19:19:33-05:00",
+      "updated_at": "2024-11-26T09:20:28-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 238917,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/238917",
+      "is_boosted": false,
+      "title": "Latin Kings, Chicago",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBQAFAPQAABEVEh4bFB4eFxscGCIkGS0pHiYoIywpISwvKTowJDs9NkpBMUdFOUlEOFFPPnRcRIqDbpSIc5GOdKumja2kksS8o8W/rc7Ir9vXvQAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAFAAUAAAUVoDFMlwItWGQxgkRVyPE0DlAkARECADs=",
+        "width": 5438,
+        "height": 5583,
+        "alt_text": "A work made of silver dye-bleach print."
+      },
+      "main_reference_number": "2019.42",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1980,
+      "date_end": 1980,
+      "date_display": "1980",
+      "date_qualifier_title": "Made",
+      "date_qualifier_id": 4,
+      "artist_display": "Luis Medina\nAmerican, born Cuba, 1942-1985",
+      "place_of_origin": "Cuba",
+      "description": "<p>Born in Cuba, <a href=\"http://www.artic.edu/artists/35721/luis-medina\">Luis Medina</a> immigrated to Miami after a multiyear tour of Europe in his teens. He relocated to Chicago in 1967 to study first sculpture, then photography, at the School of the Art Institute of Chicago. As a boy in Havana, Medina had, as he put it, “explored the brightest and darkest corners of that city . . . in search of ineffable essences, contradictions, and tragedies contained in anything human.” This interest in his immediate surroundings continued in Chicago, where he turned to the territorial gang graffiti he found in his own neighborhood northwest of Wrigley Field. Medina approached these images as an archivist and as someone familiar with power struggles, photographing several walls after gang members had swung cans of white paint at them to efface a rival gang’s graffiti. He eventually gained the trust of members of several Latino gangs, who allowed him to take their portraits in front of their graffiti, in a further gesture of power and defiance.</p>\n",
+      "short_description": null,
+      "dimensions": "Image, approx: 26.8 × 25.9 cm (10 9/16 × 10 1/4 in.); Paper: 35.4 × 27.7 cm (13 15/16 × 10 15/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 25,
+          "height": 26,
+          "diameter": null,
+          "clarification": "Image, approx"
+        },
+        {
+          "depth": null,
+          "width": 27,
+          "height": 35,
+          "diameter": null,
+          "clarification": "Paper"
+        }
+      ],
+      "medium_display": "Silver dye-bleach print",
+      "inscriptions": null,
+      "credit_line": "Purchased with funds provided by Lucia Woods Lindley and Daniel A. Lindley, Jr.",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": 2019,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 28.801,
+      "color": {
+        "h": 359,
+        "l": 34,
+        "s": 58,
+        "percentage": 0.0013713752837032618,
+        "population": 10
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 35721,
+      "artist_title": "Luis Medina",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        35721
+      ],
+      "artist_titles": [
+        "Luis Medina"
+      ],
+      "category_ids": [
+        "PC-154",
+        "PC-12"
+      ],
+      "category_titles": [
+        "Chicago Artists",
+        "Photography and Media"
+      ],
+      "term_titles": [
+        "color photograph",
+        "color photography",
+        "20th Century",
+        "Chicago",
+        "photography",
+        "photograph",
+        "photography",
+        "latinX",
+        "photograph",
+        "photographic images",
+        "photographic materials",
+        "photographic print"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-12091",
+      "classification_title": "color photograph",
+      "alt_classification_ids": [
+        "TM-240",
+        "TM-67"
+      ],
+      "classification_ids": [
+        "TM-12091",
+        "TM-240",
+        "TM-67"
+      ],
+      "classification_titles": [
+        "color photograph",
+        "photograph",
+        "photography"
+      ],
+      "subject_id": "TM-12075",
+      "alt_subject_ids": [
+        "TM-14471"
+      ],
+      "subject_ids": [
+        "TM-12075",
+        "TM-14471"
+      ],
+      "subject_titles": [
+        "Chicago",
+        "latinX"
+      ],
+      "material_id": "TM-14147",
+      "alt_material_ids": [
+        "TM-13858",
+        "TM-13158",
+        "TM-3250",
+        "TM-13906"
+      ],
+      "material_ids": [
+        "TM-14147",
+        "TM-13858",
+        "TM-13158",
+        "TM-3250",
+        "TM-13906"
+      ],
+      "material_titles": [
+        "photography",
+        "photograph",
+        "photographic images",
+        "photographic materials",
+        "photographic print"
+      ],
+      "technique_id": "TM-13061",
+      "alt_technique_ids": [],
+      "technique_ids": [
+        "TM-13061"
+      ],
+      "technique_titles": [
+        "color photography"
+      ],
+      "theme_titles": [
+        "Chicago Artists"
+      ],
+      "image_id": "547d912d-c74a-213b-2954-d8ad2d206bcd",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "2019.42"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Latin Kings, Chicago"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2022-09-21T19:19:33-05:00",
+      "updated_at": "2024-11-26T09:20:28-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 238860,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/238860",
+      "is_boosted": false,
+      "title": "Blackstone, Woodlawn/Chicago",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhCAAFAPUAADY2L0ZFP09NRlJQSVNRSlZUTFZUTVdVTVxaU2JgWGRiWGRiWmVjWmRiW25sZHJwaHNxaHNxaXZzand0anZ0a3x6cn58c4F+c4F/d4OAd4OBeIaFfYiGfoyKgZCOhZCOhpGPhpaTiZeVjZuYj5yYjJqZkaGelAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAIAAUAAAYlwIwH8xGBQqRHhrMpdSSXQwLSqGgYioDAMTIRAAXDIkKxIAaTIAA7",
+        "width": 3873,
+        "height": 2549,
+        "alt_text": "A work made of gelatin silver print."
+      },
+      "main_reference_number": "2017.160",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1968,
+      "date_end": 1968,
+      "date_display": "1968",
+      "date_qualifier_title": "Made",
+      "date_qualifier_id": 4,
+      "artist_display": "Darryl Cowherd\nAmerican, born 1940",
+      "place_of_origin": "United States",
+      "description": null,
+      "short_description": null,
+      "dimensions": "Image/paper: 18.6 × 28.4 cm (7 3/8 × 11 3/16 in.); Mount: 24 × 30 cm (9 1/2 × 11 13/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 28,
+          "height": 18,
+          "diameter": null,
+          "clarification": "Image/paper"
+        },
+        {
+          "depth": null,
+          "width": 30,
+          "height": 24,
+          "diameter": null,
+          "clarification": "Mount"
+        }
+      ],
+      "medium_display": "Gelatin silver print",
+      "inscriptions": null,
+      "credit_line": "Through prior gift of the Harold and Esther Edgerton Family Foundation and through exchange with George Eastman House",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": 2017,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 7.4573,
+      "color": {
+        "h": 43,
+        "l": 50,
+        "s": 6,
+        "percentage": 0.15324933474399666,
+        "population": 717
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 115333,
+      "artist_title": "Darryl Cowherd",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        115333
+      ],
+      "artist_titles": [
+        "Darryl Cowherd"
+      ],
+      "category_ids": [
+        "PC-12",
+        "PC-830",
+        "PC-142",
+        "PC-154"
+      ],
+      "category_titles": [
+        "Photography and Media",
+        "African Diaspora",
+        "African American artists",
+        "Chicago Artists"
+      ],
+      "term_titles": [
+        "black-and-white photography",
+        "photography",
+        "Chicago",
+        "20th Century",
+        "photography",
+        "photograph",
+        "documentary",
+        "photographic processes",
+        "photographic techniques",
+        "photography",
+        "civil rights",
+        "photographic print",
+        "photographic paper",
+        "photographic materials",
+        "photograph"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-67",
+      "classification_title": "photography",
+      "alt_classification_ids": [
+        "TM-240"
+      ],
+      "classification_ids": [
+        "TM-67",
+        "TM-240"
+      ],
+      "classification_titles": [
+        "photography",
+        "photograph"
+      ],
+      "subject_id": "TM-12075",
+      "alt_subject_ids": [
+        "TM-13647",
+        "TM-13480"
+      ],
+      "subject_ids": [
+        "TM-12075",
+        "TM-13647",
+        "TM-13480"
+      ],
+      "subject_titles": [
+        "Chicago",
+        "documentary",
+        "civil rights"
+      ],
+      "material_id": "TM-14147",
+      "alt_material_ids": [
+        "TM-13906",
+        "TM-3046",
+        "TM-3250",
+        "TM-13858"
+      ],
+      "material_ids": [
+        "TM-14147",
+        "TM-13906",
+        "TM-3046",
+        "TM-3250",
+        "TM-13858"
+      ],
+      "material_titles": [
+        "photography",
+        "photographic print",
+        "photographic paper",
+        "photographic materials",
+        "photograph"
+      ],
+      "technique_id": "TM-12089",
+      "alt_technique_ids": [
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_ids": [
+        "TM-12089",
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_titles": [
+        "black-and-white photography",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "theme_titles": [
+        "African Diaspora",
+        "African American artists",
+        "Chicago Artists"
+      ],
+      "image_id": "722e6aba-1792-07ea-af3a-f51eb6a6d2f5",
+      "alt_image_ids": [
+        "daadda06-8df9-b203-b4d6-a9e444df4a2f"
+      ],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "2017.160"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Blackstone, Woodlawn/Chicago"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2024-08-20T19:54:43-05:00",
+      "updated_at": "2024-11-26T09:20:28-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 243670,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/243670",
+      "is_boosted": false,
+      "title": "Untitled",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBwAFAPUAADc0Ljs4MTs4Mj48NkE+NkE/OklFPkhFQExJQU1JQk1KRE9LRFBMRFJOR1NPSFdSSldTSlhTS1lVTVxXUF1ZUV5ZUl5aUl9aUl9bU2JeVmNeVmNfV2RfV2VhWWllXmtnXnJuZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhwI4hsSE0PBUK5BKIHCSTjIXzKDgcDMRnMdCANgCMQBEEADs=",
+        "width": 6016,
+        "height": 4538,
+        "alt_text": "Photograph of a group of black children, mostly boys, who laugh outside a stone house, one with his arms wrapped around another's shoulders.  A formally dressed black women stands in front of them in profile. Behind them, a black man stands in the doorway, and children perch in the windows."
+      },
+      "main_reference_number": "Obj: 243670",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1960,
+      "date_end": 1960,
+      "date_display": "c. 1960",
+      "date_qualifier_title": "",
+      "date_qualifier_id": null,
+      "artist_display": "Jim Stricklin \nAmerican, 1934-2021",
+      "place_of_origin": "United States",
+      "description": null,
+      "short_description": null,
+      "dimensions": "Image: 27.2 × 35.3 cm (10 3/4 × 13 15/16 in.); Paper: 27.6 × 35.4 cm (10 7/8 × 13 15/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 35,
+          "height": 27,
+          "diameter": null,
+          "clarification": "Image"
+        },
+        {
+          "depth": null,
+          "width": 35,
+          "height": 27,
+          "diameter": null,
+          "clarification": "Paper"
+        }
+      ],
+      "medium_display": "Gelatin silver print",
+      "inscriptions": null,
+      "credit_line": "Promised gift of Raven Thomas Abdul-Aleem and Zaid Abdul-Aleem",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": null,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 6.1123,
+      "color": {
+        "h": 38,
+        "l": 14,
+        "s": 14,
+        "percentage": 0.3355416787901848,
+        "population": 1799
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 115863,
+      "artist_title": "Jim Stricklin",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        115863
+      ],
+      "artist_titles": [
+        "Jim Stricklin"
+      ],
+      "category_ids": [
+        "PC-12"
+      ],
+      "category_titles": [
+        "Photography and Media"
+      ],
+      "term_titles": [
+        "gelatin silver print",
+        "civil rights",
+        "black-and-white film",
+        "20th Century",
+        "black-and-white photography",
+        "photograph",
+        "photography",
+        "silver gelatin print",
+        "African American",
+        "people",
+        "gelatin",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-966",
+      "classification_title": "gelatin silver print",
+      "alt_classification_ids": [
+        "TM-240",
+        "TM-67",
+        "TM-10440"
+      ],
+      "classification_ids": [
+        "TM-966",
+        "TM-240",
+        "TM-67",
+        "TM-10440"
+      ],
+      "classification_titles": [
+        "gelatin silver print",
+        "photograph",
+        "photography",
+        "silver gelatin print"
+      ],
+      "subject_id": "TM-13480",
+      "alt_subject_ids": [
+        "TM-12272",
+        "TM-8810"
+      ],
+      "subject_ids": [
+        "TM-13480",
+        "TM-12272",
+        "TM-8810"
+      ],
+      "subject_titles": [
+        "civil rights",
+        "African American",
+        "people"
+      ],
+      "material_id": "TM-3441",
+      "alt_material_ids": [
+        "TM-3713"
+      ],
+      "material_ids": [
+        "TM-3441",
+        "TM-3713"
+      ],
+      "material_titles": [
+        "black-and-white film",
+        "gelatin"
+      ],
+      "technique_id": "TM-12089",
+      "alt_technique_ids": [
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_ids": [
+        "TM-12089",
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_titles": [
+        "black-and-white photography",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "theme_titles": [],
+      "image_id": "45a61fab-df56-b7cc-768a-08344e3a1768",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "Obj: 243670"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Untitled"
+          ],
+          "weight": 8,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2022-09-21T19:19:35-05:00",
+      "updated_at": "2024-11-26T09:20:27-06:00",
+      "timestamp": "2024-11-26T09:24:13-06:00"
+    },
+    {
+      "id": 239564,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/239564",
+      "is_boosted": false,
+      "title": "Leaving the Killing Floor (Stockyards)",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhBwAFAPUAADUzMD89OkhGQlNRTlRRT15cWV9cWWtoZHFuanJva3Vyb3dzcHh1cHt4dImFgYqHgouHg4uIhJGNiJWRjJaRjJaTj5uWkaKdmKOfmaOfmqikn66ppLGsp7KtqLaxq7eyrL24scC7tcG8tgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhQAdG8rCADpoOJ5K4ZDwiikAx+WxCDEABAWlUFgMDIRAEADs=",
+        "width": 5422,
+        "height": 3684,
+        "alt_text": "Black-and-white photograph of a dark-skinned man in a black cap and long black coat walking alongside a concrete wall with a bricked-in doorway. His eyes are downcast, and he smokes a cigarette.-"
+      },
+      "main_reference_number": "Obj: 239564",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1972,
+      "date_end": 1972,
+      "date_display": "1972, printed 1972/78",
+      "date_qualifier_title": "Made",
+      "date_qualifier_id": 4,
+      "artist_display": "Ozier Muhammad\nAmerican, born 1950",
+      "place_of_origin": null,
+      "description": null,
+      "short_description": null,
+      "dimensions": "Image: 21.6 × 31.7 cm (8 9/16 × 12 1/2 in.); Paper: 27.7 × 35.6 cm (10 15/16 × 14 1/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 31,
+          "height": 21,
+          "diameter": null,
+          "clarification": "Image"
+        },
+        {
+          "depth": null,
+          "width": 35,
+          "height": 27,
+          "diameter": null,
+          "clarification": "Paper"
+        }
+      ],
+      "medium_display": "Gelatin silver print",
+      "inscriptions": null,
+      "credit_line": "Promised gift of Raven Thomas Abdul-Aleem and Zaid Abdul-Aleem",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 20,
+      "fiscal_year": null,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": false,
+      "max_zoom_window_size": 843,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 5.62,
+      "color": {
+        "h": 40,
+        "l": 12,
+        "s": 10,
+        "percentage": 0.20267514631323763,
+        "population": 979
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Photograph",
+      "artwork_type_id": 2,
+      "department_title": "Photography and Media",
+      "department_id": "PC-12",
+      "artist_id": 115375,
+      "artist_title": "Ozier Muhammad",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        115375
+      ],
+      "artist_titles": [
+        "Ozier Muhammad"
+      ],
+      "category_ids": [
+        "PC-12"
+      ],
+      "category_titles": [
+        "Photography and Media"
+      ],
+      "term_titles": [
+        "gelatin silver print",
+        "civil rights",
+        "black-and-white film",
+        "20th Century",
+        "black-and-white photography",
+        "photograph",
+        "photography",
+        "silver gelatin print",
+        "African American",
+        "people",
+        "gelatin",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "style_id": "TM-13130",
+      "style_title": "20th Century",
+      "alt_style_ids": [],
+      "style_ids": [
+        "TM-13130"
+      ],
+      "style_titles": [
+        "20th Century"
+      ],
+      "classification_id": "TM-966",
+      "classification_title": "gelatin silver print",
+      "alt_classification_ids": [
+        "TM-240",
+        "TM-67",
+        "TM-10440"
+      ],
+      "classification_ids": [
+        "TM-966",
+        "TM-240",
+        "TM-67",
+        "TM-10440"
+      ],
+      "classification_titles": [
+        "gelatin silver print",
+        "photograph",
+        "photography",
+        "silver gelatin print"
+      ],
+      "subject_id": "TM-13480",
+      "alt_subject_ids": [
+        "TM-12272",
+        "TM-8810"
+      ],
+      "subject_ids": [
+        "TM-13480",
+        "TM-12272",
+        "TM-8810"
+      ],
+      "subject_titles": [
+        "civil rights",
+        "African American",
+        "people"
+      ],
+      "material_id": "TM-3441",
+      "alt_material_ids": [
+        "TM-3713"
+      ],
+      "material_ids": [
+        "TM-3441",
+        "TM-3713"
+      ],
+      "material_titles": [
+        "black-and-white film",
+        "gelatin"
+      ],
+      "technique_id": "TM-12089",
+      "alt_technique_ids": [
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_ids": [
+        "TM-12089",
+        "TM-3937",
+        "TM-3977",
+        "TM-3978"
+      ],
+      "technique_titles": [
+        "black-and-white photography",
+        "photographic processes",
+        "photographic techniques",
+        "photography"
+      ],
+      "theme_titles": [],
+      "image_id": "ac2c7782-77ef-e540-aa39-f1c594527ecf",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "Obj: 239564"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Leaving the Killing Floor (Stockyards)"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2022-09-21T19:19:33-05:00",
+      "updated_at": "2024-11-26T09:20:27-06:00",
+      "timestamp": "2024-11-26T09:24:14-06:00"
+    },
+    {
+      "id": 207493,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/207493",
+      "is_boosted": false,
+      "title": "Lana Turner with Her Own Eyebrows Before Schrafft's Drug Store",
+      "alt_titles": null,
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhAwAFAPMAAFtNN2lWNH9uM3RuOEI/RUZDRV9RSGdZTX1vQnxjSoFJTIFQR4xvQ41vRp+MSgAAACH5BAAAAAAALAAAAAADAAUAAAQL0KCTXFtMBQHKIBEAOw==",
+        "width": 6155,
+        "height": 10333,
+        "alt_text": "A work made of acrylic on linen."
+      },
+      "main_reference_number": "2011.120",
+      "has_not_been_viewed_much": false,
+      "boost_rank": null,
+      "date_start": 1964,
+      "date_end": 1974,
+      "date_display": "c. 1969",
+      "date_qualifier_title": "",
+      "date_qualifier_id": null,
+      "artist_display": "Karl Wirsum\nAmerican, 1939-2021",
+      "place_of_origin": null,
+      "description": null,
+      "short_description": null,
+      "dimensions": "91.5 × 53.4 cm (36 × 21 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 53,
+          "height": 91,
+          "diameter": null,
+          "clarification": null
+        }
+      ],
+      "medium_display": "Acrylic on linen",
+      "inscriptions": null,
+      "credit_line": "Gift of the Raymond K. Yoshida Living Trust and Kohler Foundation, Inc.",
+      "catalogue_display": null,
+      "publication_history": null,
+      "exhibition_history": null,
+      "provenance_text": null,
+      "edition": null,
+      "publishing_verification_level": "Web Basic",
+      "internal_department_id": 246,
+      "fiscal_year": 2011,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": false,
+      "is_zoomable": true,
+      "max_zoom_window_size": 1280,
+      "copyright_notice": "© Karl Wirsum.",
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 0,
+      "color": {
+        "h": 50,
+        "l": 46,
+        "s": 70,
+        "percentage": 0.003069200969219703,
+        "population": 1952
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Painting",
+      "artwork_type_id": 1,
+      "department_title": "Contemporary Art",
+      "department_id": "PC-8",
+      "artist_id": 37327,
+      "artist_title": "Karl Wirsum",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        37327
+      ],
+      "artist_titles": [
+        "Karl Wirsum"
+      ],
+      "category_ids": [
+        "PC-8",
+        "PC-154"
+      ],
+      "category_titles": [
+        "Contemporary Art",
+        "Chicago Artists"
+      ],
+      "term_titles": [
+        "acrylic paintings (visual works)",
+        "painting"
+      ],
+      "style_id": null,
+      "style_title": null,
+      "alt_style_ids": [],
+      "style_ids": [],
+      "style_titles": [],
+      "classification_id": "TM-10368",
+      "classification_title": "acrylic paintings (visual works)",
+      "alt_classification_ids": [
+        "TM-9"
+      ],
+      "classification_ids": [
+        "TM-10368",
+        "TM-9"
+      ],
+      "classification_titles": [
+        "acrylic paintings (visual works)",
+        "painting"
+      ],
+      "subject_id": null,
+      "alt_subject_ids": [],
+      "subject_ids": [],
+      "subject_titles": [],
+      "material_id": null,
+      "alt_material_ids": [],
+      "material_ids": [],
+      "material_titles": [],
+      "technique_id": null,
+      "alt_technique_ids": [],
+      "technique_ids": [],
+      "technique_titles": [],
+      "theme_titles": [
+        "Chicago Artists"
+      ],
+      "image_id": "95d43c0f-645a-8f67-f8ca-e281cf3300a8",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "2011.120"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Lana Turner with Her Own Eyebrows Before Schrafft's Drug Store"
+          ],
+          "weight": 314,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2024-11-21T16:36:09-06:00",
+      "updated_at": "2024-11-26T09:20:27-06:00",
+      "timestamp": "2024-11-26T09:24:14-06:00"
+    }
+  ],
+  "info": {
+    "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+    "license_links": [
+      "https://creativecommons.org/publicdomain/zero/1.0/",
+      "https://www.artic.edu/terms"
+    ],
+    "version": "1.10"
+  },
+  "config": {
+    "iiif_url": "https://www.artic.edu/iiif/2",
+    "website_url": "http://www.artic.edu"
+  }
+}
