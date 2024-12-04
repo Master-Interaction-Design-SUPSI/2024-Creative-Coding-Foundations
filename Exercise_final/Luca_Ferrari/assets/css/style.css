@@ -1,3 +1,4 @@
+/* main styling */
 * {
   box-sizing: border-box;
   cursor: default;
@@ -10,6 +11,7 @@ body {
   font-size: 16px;
   font-weight: 300;
 }
+/* The main container */
 .container {
   display: flex;
   flex-direction: row;
@@ -20,6 +22,8 @@ body {
   box-shadow: 0 1.1rem 4rem rgba(0,0,0,0.4);
   position: relative;
 }
+
+/* Sidebar */
 .menu {
   flex: 4;
   flex-direction: column;
@@ -47,7 +51,6 @@ body {
   font-weight: 400;
   font-size: 20px;
 }
-
 .nav-group-list {
   padding: 0;
   margin: 0;
@@ -69,10 +72,12 @@ body {
   cursor: pointer;
 }
 
+/* The arduino elements */
 #serial_control_bar {
   margin: 2rem;
 }
 
+/* The right part with the cards */
 .main-container {
   display: flex;
   flex: 8;
@@ -80,12 +85,13 @@ body {
   overflow: hidden;
   position: relative;
 }
-
+/* The title section */
 .top {
   padding: 1rem 2rem;
 
 }
 
+/* The div with the card */
 .results {
   display: flex;
   flex-direction: row;
@@ -100,6 +106,8 @@ body {
   margin: .3rem;
   margin-top: 1rem;
 }
+
+/* The area div with the results */
 .middle {
   display: flex;
   flex-direction: row;
@@ -116,13 +124,14 @@ body {
   margin-top: 1rem;
 }
 
+/* Elements that appears and disappears on the main container when btn clicked (the home image, the lucky image and the credits) */
 #home-img {
   width: 30rem;
   height: auto;
   margin: 0 auto;
 }
 #lucky-img {
-  width: 30rem;
+  width: 10rem;
   height: auto;
   margin: 0 auto;
   display: none;
@@ -131,6 +140,7 @@ body {
   text-align: center;
 }
 
+/* Styling of the cards */
 .card-result {
   padding: 2.5rem 0 3.5rem;
   margin-bottom: 2rem;
@@ -233,7 +243,7 @@ body {
     width: 20rem;
   }
   #lucky-img {
-    width: 20rem;
+    width: 10rem;
     display: none;
   }
 }
@@ -253,7 +263,7 @@ body {
     width: 15rem;
   }
   #lucky-img {
-    width: 15rem;
+    width: 10rem;
     display: none;
   }
 }

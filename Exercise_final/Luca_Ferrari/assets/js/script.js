@@ -17,8 +17,9 @@ const LUCKYIMG = document.getElementById("lucky-img");
 let access_token = "";
 let artist_selected_album = "";
 let selected_album_img = "";
+let day = "";
 
-
+//Arrays and variable for the automatic research and navigation of results
 let artistArray = [];
 let artist_position = 0;
 let albumArray = [];
@@ -130,21 +131,19 @@ async function getAlbumTracks(album_id, album_title, image_album) {
 
 }
 
-//with this function we populate the main container with the basic information of the artist (name, followers, cover image)
-//and we call the getAlbum function in order to get and display the album list
+//with this function we add all the artist we get inside the array and we call the function to display one of them
 function displayArtist(data) {
     change = "artist";
     for (const element of data.artists) {
         artistArray.push(element);
 
     }
-    console.log(artistArray);
 
     changeArtist(artist_position);
-    console.log("art: " + artist_position);
 
 }
 
+//with this function we create the card for the artist with all the needed information
 function changeArtist(id) {
     TITLE.innerText = "Top artists";
     change = "artist";
@@ -179,8 +178,7 @@ function changeArtist(id) {
 }
 
 
-//with this function we populate the main container with the basic information of the artist (name, followers, cover image)
-//and we call the getAlbum function in order to get and display the album list
+//with this function we add all the album we get inside the array and we call the function to display one of them
 function displayAlbum(data) {
 
     albumArray = [];
@@ -189,13 +187,11 @@ function displayAlbum(data) {
         albumArray.push(element);
 
     }
-    console.log(albumArray);
 
     changeAlbum(album_position);
-    console.log("alb: " + album_position);
 
 }
-
+//with this function we create the card for the album with all the needed information
 function changeAlbum(id) {
     TITLE.innerText = "Albums";
     change = "album";
@@ -235,6 +231,7 @@ function changeAlbum(id) {
 
 }
 
+//with this function we add all the tracks we get inside the array and we call the function to display one of them
 function displayAlbumTracks(data) {
 
     trackArray = [];
@@ -243,13 +240,11 @@ function displayAlbumTracks(data) {
         trackArray.push(element);
 
     }
-    console.log(trackArray);
 
     changeAlbumTracks(track_position);
-    //console.log("tra: "+track_position);
 
 }
-
+//with this function we create the card for the tracks with all the needed information
 function changeAlbumTracks(id) {
     TITLE.innerText = artist_selected_album;
     change = "track";
@@ -279,11 +274,6 @@ function changeAlbumTracks(id) {
 
 }
 
-//it cathches the error when the search gives no results and displays a specific page/information
-function displayError(err) {
-    RESULTS.innerHTML = "";
-}
-
 //it converts milliseconds to a more readable format (MM:SS)
 function msToTime(duration) {
     var milliseconds = Math.floor((duration % 1000) / 100),
@@ -298,17 +288,19 @@ function msToTime(duration) {
     return minutes + ":" + seconds;
 }
 
-//the actions done by clicking on the Home button on the sidebar
+//the actions done by clicking on the Top artist button on the sidebar
 ARTIST.addEventListener("click", function () {
+    LUCKYIMG.style.display = "none";
     getArtist('2eFv7NVs8R6Go7msuqikeg', '25MkkfEousyfp2eyh38FUl', '19HiWVd2g0XyJstBsbW2Qm', '5Nydhpz1rcPbgM0fYvLxhz', '1h5O32I1o0VOnpLmKXLfRa', '2pboyZFylWoAL86o6E1gDo', '6q8f3fxaWqkXzkbxtKOzYF', '4l0PmbNvFq3m5JaUuAPbcB', '6bMul6rmRS03x38tWKYifO', '1Ij5ZIGlPTkoZibay58zHe', '3hYLJPJuDyblFKersEaFd6', '396Jr76018oUMR6QBnqT8T', '6RdcIWVKYYzNzjQRd3oyHS');
 
 })
 
+//function that creates a random number within a specific range (0-max)
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-//the actions done by clicking on the Home button on the sidebar
+//Showing the credits by clicking on the Credits btn on the sidebar
 CREDITS.addEventListener("click", function () {
     
     LUCKYIMG.style.display = "none";
@@ -324,6 +316,7 @@ CREDITS.addEventListener("click", function () {
     `;
 })
 
+//Showing the home image by clicking on the logo on top left
 HOME.addEventListener("click", function () {
     LUCKYIMG.style.display = "none";
     TITLE.innerText = "";
@@ -332,10 +325,10 @@ HOME.addEventListener("click", function () {
     `;
 })
 
-let day = "";
+//this funciton reads the value coming from the serial print of the arduino and calls some functions based on the value
 function updateWebPage(data) {
     const encode = data[0];
-    console.log(encode);
+    //switch to the night mode if the switch changes value
     if (encode == "back"){
         if(day === "day"){
             console.log("day");
@@ -350,17 +343,23 @@ function updateWebPage(data) {
         
     }
    
+    /*in all this if/else clause we check
+    - if we are showing the artists, the albums or the tracks
+    - we check that the value coming form the encoder do not increase or decrease the position variable under 0 or over the array length
+    - we call the right function based on the elements we are showing (artists, albums, tracks)
+    - navigate through level (Up and Down based) based on the elements we are showing (artists, albums, tracks)
+    - perform the feeling lucky task
+    - open the track on the spotify web app
+    */
     if (change === "artist") {
             if ((encode == "+") && (artist_position < 12)) {
                 LUCKYIMG.style.display = "none";
                 artist_position++;
-                console.log(artist_position);
                 changeArtist(artist_position);
             }
             else if ((encode == "-") && (artist_position > 0)) {
                 LUCKYIMG.style.display = "none";
                 artist_position--;
-                console.log(artist_position);
                 changeArtist(artist_position);
             }
             else if (encode == "enter") {
@@ -377,13 +376,11 @@ function updateWebPage(data) {
         if ((encode == "+") && (album_position < albumArray.length-1)) {
             LUCKYIMG.style.display = "none";
             album_position++;
-            console.log(album_position);
             changeAlbum(album_position);
         }
         else if ((encode == "-") && (album_position > 0)) {
             LUCKYIMG.style.display = "none";
             album_position--;
-            console.log(album_position);
             changeAlbum(album_position);
         }
         else if (encode == "enter") {
@@ -404,19 +401,16 @@ function updateWebPage(data) {
         if ((encode == "+") && (track_position < trackArray.length-1)) {
             LUCKYIMG.style.display = "none";
             track_position++;
-            console.log(track_position);
             changeAlbumTracks(track_position);
         }
         else if ((encode == "-") && (track_position > 0)) {
             LUCKYIMG.style.display = "none";
             track_position--;
-            console.log(track_position);
             changeAlbumTracks(track_position);
         }
         else if (encode == "enter") {
             LUCKYIMG.style.display = "none";
             const SPOTIFY = document.getElementById("go-to-spotify");
-            console.log(SPOTIFY.getAttribute("href"));
             window.open(SPOTIFY.getAttribute("href"));
         }
         else if (encode == "up") {
