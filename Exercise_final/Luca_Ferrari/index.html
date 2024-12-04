@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotiMaynd</title>
+    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/arduino/WebSerialAPI_library.js" defer></script>
+    <script src="assets/arduino/WebSerialAPI_ui.js" defer></script>
+    <link rel="stylesheet" href="assets/arduino/WebSerialAPI_style.css">
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="menu">
+            <div class="menu-profile-container">
+                <div id="home" class="menu-profile-pic"><img src="assets/img/logo_spotimaynd_white.png"></div>
+            </div>
+            <!-- The sidebar menu items -->
+            <nav>
+                <div class="nav-group">
+                    <div class="nav-group-title">Menu</div>
+                    <ul class="nav-group-list">
+                        <li id="top-artist" class="group-list-item">
+                            <div class="item-text">Top Artists</div>
+                        </li>
+                        <li id="credits" class="group-list-item">
+                            <div class="item-text">Credits</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- WebSerialAPI control menu -->
+            <div id="support_status"></div>
+
+            <div id="serial_control_bar">
+                <button id="button_start_serial">Start Serial Communication</button>
+                <button id="button_stop_serial">Stop Serial Communication</button>
+                <div id="serial_logger_container"></div>
+            </div>
+            <!-- end: WebSerialAPI control menu -->
+        </div>
+        <!-- The right container -->
+        <div class="main-container">
+            <div class="top">
+                <h1 id="title"></h1>
+            </div>
+
+            <img id="lucky-img" src="assets/img/feel_lucky.png">
+            <!-- Area with the dynamic presentation of results/cards -->
+            <div id="middle" class="middle">
+                <img id="home-img" src="assets/img/welcome_page.png">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
