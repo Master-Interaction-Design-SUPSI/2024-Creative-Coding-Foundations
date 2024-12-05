@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #eff3ff;
+}
+
+header{
+    background-color: #FF0000;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 15vh;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#logo{
+    height: 100%;
+}
+
+.container{
+    margin-top: 5vh;
+    width: 350px;
+    position: relative;
+    transform: translate(-50%, 0%);
+    top: 50%;
+    left: 50%;
+}
+
+#card{
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+#card img{
+   display: block;
+   width: 180px; 
+   max-height: 200px;
+   position: relative;
+   margin: 20px auto;
+}
+
+.hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.poke-name{
+    text-align: center;
+    font-weight: 600;
+}
+
+.types{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.hp span,
+.types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+}
+
+.types span {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stats p {
+    color: #404060;
+}
+
+.btn-container{
+    display: flex;
+}
+
+#btn-next {
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #101010;
+    color: #ffffff;
+    position: relative;
+    margin: 30px ;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn-previous {
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #101010;
+    color: #ffffff;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn-reset {
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #101010;
+    color: #ffffff;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #btn-reset{
+        margin-top: 10vh;
+        margin-right: 0;
+    }
+
+    .logo{
+        padding-left: 0;
+    }
+
+    .container{
+        margin-top: 20vh;
+    }
+}

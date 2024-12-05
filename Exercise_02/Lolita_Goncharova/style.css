@@ -1,0 +1,165 @@
+
+* {
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; 
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex; /*macks the box centered*/
+    align-items: center;  
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(255, 195, 195);
+}
+
+
+.container {
+    width: 100%;
+    max-width: 30rem; 
+    padding: 1.5rem; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+    border-radius: 0.5rem; 
+    text-align: center;
+}
+
+
+h1 {
+    margin-bottom: 1.5rem; 
+    font-size: 2rem; 
+    color: rgb(51, 51, 51);
+}
+
+/* input bar */
+
+        .todo-input {
+            display: flex;
+            gap: 1rem; 
+            margin-bottom: 2rem; 
+        }
+
+        .todo-input input {
+            flex: 1;
+            padding: 0.5rem; 
+            border: 0.1rem solid rgb(211, 202, 202); 
+            border-radius: 0.25rem; 
+            font-size: 1rem; 
+        }
+
+/* input button */
+
+        .todo-input button {
+            padding: 0.5rem 1rem; 
+            background-color: rgb(33, 172, 66);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 0.25rem; 
+            font-size: 1rem; 
+            cursor: pointer;
+            
+        }
+
+        .todo-input button:active {
+            cursor: grab;
+            position: relative;
+            top: 0.2rem;
+            }
+
+
+        .todo-input button:hover {
+            background-color: rgb(21, 133, 45);
+        }
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+li button {
+    background-color: rgb(254, 115, 129);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.3rem 0.6rem; 
+    border-radius: 0.25rem; 
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: rgb(223, 65, 81);
+}
+
+
+
+li {
+    padding: 0.6rem; 
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+    border-radius: 0.25rem; 
+    font-size: 1rem; 
+}
+
+
+/* Edit Button*/
+li button:nth-child(3) { /* The 3rd child  */
+    background-color: rgb(116, 173, 233);
+    color: rgb(255, 255, 255);
+}
+
+li button:nth-child(3):hover {
+    background-color: rgb(21, 112, 209);
+}
+
+
+
+li input[type="checkbox"] {
+    margin-right: 0.6rem; 
+    cursor: pointer;
+}
+
+li span.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    
+    .container {
+        max-width: 20rem; 
+    }
+
+    h1 {
+        font-size: 1.75rem; 
+    }
+
+    .todo-input button {
+        padding: 0.5rem 0.625rem; 
+    }
+}
+
+
+
+
+
+
+

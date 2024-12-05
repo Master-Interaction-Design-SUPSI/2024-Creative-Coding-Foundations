@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Piece Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Art Piece Explorer</h1>
+    <div id="filters">
+      <label for="artist-filter">Filter by Artist:</label>
+      <select id="year-sort" onchange="onChangeSort()">
+        <option>Ascending</option>
+        <option>Descending</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="gallery">
+    <!-- Artwork cards will be dynamically added here -->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Art Piece Explorer</p>
+  </footer>
+  <div id="overlay" class="hidden">
+
+  </div>
+  <div id="modal" class="hidden">
+
+    <button id="close-button" onclick="hideModal()">x</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
