@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f3f3f3;
+    color: #454545;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Vertical layout for the main content */
+    height: 100vh; /* Full height equals the viewport */
+    position: relative;
+}
+
+main {
+    flex: none;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height equals the viewport */
+    display: flex;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    position: relative;
+}
+
+#canvas_container {
+    width: 100%;
+    height: 100%; /* Fill the parent container */
+    background-color: #000000;
+    position: relative; /* Relative positioning for floating content */
+    display: flex; /* Ensure content inside is centered */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+canvas {
+    width: 100%; /* Fill the parent container */
+    height: 100%;
+}
+
+aside {
+    position: absolute; /* Absolute positioning, overlays on #canvas_container */
+    top: 10px; /* Maintain a distance from the top */
+    right: 10px; /* Always align to the right */
+    background-color: rgba(227, 227, 227, 0.9); /* Semi-transparent background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Internal spacing */
+    z-index: 10; /* Ensure it stays above the canvas */
+}
+
+#input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Spacing between controls */
+}
+
+#number_input {
+    width: 60px; /* Increase input field width */
+    text-align: center; /* Center text in the input field */
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#button_container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    gap: 10px; /* Spacing between buttons */
+    align-items: center; /* Center buttons horizontally */
+    margin: 20px;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+}
+
+p {
+    font-size: 0.5em;
+}
+
+label {
+    font-size: 0.5em;
+}
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons:hover {
+    background-color: #c1c1c1;
+    color: #ffffff;
+    transform: scale(1.05); /* Enlarge effect on hover */
+}
+
+.buttons:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px; /* Focus effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    aside {
+        top: 10px; /* Keep distance from the top */
+        right: 10px; /* Always align to the right */
+    }
+
+    #button_container {
+        gap: 5px; /* Reduce button spacing for smaller screens */
+    }
+
+    .buttons {
+        width: auto; /* Adjust width automatically */
+        max-width: 200px; /* Limit the maximum width */
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Kaleidoscope</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <script src="assets/javascript.js" defer></script>
+</head>
+<body>
+    <main>
+        <!-- Canvas container -->
+        <div id="canvas_container">
+            <canvas id="visualizer_canvas"></canvas>
+        </div>
+    </main>
+    <aside>
+        <p>Music Kaleidoscope</p>
+        <!-- Control buttons -->
+        <div id="button_container">
+            <button id="start" class="buttons"><img src="assets/icons/record.png" alt="Start"></button>
+            <button id="stop" class="buttons"><img src="assets/icons/pause.png" alt="Pause"></button>
+            <button id="clean" class="buttons"><img src="assets/icons/clean.png" alt="Clean"></button>
+            <button id="download" class="buttons"><img src="assets/icons/download.png" alt="Download"></button>
+        </div>
+        <!-- Slider and input settings -->
+        <div id="arduino_inputs">
+            <div id="input_container">
+                <label for="preset">Choose an artist style:</label>
+                <select id="preset">
+                    <option value="default">None</option>
+                    <option value="andyWarhol">Andy Warhol</option>
+                    <option value="royLichtenstein">Roy Lichtenstein</option>
+                    <option value="keithHaring">Keith Haring</option>
+                    <option value="eduardoPaolozzi">Eduardo Paolozzi</option>
+                    <option value="robertRauschenberg">Robert Rauschenberg</option>
+                </select>                            
+                <div class="color_input">
+                    <input type="color" id="color_input1">
+                    <p>Canvas color</p>
+                </div>
+                <div class="color_input">
+                    <input type="color" id="color_input2">
+                    <p>Brush color</p>
+                </div>                               
+                <label for="number_input">Rotation Axis Angle (°) <br>per Frame</label>
+                <input type="number" id="number_input" placeholder="Enter angle (-360 to 360)" min="-360" max="360" step="1" value="0">
+                <label for="brush_size">Brush Size:</label>
+                <input id="brush_size" type="range" min="1" max="20" value="1" step="1">
+                <label><input type="checkbox" id="auto_clear" checked>Auto Clear Canvas</label>
+                <label for="scale_input">Scale</label>
+                <input type="range" id="scale_input" placeholder="Enter scale factor" min="0" max="2" step="0.1" value="1">
+                <p>Instructions:<br>
+                   - Press 'C' to clear the canvas <br>
+                   - Press 'S' to download<br>
+                   - Press 'Space' to play/pause</p>
+                <p>Made by Zheng Chen,<br>SUPSI</p>
+            </div>
+        </div>
+    </aside>
+</body>
+</html>
