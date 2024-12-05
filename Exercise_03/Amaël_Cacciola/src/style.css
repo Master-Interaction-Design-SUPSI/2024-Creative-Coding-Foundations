@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0d1b2a;
+    color: #fff;
+}
+
+#game-container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+#feedback {
+    font-size: 1.5em;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#bridge {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Griglia 5x5 */
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffd700;
+    border: 2px solid #333;
+}
+
+
+.tile.start {
+    background-color: #4caf50; 
+    color: #fff;
+}
+
+.tile.finish {
+    background-color: #f44336; 
+    color: #fff;
+}
+
+.tile.safe {
+    background-color: #1f7a8c; 
+    color: #0d1b2a;
+}
+
+.tile.trap {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+.tile.player {
+    background-color: #ffd700; 
+    color: #0d1b2a;
+}
+
+.tile.player::before {
+    content: "🏃🏼‍♂️‍➡️";
+    font-size: 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#feedback.success {
+    color: #4caf50;
+}
+
+#feedback.failure {
+    color: #f44336;
+}

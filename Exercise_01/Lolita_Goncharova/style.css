@@ -1,0 +1,49 @@
+html{
+    font-size: 20px;
+    color: antiquewhite;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+
+    /*buttons */
+
+        button{
+            font-size: 5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            }
+        button:hover{
+            background-color: rgb(254, 168, 126);
+
+            }
+        button:active {
+            background-color: rgb(209, 97, 69);
+            cursor: grab;
+            position: relative;
+            top: 0.3rem;
+            }
+        #button-4 {
+            width: 150px;       
+            height: 60px;       
+            padding: 10px 20px; 
+            font-size: 18px;
+            background-color: rgb(255, 146, 113);
+        }
+        
+h1{
+    font-size: 3rem;
+    color: yellowgreen;
+}
+
+p{
+    color: black;
+    line-height: 5rem;
+    background-color: yellowgreen;
+    padding: 0.5rem;
+    margin: 5rem;
+}
+
+

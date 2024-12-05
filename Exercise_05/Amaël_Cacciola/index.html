@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualizer</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Visualizer</h1>
+        <canvas id="audioCanvas"></canvas>
+        <div class="controls">
+            <label for="colorPicker">Wave Color:</label>
+            <input type="color" id="colorPicker" value="#00ff00">
+
+            <label for="lineWidth">Line Width:</label>
+            <input type="range" id="lineWidth" min="1" max="10" value="2">
+
+            <button id="startButton">Start</button>
+            <button id="stopButton" disabled>Stop</button>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+/* main styling */
+* {
+  box-sizing: border-box;
+  cursor: default;
+  letter-spacing: 1.2px;
+  outline: none;
+}
+body {
+  background: #fbfafa;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+/* The main container */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 90%;
+  background: #fbfafa;
+  margin: 4rem auto;
+  box-shadow: 0 1.1rem 4rem rgba(0,0,0,0.4);
+  position: relative;
+}
+
+/* Sidebar */
+.menu {
+  flex: 4;
+  flex-direction: column;
+  background: #323644;
+  color: #fbfafa;
+}
+.menu-profile-container {
+  width: 100%;
+  padding: 32px;
+  overflow: hidden;
+}
+.menu-profile-pic img{
+  float: left;
+  height: 2rem;
+  width: auto;
+}
+.nav-group {
+  padding: 32px 0;
+}
+.nav-group-title {
+  text-transform: uppercase;
+  padding-left: 32px;
+  padding-bottom: 16px;
+  color: rgba(255,255,255,0.3);
+  font-weight: 400;
+  font-size: 20px;
+}
+.nav-group-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.group-list-item {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  position: relative;
+}
+.group-list-item:hover,
+.group-list-item.active {
+  background-color: #1c1e26;
+  font-weight: 400;
+}
+.group-list-item * {
+  cursor: pointer;
+}
+
+/* The arduino elements */
+#serial_control_bar {
+  margin: 2rem;
+}
+
+/* The right part with the cards */
+.main-container {
+  display: flex;
+  flex: 8;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+/* The title section */
+.top {
+  padding: 1rem 2rem;
+
+}
+
+/* The div with the card */
+.results {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.results div {
+  flex: 0 0 28%;
+  margin: .3rem;
+  margin-top: 1rem;
+}
+
+/* The area div with the results */
+.middle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.middle div {
+  flex: 0 0 100%;
+  margin: .3rem;
+  margin-top: 1rem;
+}
+
+/* Elements that appears and disappears on the main container when btn clicked (the home image, the lucky image and the credits) */
+#home-img {
+  width: 30rem;
+  height: auto;
+  margin: 0 auto;
+}
+#lucky-img {
+  width: 10rem;
+  height: auto;
+  margin: 0 auto;
+  display: none;
+}
+#credits-info {
+  text-align: center;
+}
+
+/* Styling of the cards */
+.card-result {
+  padding: 2.5rem 0 3.5rem;
+  margin-bottom: 2rem;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 16px -8px;
+  border-radius: 1rem;
+  height: auto;
+  cursor: grab;
+}
+
+.card-result .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+.card-result .picture::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #323644;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+
+.card-result .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+  box-shadow: 0 0 0 14px #f7f5ec;
+}
+
+.card-result h4 {
+  margin: 1rem 6rem;
+}
+
+.card-result .title {
+  display: block;
+  font-size: 1rem;
+  color: #4e5052;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+
+.card-result .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #fff ;
+  background-color: #323644;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.social div {
+  display: inline-flex;
+  background-color: #fbfafa;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  margin: 1rem;
+  justify-content: center;
+}
+.social i {
+  padding-top: 1.5rem;
+  width: 3em;
+  height: 3rem;
+  color: #323644;
+}
+
+.social img {
+  width: 12rem;
+  height: auto;
+}
+
+/* Responsive layout - Tablet devices */
+@media only screen and (max-width: 1200px) {
+ 
+  .card-result h4 {
+    margin: 1rem 4rem;
+  }
+  #home-img {
+    width: 20rem;
+  }
+  #lucky-img {
+    width: 10rem;
+    display: none;
+  }
+}
+
+/* Responsive layout - Mobile devices*/
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .results {
+    flex-direction: column;
+  }
+  .card-result h4 {
+    margin: 1rem 2rem;
+  }
+  #home-img {
+    width: 15rem;
+  }
+  #lucky-img {
+    width: 10rem;
+    display: none;
+  }
+}

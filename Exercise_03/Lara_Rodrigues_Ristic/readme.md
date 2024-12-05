@@ -1,0 +1,3 @@
+#Game
+##Lara Rodrigues Ristic
+###The game has three levels, each level has more steps than the previous. Arrow up is jumping (2 steps forward) and Arrow right is one step forward. The gifs and messages are indicators if the user fell into a trap. There are two different gifs for trap and clear step, another gif is for when the user passes the level and a gif for when the user wins the game. The game resets when the user clicks the button or when the user passes the game, if the user falls into a trap then only the level resets. 

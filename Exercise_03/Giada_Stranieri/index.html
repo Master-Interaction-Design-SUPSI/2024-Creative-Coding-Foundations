@@ -1,0 +1,33 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bridge Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="bridge">
+            <div id="mario" class="character"></div>
+            <div id="princess" class="character princess"></div>
+        </div>
+        <div class="game-info">
+            <h1>Help Mario save the princess!</h1>
+            <p id="status">Safe! Go Ahead!</p>
+        </div>
+        <div id="winMessage" class="win-message">You saved the princess! You won!</div>
+    </div>
+    
+    <div class="controls">
+        <button id="moveRight" class="control-btn">Move Forward</button>
+        <button id="jump" class="control-btn">Jump</button>
+    </div>
+
+    <audio id="trapSound" src="Super Mario Bros. - Lost a Life Sound Effect.mp3" preload="auto"></audio>
+    <audio id="victorySound" src="Super Mario Bros. Music - Level Complete.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

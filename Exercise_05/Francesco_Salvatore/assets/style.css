@@ -1,0 +1,86 @@
+/* Global Styles */
+body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header {
+    border-bottom: 2px solid white;
+    max-width: 75%;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #logotipo {
+    margin-bottom: 3px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  #controls {
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 50%;
+    height: auto;
+  }
+  
+  button {
+    padding: 15px 25px;
+    color: white;
+    background-color: #494949;
+    cursor: pointer; /* Changed from "cell" to "pointer" */
+    border-radius: 10px;
+  }
+  
+label {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+button, label, input {
+    margin: 0;
+    padding: 5px 10px;
+  }
+  
+/* Setting canvas Dimension */
+canvas {
+    display: block;
+    max-height: 500px;
+    max-width: 900px;
+  }
+
+
+
+/* Media Query for Smartphones --> delete max width and width limitation */
+@media (max-width: 768px) {
+#controls {
+    width: 95%;
+    gap: 15px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+}
+canvas {
+    display: block;
+    max-height: 700px;
+    max-width: 1500px;
+  }
+
+}

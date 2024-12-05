@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pittura sonora</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>   
+    <main>
+        <h1>Generate your universe with the sound</h1>
+        <div id="container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <h2>Selecting canvas and brush colors.</h2>
+
+        <div id="input_container">
+            <div class="color_input">
+            <input type="color" id="color_input1">
+            <p>Canvas color</p>
+            </div>
+            <div class="color_input">
+            <input type="color" id="color_input2">
+            <p>Brush color</p>
+            </div>
+            <div class="number_input">
+                <input type="number" id="number_input">
+                <p>Rotation axis angle</p>
+            </div>
+        </div>
+
+        <div id="button_container">
+            <button id="start" class="buttons">Start record</button>
+            <button id="stop" class="buttons">Stop record</button>
+        </div>
+        <div id="button_container">
+        <button id="clean" class="buttons">Clean all</button>
+        <button id="download" class="buttons">Download</button>
+        </div>
+    </main>
+</body>
+</html>
