@@ -13,13 +13,13 @@ body, html {
 }
 
 #left-div {
-    width: 60%; /* Occupazione in larghezza */
+    width: 60%;
     height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #000; /* Sfondo per il div di sinistra */
+    background-color: #000;
     color: white;
     z-index: 1;
 }

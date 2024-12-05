@@ -1,3 +1,4 @@
+const DATABASE_WEATHER ='city-weather.json';
 const START_BUTTON = document.getElementById('start-button');
 const FOG_IMAGE = document.querySelector(".overlay-image");
 const BACKGROUND_GIF = document.getElementById("background-gif");
@@ -20,12 +21,11 @@ let isRaining = false; // manage rain animation
 
 // Weather data
 function fetchWeatherData(city) {
-    const apiKey = 'a11ff28d306f17dddfed773c3a18e92f';
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
 
     stopRain(); // Reset previous effects
 
-    fetch(apiUrl)
+    fetch(DATABASE_WEATHER)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`City not found: ${city}`);
