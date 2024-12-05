@@ -1,0 +1,178 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #008080;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    text-align: center;
+    max-width: 80%;
+    margin: 30px;
+    padding: 30px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* welcome screen styles */
+#first-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+b {
+    font-weight: bold;
+}
+
+#press-space {
+    font-weight:bold;
+    color: #FF6F61;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FF6F61;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #2F4F4F;
+}
+
+/* game screen styles */
+#game-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: aliceblue;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 7px;
+    color:#008080;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #008080;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-0.2rem);
+}
+
+button:active {
+    transform: translateY(-0.2rem);
+}
+
+#timer {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF6F61;
+}
+
+#score-display {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#options-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center; /* Center buttons */
+    margin-top: 20px;
+}
+
+
+/* Popup Styles */
+#popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: aliceblue;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* to make it be on the front */
+    gap: 30px;
+}
+
+#popup h2 {
+    color: #FF6F61;
+}
+
+#restart-button {
+    background: #008080;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#restart-button:hover {
+    background: #FF6F61;
+    transform: translateY(-0.2rem);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#hint-box, #message-box {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .option {
+        font-size: 1em;
+    }
+}

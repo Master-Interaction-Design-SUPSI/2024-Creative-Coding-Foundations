@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8">
+	<title> 🎬 Guess The TV Show </title>
+	<link rel="stylesheet" href="style.css"></link>
+    <!-- <script src="cleaningDataScript.js" type="module" defer></script> -->
+	<script src="gameScript.js" type="module" defer></script>
+</head> 
+<body> 
+	<main> 
+        <!-- Welcome screen -->
+        <section id="first-screen">
+            <div id="explanation"></div>
+                <h1>Welcome to the TV Show Challenge!</h1>
+                <h3>Test your knowledge and earn as many points in 2 minutes by guessing TV shows from pixelated posters!</h3>
+                <h2>Scoring system:</h2>
+                <h3>If you guess from the <b>first try</b> you get <b>3 points</b></h3> 
+                <h3><b>Second try</b> guess gives you <b>2 points</b></h3>
+                <h3>After the second try you can <b>get a hint</b> and still win <b>1 point</b></h3>
+                <h2>Enjoy the game!</h2>
+            </div>
+
+            <div id="press-space">
+                <p>Press space to begin</p>
+            </div>
+
+        </section>
+        
+        <!-- Game screen -->
+        <section id="game-section" style="display: none;">
+
+            <div id="timer">02:00</div>
+            
+            <div>
+                <canvas id="canvas" width="252" height="363"></canvas>
+                <p id="score-display">Score: 0</p>
+                <p id="difficulty-display"></p>
+            </div>
+
+            <div id="options-container">
+                <button class="option" id="option-1"></button>
+                <button class="option" id="option-2"></button>
+                <button class="option" id="option-3"></button>
+                <button class="option" id="option-4"></button>
+            </div>
+
+            <div id="popup" style="display: none;">
+                <h2>Time's Up!</h2>
+                <p>Your score: <span id="score"></span></p>
+                <button id="restart-button">Restart Game</button>
+            </div>
+
+            <div id="hint-box"></div>
+
+            <div id="message-box"></div>
+
+        </section>
+	</main>
+</body>
+</html>
