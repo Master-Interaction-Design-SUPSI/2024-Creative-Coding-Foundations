@@ -1,0 +1,47 @@
+   {"coord": {
+      "lon": 8.9821,
+      "lat": 45.8674
+    },
+    "weather": [
+      {
+        "id": 800,
+        "main": "Rain",
+        "description": "Moderate rain",
+        "icon": "01n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 278.4,
+      "feels_like": 278.4,
+      "temp_min": 277.05,
+      "temp_max": 279.45,
+      "pressure": 1025,
+      "humidity": 71,
+      "sea_level": 1025,
+      "grnd_level": 957
+    },
+    "visibility": 8000,
+    "wind": {
+      "speed": 1.03,
+      "deg": 0
+    },
+    "clouds": {
+      "all": 75
+    },
+    "rain": {
+        "1h": 1.13
+      },
+    "dt": 1733415121,
+    "sys": {
+      "type": 1,
+      "id": 6936,
+      "country": "CH",
+      "sunrise": 1733381399,
+      "sunset": 1733413200
+    },
+    "timezone": 3600,
+    "id": 2659689,
+    "name": "Mendrisio",
+    "cod": 200
+  }
