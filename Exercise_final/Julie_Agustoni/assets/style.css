@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: Orbitron, Courier, monospace;
+  font-size: 1rem;
+  color: blueviolet;
+  background-color: black;
+  letter-spacing: 3px;
+}
+
+body {
+  cursor: crosshair;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Quantico, Courier, monospace;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+#intro,
+#mission,
+section,
+#crew,
+#score-board,
+#control,
+#score, #quote {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid blueviolet;
+  border-radius: 0.5rem;
+}
+
+li {
+  margin: 0px 0px 0px 50px;
+}
+
+.character {
+  border: 2px solid blueviolet;
+  border-radius: 0.2rem;
+  margin: 1px;
+}
+
+.character:hover {
+  background-color: HotPink;
+  cursor: cell;
+}
+
+
+.character-img{
+  width: 100%;
+}
+
+
+
+button {
+  font-family: Orbitron, Courier, monospace;
+  font-size: 1rem;
+  color: blueviolet;
+  background-color: black;
+  padding: 10px;
+  margin: 5px 15px 5px 0px;
+  border: 0.5px solid blueviolet;
+  border-radius: 0.2rem;
+}
+
+button:hover {
+  background-color: #521b85;
+  position: relative;
+  top: -0.1rem;
+  cursor: cell;
+}
+
+button:active {
+  background-color: darkblue;
+  position: relative;
+  top: 0.1rem;
+}
+
+#quote{
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 1.3rem;
+  }
+
+  main {
+    display: flex; /* Enable flexbox */
+  }
+  section {
+    flex: 1; /* Sections take equal space */
+  }
+
+  aside {
+    flex-basis: 30%; /* Set a fixed width for the aside */
+  }
+
+  #container-character {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .character {
+    flex: 1 1 25%;
+    border: 2px solid blueviolet;
+    border-radius: 0.5rem;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .character {
+    flex: 1 1 20%;
+  }
+
+}
