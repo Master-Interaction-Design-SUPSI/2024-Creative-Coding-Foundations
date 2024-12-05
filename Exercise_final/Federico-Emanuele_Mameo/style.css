@@ -1,0 +1,189 @@
+@font-face {
+    font-family: myfont;
+    src: url(assets/digital-7.ttf);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+#left-div {
+    width: 60%; /* Occupazione in larghezza */
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000; /* Sfondo per il div di sinistra */
+    color: white;
+    z-index: 1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#start-button {
+    position: absolute;
+    bottom: 12%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    padding: 8px 16px;
+    font-size: 14px;
+    background: #000;
+    color: red;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#start-button img {
+    max-height: 20px;
+    width: auto;
+    margin-right: 8px;
+}
+
+#city-input {
+    position: absolute;
+    bottom: 34%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#fetch-weather {
+    position: absolute;
+    bottom: 27%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    padding: 10px 16px;
+    font-size: 16px;
+    background: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#rain-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Altezza del canvas a metà del div di sinistra */
+    pointer-events: none; /* Permette l'interazione con gli altri elementi sopra */
+}
+
+.sample-content {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+#right-div {
+    width: 40%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Scroll per contenuti lunghi */
+    padding: 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#history-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+h1{
+    color: #cb3333;
+    font-family: myfont;}
+
+h2 {
+    font-size: 18px;
+    color: #cb3333;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    color: #e1e1e1;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.flag-img {
+    max-height: 16px; /* Altezza della bandiera */
+    display: inline-block;
+}
+
+#time-box {
+    position: absolute;
+    left: 72%;
+    bottom:8%;
+    padding: 8px 50px;
+    font-size: 70px;
+    font-family: myfont;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(192, 44, 44);
+    border: 1px solid rgb(192, 44, 44);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#cloud-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3; /* Superiore a BACKGROUND_GIF */
+    pointer-events: none; /* Non interferisce con i clic */
+}
+
+@media (max-width: 1023px) {
+    #left-div {
+        width: 100%;
+    }
+    .background-image, .overlay-image {
+        width: 80%;
+    }
+    #city-input {
+        width: 150px;
+    }
+    #start-button, #fetch-weather {
+        padding: 6px 12px;
+    }
+}

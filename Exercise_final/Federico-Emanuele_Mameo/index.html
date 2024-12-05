@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Weather and Audio</title>
+    <link rel="icon" type="image/png" href="assets/vecteezy_realistic-dense-cloud-png-design-on-a-transparent_24679444.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="left-div">
+        <img src="assets/car-driving-notime-nofog.gif" alt="Driving No Fog" class="background-image" id="background-gif">
+        <img src="assets/3-prova-fog.png" alt="Fog Overlay" class="overlay-image" id="fog-image">
+        <img src="" alt="Cloud Overlay" id="cloud-overlay" style="display: none;">
+        <canvas id="rain-canvas"></canvas>
+        
+
+        <button id="start-button">
+            <img src="assets/microphone-icon.png" alt="Mic Icon">
+            AUDIO
+        </button>
+
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="fetch-weather">Go there</button>
+
+        <div id="time-box"></div>
+    </div>
+
+    <div id="right-div">
+        <h1>Weather logbook</h1>
+        <div id="history-container"></div>
+    </div>
+</body>
+</html>
