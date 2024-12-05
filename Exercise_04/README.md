@@ -1,17 +1,8 @@
-# Exercise 04
+# Excersise 04
+Plant Planet
 
-## Brief
+## Author
+Tehreem Raheel
 
-Starting from an online API, implement a web page that:
-
-- allows the user to visually see the data (at least 3 objects)
-- allows the user to interact with some visual elements
-- allows to see something even if the data are not available 
-- is responsive
-
-
-## Topics
-
-- Arrays and objects 
-- JSON files
-- External API
+## Description
+This is an interactive interface where user can explore and save their favorite plants. It displays detailed information such as the plant’s name, year, and bibliography etc. The data is fetched from a plants API which is stored locally in JSON file. 

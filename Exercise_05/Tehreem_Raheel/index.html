@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualization</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <button id="start_listening">Start Listening</button>
+
+        <div class="controls">
+            <label for="wave_color">Wave Color</label>
+            <input type="color" id="wave_color" value="#ffffff">
+        
+            <label for="circle_color">Circle Color</label>
+            <input type="color" id="circle_color" value="#000000">
+        
+            <label for="circle_size">Circle Size:</label>
+            <input type="range" id="circle_size" min="20" max="150" value="100">
+        </div>
+
+        <canvas id="canvas"></canvas>
+    </div>
+
+</body>
+</html>

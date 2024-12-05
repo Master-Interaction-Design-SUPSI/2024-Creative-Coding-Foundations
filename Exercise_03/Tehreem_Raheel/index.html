@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Castle Adventure</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Magic Castle Adventure</h1>
+        <p>Help the princess reach her castle safely by stepping on the correct stones!
+        <!-- Bridge Path -->
+        <div class="bridge">
+            <div id="player" class="princess"></div>
+            <div class="stones" id="stones">
+                <!--stepping stones -->
+                <div class="stone" id="stone1"></div>
+                <div class="stone" id="stone2"></div>
+                <div class="stone" id="stone3"></div>
+                <div class="stone" id="stone4"></div>
+                <div class="stone" id="stone5"></div>
+                <div class="stone" id="stone6"></div>
+                <div class="stone" id="stone7"></div>
+                <div class="stone" id="stone8"></div>
+                <div class="stone" id="stone9"></div>
+                <div class="stone" id="stone10"></div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <p class="instructions">Use the <strong>Right Arrow</strong> to move forward. Press <strong>Space</strong> to make the princess jump over traps!</p>
+      
+
+        <!--Messages -->
+        <div class="game-over-message" id="gameOverMessage">Oh no! You triggered a trap. Try again!</div>
+        <div class="win-message" id="winMessage">Thank you! You've saved the princess!</div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
