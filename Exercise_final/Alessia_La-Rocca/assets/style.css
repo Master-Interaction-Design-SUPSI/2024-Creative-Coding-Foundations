@@ -1,0 +1,85 @@
+body, canvas, html {
+    background-color: #104534;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: 'Satoshi', sans-serif;
+    color: #ebff70;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#title{
+    position: relative;
+    margin: 20px; 
+    top: 0;
+    left: 0; 
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    
+}
+#subtitle {
+    font-size: 1.3rem;
+}
+
+button, input {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px;
+    border: 4px solid #ebff70;
+    border-radius: 20px;
+    background-color: #104534;
+    color: #ebff70;
+    transition: 0.3s ease;
+}
+#letter_input{
+    position: absolute;
+    bottom: 2rem;
+    margin: 20px;
+
+}
+
+button:hover {
+    background-color: #ebff70;
+    color: #104534;
+    cursor: pointer;
+}
+
+button:focus, input:focus {
+    outline: 2px solid #ebff70;
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #subtitle {
+        font-size: 1rem;
+    }
+    button, input {
+        font-size: 0.9rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
