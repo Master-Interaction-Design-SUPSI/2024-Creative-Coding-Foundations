@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Daily Dashboard</h1>
+        <div class="theme-switcher">
+            <label for="theme">Choose a Theme:</label>
+            <select id="theme" onchange="changeTheme()">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <section class="tasks">
+            <h2>Task List</h2>
+            <!-- Dropdown per attività predefinite -->
+            <label for="predefined-tasks">Add a new task:</label>
+            <select id="predefined-tasks">
+                <option value="" disabled selected>Select a task</option>
+                <option value="Wake up">Wake up</option>
+                <option value="Open the window">Open the window</option>
+                <option value="Morning stretch">Morning stretch</option>
+                <option value="Breakfast preparation">Breakfast preparation</option>
+                <option value="Check news">Check news</option>
+                <option value="Take a shower">Take a shower</option>
+                <option value="Brush teeth and wash face">Brush teeth and wash face</option>
+                <option value="Get dressed for university">Get dressed for university</option>
+                <option value="Pack lunch">Pack lunch</option>
+                <option value="Leave for train station">Leave for train station</option>
+                <option value="Attend class at 09:05">Attend class at 09:05</option>
+                <option value="Lunch break">Lunch break</option>
+                <option value="Evening relaxation">Evening relaxation</option>
+                <option value="Dinner preparation">Dinner preparation</option>
+                <option value="Video call with family/girlfriend">Video call with family/girlfriend</option>
+                <option value="Watch TV for relaxation">Watch TV for relaxation</option>
+                <option value="Prepare for next day">Prepare for next day</option>
+                <option value="Go to bed">Go to bed</option>
+            </select>
+            
+            <button id="add-task">Add Task</button>
+            <ul id="task-list"></ul>
+            <input type="text" id="taskInput" placeholder="Add a personal task...">
+            <button id="addTaskButton">Add Personal Task</button> 
+            <ul id="taskList"></ul>
+        </section>
+
+        <section class="completed-tasks">
+            <h2>Completed Tasks</h2>
+            <textarea id="completed-task-input" placeholder="Write your completed task here..." rows="4" cols="50"></textarea>
+            <button id="add-completed-task">Add Task</button>
+            <ul id="completed-task-list"></ul>
+        </section>
+
+        <section class="timer">
+            <h2>Timer</h2>
+            <div id="timerDisplay">00:00</div>
+            <button id="startTimer">Start</button>
+            <button id="resetTimer">Reset</button>
+        </section>
+        
+
+        <section class="notes">
+            <h2>Notes and Ideas</h2>
+            <textarea id="notesInput" placeholder="Write your notes..."></textarea>
+            <button id="saveNoteButton">Save Note</button>
+            <div id="notesDisplay"></div>
+        </section>
+
+        <section class="long-term-goals">
+            <h2>Long-Term Goals</h2>
+            <textarea id="longTermGoals" placeholder="Write your long-term goals..."></textarea>
+            <button id="saveLongTermGoals">Save Goals</button>
+        </section>
+        
+    </main>
+
+    <div class="footer-banner">
+        <p>2024 My Dashboard Exercise 2 - Creative Coding Foundation Marco Lurati, Giovanni Profeta, Luca Draisci;  2024 My Dashboard Exercise 2 - Creative Coding Foundation Marco Lurati, Giovanni Profeta, Luca Draisci;  2024 My Dashboard Exercise 2 - Creative Coding Foundation Marco Lurati, Giovanni Profeta, Luca Draisci;  2024 My Dashboard Exercise 2 - Creative Coding Foundation Marco Lurati, Giovanni Profeta, Luca Draisci;  2024 My Dashboard Exercise 2 - Creative Coding Foundation Marco Lurati, Giovanni Profeta, Luca Draisci;</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
