@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <a href="saved_images.html" class="button"></a>
+
+</head>
+<body>
+    <div id="dynamic_background">
+        <canvas id="background_canvas"></canvas>
+    </div>    
+    <nav class="navbar">
+        <div class="menu">
+            <button class="menu-btn"><img src="assets/dropdown-menu.png" width="30" lenght="30"></button>
+            <ul class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="saved_images.html">Saved Patterns</a></li>
+            </ul>
+        </div>
+    </nav>    
+    <h1></h1>
+    <div class="input_container" id="input_container"></div>
+        <button id="add_city_button">Add city</button>
+        <button id="compare_button">Compare</button>
+        <div class="canvas_container" id="canvas_container">
+    </div>
+</body>
+</html>

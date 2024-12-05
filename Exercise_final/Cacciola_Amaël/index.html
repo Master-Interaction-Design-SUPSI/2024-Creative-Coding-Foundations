@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collect the Letters</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Collect the Letters and find the font!</h1>
+        <div id="feedback">Inizia il gioco!</div>
+        <div id="bridge"></div>
+    </div>
+    <canvas id="backgroundCanvas"></canvas>
+
+<!-- Aggiungi questo HTML per la finestra modale -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeBtn" class="close-btn">&times;</span>
+        <p id="fontHistory"></p>
+    </div>
+</div>
+
+
+
+    <audio id="jump-sound" src="src/audio/jump.mp4"></audio>
+    <audio id="safe-sound" src="src/audio/Beep.mp3"></audio>
+    <audio id="trap-sound" src="src/audio/Fail Sound Effect.mp3"></audio>
+    <audio id="win-sound" src="src/audio/win.mp4"></audio>
+    <script src="src/script.js"></script>
+</body>
+</html>

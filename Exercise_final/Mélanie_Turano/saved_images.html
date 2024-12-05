@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Images</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="saved_images.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu">
+            <button class="menu-btn"><img src="assets/dropdown-menu.png" width="30" lenght="30"></button>
+            <ul class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="saved_images.html">Saved Patterns</a></li>
+            </ul>
+        </div>
+    </nav>  
+    <h1>Saved City Patterns</h1>
+    <div id="filters">
+        <input type="text" id="filter_city" placeholder="Filter by city">
+        <label for="date_filter">Filter by Date:</label>
+        <input type="date" id="filter_date" name="date_filter">
+        <button id="apply_filters">Apply Filters</button>
+        <button id="clear_filters">Clear Filters</button>
+    </div>
+    <div id="saved_images_container"></div>
+</body>
+</html>

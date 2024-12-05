@@ -1,0 +1,5 @@
+# Weather comparator
+
+## Mélanie Turano
+
+### This project combines the API concept and the canvas concept. Starting from the exercise created with the API where it was possible to display the weather conditions of 3 different cities at the same time, I developed a platform where it is possible to compare the weather of different cities (the user chooses which and how many cities to display). Within the canvas it is possible to visualize the weather conditions through a “pattern”: the icon represents the weather conditions, the speed and amount of circles represents the humidity while the background of the canvas changes according to the temperature. The generated images can be saved locally or within the site. Within this online archive it is possible to trace all displayed patterns by filtering them by city or date (or both if searching for a specific section). 

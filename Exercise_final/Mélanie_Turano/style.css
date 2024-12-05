@@ -1,0 +1,322 @@
+body {
+  text-align: center;
+  margin: 0px;
+  background-color: #fbffe9;
+  font-family: "Open Sans", sans-serif;
+  color: #1D1B19;
+  padding-top: 60px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #00272B;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #F8FFDB;
+}
+
+
+.input_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.canvas_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+canvas {
+  /* border: 0.5px solid #2D3436; */
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 150px;
+}
+
+button {
+  background-color: #001A1D;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #96ac35;
+}
+
+/* 
+button {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #00CEC9;
+  color: #2D3436;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00A397;
+} */
+
+.city_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.weather-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  background-color: #d5dcb7;
+}
+
+.summary_item {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.summary_item h3 {
+  margin-bottom: 2px;
+  font-size: 10px;
+  font-weight: 900;
+  color: #161616;
+}
+
+.summary_item p {
+  font-size: 13px;
+  font-weight:400;
+  color: #161616;
+}
+
+/* CSS for saved_images.html page */
+#saved_images_container p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
+}
+
+
+.image_card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image_card img {
+  max-width: 250px;
+  height: auto;
+  margin-top: 5px;
+}
+
+#filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+#filters input,
+#filters button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 200px;
+}
+
+#filters button {
+  background-color: #001A1D;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  /* margin-right:200px; */
+}
+
+#clear_filters {
+  margin-right:200px;
+}
+
+label[for="date_filter"]{
+  margin-top: 210px;
+}
+
+#filters button:hover {
+  background-color: #96ac35;
+}
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 40px;
+}
+
+/* .menu-btn:hover {
+  text-decoration: underline;
+} */
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #001A1D;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown li {
+  border-bottom: 1px solid #96ac35;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li a {
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background-color: #96ac35;
+}
+
+.menu:hover .dropdown {
+  display: block;
+}
+
+/* Input style*/
+input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 15px;
+  margin: 10px auto;
+  border: 2px solid #96ac35; 
+  border-radius: 25px; 
+  font-size: 16px;
+  background-color: #ecf0f1; 
+  color: #2c3e50; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+}
+
+input[type="text"]:hover {
+  background-color: #dff2e1;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #96ac35; 
+  box-shadow: 0 0 8px #001A1D; /* Glow */
+  background-color: white;
+}
+
+/* Placeholder style */
+input[type="text"]::placeholder {
+  color: #95a5a6;
+  font-style: italic;
+}
+
+/* Date input style */
+input[type="date"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 15px;
+  border: 2px solid #96ac35; 
+  border-radius: 25px; 
+  font-size: 16px;
+  background-color: #f4faff; 
+  color: #34495e; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+}
+
+input[type="date"]:hover {
+  border-color: #1abc9c; 
+}
+
+/* Focus: Glow */
+input[type="date"]:focus {
+  outline: none; 
+  border-color: #16a085;
+  box-shadow: 0 0 8px #1abc9c; /* Glow */
+}
+
+input[type="date"]::placeholder {
+  color: #95a5a6;
+  /* font-style: italic; */
+}
+
+#dynamic_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#background_canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
