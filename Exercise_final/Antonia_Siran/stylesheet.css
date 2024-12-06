@@ -1,0 +1,223 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('assets/favicon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(assets/PixelGame.otf);
+}
+
+
+
+
+/* WELCOME POP-UP */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+#welcome-popup {
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('assets/pop-up.png') no-repeat center center;
+  background-size: contain;
+  text-align:center;
+  width: 600px;
+  height: 500px;
+  position:center;
+}
+
+#text-container {
+  max-width: 90%; 
+  margin: 0 auto; 
+}
+
+h1{
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5); 
+  font-size: 60px;
+  font-family: myFont;
+  color: rgb(255, 255, 255); 
+  margin-bottom: 15px;
+}
+
+#start-button {
+  background: url('assets/play.png') no-repeat center center;
+  background-size: contain;
+  width: 330px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+
+}
+
+#start-button:hover {
+  transform: scale(1.1); 
+}
+
+
+
+
+/* SELECTION POP-UP */
+
+#selection-popup {
+  z-index: 1000;
+}
+
+#popup-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 900px;
+  background: url(assets/pop-up.png) no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+
+#popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2000;
+}
+
+#popup-content h2 {
+  margin: 20px 0 10px 0;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-family: myFont;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#background-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.background-option, .character-option {
+  width: 120px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+}
+
+.background-option:hover, .character-option:hover {
+  transform: translateY(-5px) scale(1.1); 
+}
+
+.background-option.selected {
+  border-color: rgb(0, 0, 0); 
+  transform: scale(1.20);      /
+}
+ 
+
+.character-option.selected {
+  transform: scale(1.10);      
+}
+
+
+
+/* GAME CANVAS */
+
+#game-canvas{
+  margin: 0 auto;
+  z-index: 1000; 
+}
+
+
+
+/* SCORE  */
+
+#score {
+  position:absolute; 
+  left:0; 
+  top: 0; 
+  font-size: 3em; 
+  color:white; 
+  z-index: 1000; 
+  padding: 12px 16px;
+  font-family: myFont;
+}
+#star {
+  width:30px;
+  height:30px;
+}
+
+
+
+/* LOSE POP-UP */
+
+#lose-popup{
+  background: url('assets/pop-up.png') no-repeat center center;
+  background-size: contain; 
+  display: none;
+  position: fixed; 
+  z-index: 2000; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  width: 800px;
+  height: 600px;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+#lose-popup-content {
+text-align: center;
+}
+
+#lose-popup-title {
+    width: 800px; 
+    height: auto;
+    margin-bottom: 80px;
+}
+
+#retry-button {
+    width: 150px; 
+    height: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-size: contain;
+}
+
+#retry-button:hover {
+  transform: scale(1.1); 
+}
+
+

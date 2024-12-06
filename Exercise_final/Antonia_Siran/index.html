@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bouncy Adventure</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+    <div id="score"></div>
+    <div class="overlay"></div>
+
+    <div id="welcome-popup">
+        <div id="text-container">
+            <h1>Start your Bouncy Adventure now!</h1>
+        </div>
+        <button id="start-button"></button>
+    </div>
+
+
+    <div id="selection-popup" style="display: none;">
+
+        <div id="popup-background"></div>
+
+        <div id="popup-content">
+            <h2>Choose your background</h2>
+            <div id="background-selection">
+
+                <img src="assets/Backgrounds/Desert-Selection.png" id="bg1" class="background-option"
+                    data-start-bg="assets/Backgrounds/DesertBG-START.png"
+                    data-continue-bg="assets/Backgrounds/DesertBG-CONTINUE.png" alt="Desert Background Selection">
+                <img src="assets/Backgrounds/Farm-Selection.png" id="bg2" class="background-option"
+                    data-start-bg="assets/Backgrounds/FarmBG-START.png"
+                    data-continue-bg="assets/Backgrounds/FarmBG-CONTINUE.png" alt="Farm Background Selection">
+                <img src="assets/Backgrounds/Forest-Selection.png" id="bg3" class="background-option"
+                    data-start-bg="assets/Backgrounds/ForestBG-START.png"
+                    data-continue-bg="assets/Backgrounds/ForestBG-CONTINUE.png" alt="Forest Background Selection">
+                <img src="assets/Backgrounds/Beach-Selection.png" id="bg4" class="background-option"
+                    data-start-bg="assets/Backgrounds/BeachBG-START.png"
+                    data-continue-bg="assets/Backgrounds/BeachBG-CONTINUE.png" alt="Beach Background Selection">
+            </div>
+            <div id="character-selection">
+                <h2>Choose your character</h2>
+
+                <img src="assets/Characters/FOX_STAY.png" id="ch1" class="character-option"
+                    data-stay-img="assets/Characters/FOX_STAY.png" data-jump-img="assets/Characters/FOX_JUMP.png"
+                    alt="Fox Character">
+                <img src="assets/Characters/PIG_STAY.png" id="ch2" class="character-option"
+                    data-stay-img="assets/Characters/PIG_STAY.png" data-jump-img="assets/Characters/PIG_JUMP.png"
+                    alt="Pig Character">  
+                <img src="assets/Characters/KOALA_STAY.png" id="ch3" class="character-option"
+                    data-stay-img="assets/Characters/KOALA_STAY.png" data-jump-img="assets/Characters/KOALA_JUMP.png"
+                    alt="Koala Character">
+                <img src="assets/Characters/SHEEP_STAY.png" id="ch4" class="character-option"
+                    data-stay-img="assets/Characters/SHEEP_STAY.png"
+                    data-jump-img="assets/Characters/SHEEP_JUMP.png" alt="Sheep Character">
+            </div>
+        </div>
+    </div>
+
+    <div id="lose-popup">
+        <div id="lose-popup-content">
+           
+            <img src="assets/Header.png"  id="lose-popup-title">
+            <img src="assets/Replay.png"  id="retry-button" >
+        </div>
+    </div>
+
+    <canvas id="game-canvas" width="700px" height="800px" style="display: none;"></canvas>
+
+    <audio id="background-music" src="assets/music.mp3" loop autoplay muted></audio>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
