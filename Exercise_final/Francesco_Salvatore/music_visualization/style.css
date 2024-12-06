@@ -1,0 +1,48 @@
+body, h1, p{
+  color: white;
+  margin: 0;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#testo {
+  color: whitesmoke;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+
+#Logotipo {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  align-items: center;
+}
+
+
+canvas {
+  display: block;
+}
+
+#controls {
+  position: fixed;
+  bottom: 0px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.441);
+  padding: 10px;
+  border-radius: 5px;
+  align-content: center;
+}
+
+.volume-control, .time-control {
+  margin-top: 10px;
+}

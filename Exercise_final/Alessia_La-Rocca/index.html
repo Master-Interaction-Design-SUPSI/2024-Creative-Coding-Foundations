@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="Author" content="Alessia La Rocca">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creative Coding Foundations Exam - Alessia La Rocca</title>
+    <script src="assets/WebSerialAPI_library.js" defer></script>
+    <script src="assets/WebSerialAPI_ui.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/WebSerialAPI_style.css">
+    <script src="assets/script.js" defer></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&f[]=general-sans@1,2&f[]=zodiak@1,2&f[]=boska@1,2&f[]=ranade@1,2&f[]=sentient@1,2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <!-- WebSerialAPI control menu -->
+        <div id="support_status"></div>
+
+        <div id="serial_control_bar">
+            <button id="button_start_serial">Start Serial Communication</button>
+            <button id="button_stop_serial">Stop Serial Communication</button>
+            <p>Potentiometer: <span id="pot1_value">0</span></p>
+            <p>Light Sensor: <span id="light1_value">0</span></p>
+            <p>Button State: <span id="button_state">Not Pressed</span></p>
+            <p>Switch State: <span id="switch_state">OFF</span></p>
+        
+            <div id="serial_logger_container"></div>
+        </div>
+
+        <div id="menu">&#9881;</div>
+        <!-- end: WebSerialAPI control menu -->
+
+        <div id="title">
+        <h1>Proto<em>typo</em></h1>
+        <p id="subtitle">Physical Typo Tester</p>
+        </div>
+        
+    </header>
+    
+    <main>
+        <div id="container">
+            <canvas id="canvas"></canvas>
+            
+        </div>
+        <input type="text" id="letter_input" placeholder="Your text here" />
+    </main>
+</body>
+</html>

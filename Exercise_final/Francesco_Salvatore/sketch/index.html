@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Etch a Sketch</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/library/WebSerialAPI_style.css">
+  <script src="assets/script.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+
+        <!-- WebSerialAPI control menu -->
+        <div id="support_status"></div>
+
+        <div id="serial_control_bar">
+            <button id="button_start_serial">Start Serial Communication</button>
+            <button id="button_stop_serial">Stop Serial Communication</button>
+            <div id="serial_logger_container"></div>
+        </div>
+
+        <div id="menu">&#9881;</div>
+        <!-- end: WebSerialAPI control menu -->
+         
+    </header>
+
+  <!-- Text used as Logotipo -->
+  <div id="testo">
+    <a id="Logotipo" href="../index.html"><h1>Etch a Sketch</h1></a>
+    <p id="pots"></p>
+  </div>
+
+  <div id="container">
+    <canvas id="visualizer" width="1023" height="512"></canvas> <!-- Canva -->
+  </div>
+  
+
+</body>
+
+  <script src="assets/library/WebSerialAPI_library.js" defer></script>
+  <script src="assets/library/WebSerialAPI_ui.js" defer></script>
+
+</html>

@@ -1,0 +1,40 @@
+body, h1 {
+    margin: 0;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #testo {
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #Logotipo {
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  #logotipo {
+    margin-bottom: 3px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+
+/* Setting canvas Dimension */
+canvas {
+    display: block;
+    border: 1px solid white;
+  }

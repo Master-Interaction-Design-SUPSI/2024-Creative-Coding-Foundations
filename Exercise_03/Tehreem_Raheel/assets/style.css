@@ -1,0 +1,131 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/magic-castle.png') no-repeat center center fixed;
+    background-size:cover;
+}
+
+/* Instructions paragraph */
+.instructions {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* General Paragraph */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Game Container */
+.game-container {
+    text-align: center;
+    color: #fff;
+    max-width: 100%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(255, 0, 183, 0.8);
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Princess Character */
+#player {
+    width: 70px;
+    height: 70px;
+    background: url('images/princess.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    bottom: 60px; /* Adjust to sit right on top of the stones */
+    left: 0;
+    transition: left 0.5s ease, transform 0.2s ease;
+    z-index: 15; /* Ensure the player is above the stones but not messages */
+}
+
+/* Player Jump Animation */
+.player-jump {
+    animation: jumpGlow 0.5s;
+}
+
+@keyframes jumpGlow {
+    0%, 100% { box-shadow: 0 0 15px 10px rgba(255, 215, 0, 0.8); }
+    50% { box-shadow: 0 0 30px 15px rgba(255, 215, 0, 1); }
+}
+
+/* Bridge Path */
+.bridge {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+/* Stepping Stones with Glass Effect */
+.stones {
+    display: flex;
+    gap: 10px;
+}
+
+.stone {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url('images/glass.png') no-repeat center center;
+    background-size: contain;
+    position:relative;
+    bottom:0; /* Position stones on the same level */
+    transition: box-shadow 0.3s;
+}
+
+/* Safe Glow Effect */
+.stone.safe {
+    box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Trap Activation Effect */
+.stone.trap {
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.8);
+}
+ 
+
+/* Message Overlays (Outside the Game Container) */
+.game-over-message, .win-message {
+    position: fixed;
+    top: 290px; /* Position on top of the game container */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0.931);
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    display: none;
+    z-index: 20; /* Ensure messages are on top */
+}
+
+.win-message {
+    background-color: rgba(0, 128, 0, 0.8);
+}

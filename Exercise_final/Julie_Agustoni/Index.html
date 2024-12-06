@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Julie Agustoni" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Final space API</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script type="module" src="assets/script.js" defer></script>
+    
+  </head>
+  <body>
+    <header>
+      <div id="intro">
+      <h1>Final space crew</h1>
+      <p >
+        In this game your role is to put together a crew to complete a specific
+        mission
+      </p>
+      <h2>how it work :</h2>
+      <ol>
+        <li>Read the brief of the mission</li>
+        <li>Scroll through the different characters available</li>
+        <li>Select 4 of the characters to make your ideal crew to accomplish this mission</li>
+        <li>Confirm your choice</li>
+        <li>Result</li>
+        <li>Next mission</li>
+    </ol>
+    </header>
+    <main>
+      <aside>
+      </div>
+      <div id="mission">
+        <h2>Here is the mission brief : </h2>
+        <p id="container-mission">this is the brief of the mission</p>
+      </div>
+        <div id="crew">
+          <h2>Here is an overview of your crew :</h3>
+          <div id="crew-output">
+            <h3>The names of the people in your crew are:</h3>
+            <p id="crew-names"></p>
+            <h3>The abilities of everyone in the crew are:</h3>
+            <p id="crew-abilities"></p>
+          </div>
+        </div>
+        <div id="control">
+          <h2>Control :</h2>
+          <button id="button-confirm">Confirm</button>
+          <button id="button-next-mission">Next mission</button>
+          <button id="button-quotes">I am stuck</button>
+        </div>
+        <div id="score">
+          <h2>Here is the result: </h2>
+          <h3>Status of the mission : </h2>
+            <p id="mission-status"></p>
+          <h3>Missing abilities to complete the mission : </h3>
+          <p id="missing-abilities"></p>
+        </div>
+        <div id="score-board">
+          <h2>Here is your score :</h2>
+          <h3>Mission success: <span id="mission-success-count"></span></h3>
+          <h3>Fail: <span id="mission-fail-count"></span></h3>
+        </div>
+        <div id="quote">
+        </div>
+      </aside>
+      <section id="character">
+        <h2>Here are the character you can choose : </h2>
+        <div id="container-character"></div>
+      </section>
+  
+    </main>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+{
+  "hennaStyles": [
+    {
+      "title": "Indian Henna",
+      "description": {
+        "about": "Known as Mehndi in South Asia, Mehandi is derived from the Sanskrit word mendhikā, Indian henna is a vital part of ceremonies like weddings and festivals, symbolizing joy, beauty, and spiritual awakening. It is extensively practiced across Hindu and Muslim communities in India and its neighbors.",
+        "origin": "India",
+        "history": "Dating back over 5000 years, Some scholars claim that the earliest documentation of henna uses is found in ancient Indian texts and images, indicating that mehandi as an art form may have originated in ancient India. Others claim that the practice of decorating the body with henna was brought to India by the Mughals in the twelfth century, centuries after it had been in use in the Middle East and North Africa. henna was first used as a cooling agent and later became an integral part of India's cultural and religious celebrations.",
+        "religion": "Primarily Hinduism and Islam",
+        "country": "India and South Asia"
+      },
+      "designElements": {
+        "Ambi": {
+          "description": "Buta, a teardrop-shaped motif with a curved upper end. Of Iranian origin, paisley or Ambi designs became popular in the West in the 18th and 19th centuries, following imports of post-Mughal Empire versions of the design from India, it symbolizing fertility and luck.",
+          "images": [
+            "assets/images/indian/PLAIN/ambi 1 gold.png",
+            "assets/images/indian/PLAIN/ambi 2 gold.png"
+          ],
+          "rotation": 8
+        },
+        "Tikki": {
+          "description": "Circular patterns representing the sun (surya)  and the unity of life, originated from hindu culture as they worship Sun God commonly used in bridal Mehndi.",
+          "images": [
+            "assets/images/indian/PLAIN/tikki 1 gold.png",
+            "assets/images/indian/PLAIN/tikki 2 gold.png"
+          ],
+          "rotation": 1
+        },
+        "FloralVines": {
+          "description": "Intricate floral designs that symbolize beauty, elegance, and new beginnings.Commonly used in Bridle Henna",
+          "images": [
+            "assets/images/indian/PLAIN/floral vine 1 gold.png",
+            "assets/images/indian/PLAIN/floral vines 2 gold.png"
+          ],
+          "rotation": 12
+        },
+        "humps": {
+          "description": "Curvy patterns that mimic the shape of sand dunes, often used to symbolize resilience and life’s ups and downs.",
+          "images": [
+            "assets/images/indian/PLAIN/humps 1 gold.png",
+            "assets/images/indian/PLAIN/humps 2 gold.png"
+          ],
+          "rotation": 60
+        }
+      },
+      "music": [
+        "assets/audio/indian.mp3"
+      ]
+    },
+    {
+      "title": "Egyptian Henna",
+      "description": {
+        "about": ".Egyptian henna is used in various ceremonies for beautification and protection, symbolizing joy and fortune. It incorporates elements that date back to the Pharaonic era.",
+        "origin": "Egypt",
+        "history": "One of the earliest uses of henna can be dated back to Ancient Egypt, where henna paste was used to stain mummies and mummy wrappings. The Egyptians believed henna retained a person's spirituality. The lawsone also made the skin stronger and resistant to decay. Some mummies have been unearthed with flaming red hair that was dyed with henna, probably at the time of embalmment.",
+        "religion": "Islam and Ancient Egyptian beliefs",
+        "country": "Egypt"
+      },
+      "designElements": {
+        "Ankh": {
+          "description": "A symbol representing eternal life, often used in wedding ceremonies to denote longevity and health.",
+          "images": [
+            "images/arabic/floralMotifs/floral1.png"
+          ]
+        },
+        "Scarabs": {
+          "description": "Symbolizes rebirth and renewal, reflecting the ancient Egyptian belief in the afterlife and regeneration.",
+          "images": [
+            "images/arabic/leafyTrails/leaf1.png"
+          ]
+        },
+        "Geometric Shapes": {
+          "description": "Patterns that reflect the architectural symmetry of ancient Egyptian structures, symbolizing order and eternal unity.",
+          "images": [
+            "images/arabic/minimalPatterns/minimal1.png"
+          ]
+        }
+      },
+      "music": [
+        "assets/audio/egyptian.mp3"
+      ]
+    },
+    {
+      "title": "Moroccan Henna",
+      "description": {
+        "about": "The word henna is from Arabic–Al-Hinna. Moroccan henna is characterized by its bold, geometric patterns that often carry protective symbols, reflecting the Berber tradition and Islamic art.",
+        "origin": "Morocco",
+        "history": "The earliest written evidence of henna being used as an adornment for a bride is in 2100 BCE from northwest Syria. Henna has been a protective and celebratory ornament in Moroccan culture for centuries, dating back to ancient Berber communities.",
+        "religion": "Islam and Berber traditions",
+        "country": "Morocco and North African regions"
+      },
+      "designElements": {
+        "Hamsa": {
+          "description": "A palm-shaped amulet used to protect against the evil eye and bring good fortune, often featuring in bridal henna.",
+          "images": [
+            "assets/images/indian/PLAIN/hamsa gold.png"
+          ]
+        },
+        "Musallas": {
+          "description": "Triangle patterns that symbolize stability and the balance between body, mind, and spirit, often seen in spiritual henna designs.",
+          "images": [
+            ""
+            
+          ]
+        },
+        "Islamic Art": {
+          "description": "Intricate designs that represent the infinite nature of the universe, promoting unity and continuity in Islamic and Berber henna.",
+          "images": [
+            "assets/images/indian/PLAIN/Islamic art gold.png"
+          ],
+          "rotation": 40
+        },
+        "Nuqat": {
+          "description": "Small dots used to fill spaces in complex patterns, representing the simplicity and completeness of the universe.",
+          "images": [
+            "assets/images/indian/PLAIN/nuqat gold.png"
+          ],
+          "rotation": 20
+        }
+      },
+      "music": [
+        "assets/audio/moroccan.mp3"
+      ]
+    }
+  ]
+}

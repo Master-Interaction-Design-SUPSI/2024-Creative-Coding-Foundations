@@ -1,0 +1,34 @@
+[
+  {
+    "ID": 1,
+    "Title": "Steal the Nymerican cube ",
+    "Description": "this mission take place on the Toro Regetta, you will need to get a ship and then fight some enemies to get the precious cube",
+    "Requirement": ["Piloting", "Telekinesis", "Weapons: Fire axe"]
+  },
+  {
+    "ID": 2,
+    "Title": "Steal the family heirloom ",
+    "Description": "this mission take place on this planet, you will need to do that in order to get that",
+    "Requirement": ["Planetary Destruction", "Telephathy", "Weapons: Laser gun"]
+  },
+  {
+    "ID": 3,
+    "Title": "Steal the third dimensional key ",
+    "Description": "this mission take place on this planet, you will need to do that in order to get that",
+    "Requirement": ["Acrobatics", "Marksmanship", "Weapons: Titanslayer"]
+  },
+  {
+    "ID": 4,
+    "Title": "Steal the fourth dimensional key ",
+    "Description": "this mission take place on this planet, you will need to do that in order to get that",
+    "Requirement": ["Saw hands", "Surgery", "Weapons: Staff"]
+  },
+  {
+    "ID": 5,
+    "Title": "Steal the fifth dimensional key ",
+    "Description": "this mission take place on this planet, you will need to do that in order to get that",
+    "Requirement": ["Capable Shrink", "Blasters", "Weapons: Speart"]
+  }
+]
+
+

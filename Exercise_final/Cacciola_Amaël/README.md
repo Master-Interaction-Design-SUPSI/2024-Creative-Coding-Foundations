@@ -1,0 +1,3 @@
+# Game Font
+## Amaël Cacciola 
+### The game consists of collecting the letters in the path and discovering the font, once all the letters have been collected a pop-up comes out with the story of that font. It works on three levels so for three fonts. The game unfortunately has little visual coherence, but having had little time I concentrated more on the functioning than on the visual part. Unfortunately this shortcoming can be felt a lot.

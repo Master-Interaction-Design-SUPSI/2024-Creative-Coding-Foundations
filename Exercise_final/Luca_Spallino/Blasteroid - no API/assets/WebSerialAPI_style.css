@@ -1,0 +1,16 @@
+#menu {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+#serial_logger_container {
+    font-size: 0.8rem;
+    color: cadetblue;
+    padding: 0.2rem;
+}
+
+.hidden {
+    display: none;
+}

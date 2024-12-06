@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Oz Books</title>
+    <script src="assets/script.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <main>
+        <div id="text-container">
+            <div id="left-column">
+                <div>
+                    <h1>The Oz Books</h1>
+                </div>
+
+                <div id="book-dropdown">
+                    <select id="book-selector">
+                        <option disabled selected>The Oz books...</option>
+                        <option value="1_The_Wonderful_Wizard_of_Oz">The Wonderful Wizard of Oz</option>
+                        <option value="2_The_Marvelous_Land_of_Oz">The Marvelous Land of Oz</option>
+                        <option value="3_Ozma_of_Oz">Ozma of Oz</option>
+                        <option value="4_Dorothy_and_the_Wizard_in_Oz">Dorothy and the Wizard in Oz</option>
+                        <option value="5_The_Road_to_Oz">The Road to Oz</option>
+                        <option value="6_The_Emerald_City_of_Oz">The Emerald City of Oz</option>
+                        <option value="7_The_Patchwork_Girl_of_Oz">The Patchwork Girl of Oz</option>
+                        <option value="8_Tik-Tok_of_Oz">Tik-Tok of Oz</option>
+                        <option value="9_The_Scarecrow_of_Oz">The Scarecrow of Oz</option>
+                        <option value="10_Rinkitink_in_Oz">Rinkitink in Oz</option>
+                        <option value="11_The_Lost_Princess_of_Oz">The Lost Princess of Oz</option>
+                        <option value="12_The_Tin_Woodman_of_Oz">The Tin Woodman of Oz</option>
+                        <option value="13_The_Magic_of_Oz">The Magic of Oz</option>
+                        <option value="14_Glinda_of_Oz">Glinda of Oz</option>
+                    </select>
+                    <button id="open-mic">Open mic</button>
+                    <p>Read aloud.</p>
+                </div>
+                <div id="opening-message" class="hidden">
+                    <p>Walk the Yellow Brick Road and Cross the Shifting Sands by entering the magical world of Oz, explored in 14 books by L. Frank Baum between 1900 and 1920. 
+                        <br> <br> Choose a title from the shelf, take the microphone, and read your favorite passage aloud at this whimsical "open mic".</p>
+                        <div id="attribution-container" class="hidden">
+                            <img id="attribution-image" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Oz-and-surrounding-countrie.jpg" alt="Map of the countries near to the Land of Oz">
+                            <p>By <a href="https://en.wikipedia.org/wiki/en:L._Frank_Baum" class="extiw" title="w:en:L. Frank Baum"><span title="American author of children's books (1856–1919)">L. Frank Baum</span></a>  
+                            - <em>
+                                <a href="https://commons.wikimedia.org/wiki/File:Oz-and-surrounding-countrie.jpg" title="Map of the countries near to the Land of Oz">
+                                    Map of the countries near to the Land of Oz
+                                </a>
+                            </em></p>
+                        </div>
+                    </div>
+                
+                <img id="cover-image" src="" alt="Book Cover" class="cover-image">
+                
+                </div>
+             <div id="right-column">
+                </div>
+
+    </main>
+</body>
+</html>

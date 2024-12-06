@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="library/WebSerialAPI_style.css"> <!-- Linking the Library css -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Controllers -->
+    <header>
+      <div id="support_status"></div>
+      
+      <div id="serial_control_bar">
+        <button id="button_start_serial">Start Serial Communication</button>
+        <button id="button_stop_serial">Stop Serial Communication</button>
+        <div id="serial_logger_container"></div>
+      </div>
+      
+      <div id="menu">&#9881;</div>
+    </header>
+    
+    <main>
+			  <!-- Text used as Logotipo -->
+			<div id="testo">
+				<a id="Logotipo" href="../index.html"><h1>The Pong game</h1></a>
+				<p id="pots"></p>
+			</div>
+
+      <div id="game-container">
+        <div id="ball"></div>
+        <div id="paddle-left"></div>
+        <div id="paddle-right"></div>
+        <div id="score">0 : 0</div>
+      </div>
+    </main>
+  </body>
+
+  <!-- Linking the Library -->
+  <script src="library/WebSerialAPI_library.js" defer></script>
+  <script src="library/WebSerialAPI_ui.js" defer></script>
+</html>

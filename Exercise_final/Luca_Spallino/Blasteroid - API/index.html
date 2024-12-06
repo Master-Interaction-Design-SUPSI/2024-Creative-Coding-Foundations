@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blasteroid</title>
+    
+    <script src="assets/WebSerialAPI_library.js" defer></script>
+    <script src="assets/WebSerialAPI_ui.js" defer></script>
+    <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="assets/WebSerialAPI_style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/azq6qtw.css">
+</head>
+<body>
+    
+    <header>
+        <!-- WebSerialAPI control menu -->
+        <div id="support_status"></div>
+
+        <div id="serial_control_bar">
+            <button id="button_start_serial">Communicate with Arduino</button>
+            <button id="button_stop_serial">Stop</button>
+            <div id="serial_logger_container"></div>
+        </div>
+
+        <div id="menu">&#9881;</div>
+        <!-- end: WebSerialAPI control menu -->
+    </header>
+
+    <!-- score and best data -->
+    <main>
+        <div class="score-text">
+            <span>Score:</span>
+            <span id="score-number">0</span>
+        </div>
+        <div class="best-score-text">
+            <span>Best:</span>
+            <span id="best-score-number">0</span>
+        </div>
+
+        <canvas></canvas>
+
+        <!-- game over and restart -->
+        <div id="game-over-modal" class="modal">
+            <div class="modal-content">
+                <h2>Game Over.
+                </h2>
+                <p>Put more effort, it's your planet!</p>
+                <p>Score: <span id="final-score"></span></p>
+                <button id="restart-button">Restart</button>
+            </div>
+        </div>
+
+         <!-- start -->
+   <div id="start-overlay">
+  <div id="start-content">*
+    <h1 id="game-title">BLASTEROID</h1>
+    <p>Connect the controller and defend the Earth!<br>Press space to start.</p>
+  </div>
+</div>
+
+
+    </main>
+
+    <!-- shrink library + js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
