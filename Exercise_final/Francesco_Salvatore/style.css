@@ -1,0 +1,44 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #111;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin: 15px 0;
+    border: 2px solid whitesmoke;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: whitesmoke;
+    color: #111;
+}

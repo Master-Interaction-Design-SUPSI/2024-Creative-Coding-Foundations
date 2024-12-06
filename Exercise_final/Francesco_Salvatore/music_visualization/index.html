@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Final</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="library/WebSerialAPI_style.css"> <!-- Linking the Library css -->
+  <script src="script.js" defer></script>
+
+  
+</head>
+
+<body>
+    <!-- WebSerialAPI control menu -->
+        
+    <div id="support_status"></div>
+
+    <div id="serial_control_bar">
+        <button id="button_start_serial">Start Serial Communication</button>
+        <button id="button_stop_serial">Stop Serial Communication</button>
+        <div id="serial_logger_container"></div>
+    </div>
+
+    <div id="menu">&#9881;</div>
+    <!-- end: WebSerialAPI control menu -->
+     
+
+<div id="testo">
+    <a id="Logotipo" href="../index.html"><h1>Music Visualizer</h1></a>
+    <p id="pots"></p>
+</div>
+
+
+    <div id="controls">
+        <input type="file" id="audiofile1" accept="audio/*">
+        <input type="range" id="volume1" min="0" max="1" step="0.01" value="1" class="volume-control">
+        <input type="file" id="audiofile2" accept="audio/*">
+        <input type="range" id="volume2" min="0" max="1" step="0.01" value="1" class="volume-control">
+        <input type="range" id="time" min="0" max="100" step="0.1" value="0" class="time-control">
+        <button id="start_listening">Start Listening</button>
+    </div>
+    <canvas id="visualizer"></canvas>
+    
+</body>
+
+<script src="library/WebSerialAPI_library.js" defer></script>
+<script src="library/WebSerialAPI_ui.js" defer></script>
+
+</html>
